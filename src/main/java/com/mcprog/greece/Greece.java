@@ -1,6 +1,7 @@
 package com.mcprog.greece;
 
 import com.mcprog.greece.handler.ConfigHandler;
+import com.mcprog.greece.init.ModItems;
 import com.mcprog.greece.proxy.IProxy;
 import com.mcprog.greece.reference.Reference;
 import com.mcprog.greece.utility.LogHelper;
@@ -27,6 +28,7 @@ public class Greece {
 		
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigHandler());
+		ModItems.init();
 		
 		LogHelper.info("PreInitialization Completed");
 	}
