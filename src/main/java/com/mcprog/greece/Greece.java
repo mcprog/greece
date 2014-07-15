@@ -1,9 +1,11 @@
 package com.mcprog.greece;
 
-import com.mcprog.greece.configuration.ConfigHandler;
+import com.mcprog.greece.handler.ConfigHandler;
 import com.mcprog.greece.proxy.IProxy;
 import com.mcprog.greece.reference.Reference;
+import com.mcprog.greece.utility.LogHelper;
 
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
@@ -11,7 +13,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_PATH)
 public class Greece {
 
 	@Mod.Instance(Reference.MOD_ID)
@@ -22,16 +24,20 @@ public class Greece {
 	
 	@Mod.EventHandler
 	public void preInit (FMLPreInitializationEvent event) {
-//		ConfigHandler.init(event.getSuggestedConfigurationFile());
+		
+		ConfigHandler.init(event.getSuggestedConfigurationFile());
+		FMLCommonHandler.instance().bus().register(new ConfigHandler());
+		
+		LogHelper.info("PreInitialization Completed");
 	}
 	
 	@Mod.EventHandler
 	public void init (FMLInitializationEvent event) {
-		
+		LogHelper.info("Initialization Completed");
 	}
 	
 	@Mod.EventHandler
 	public void postInit (FMLPostInitializationEvent event) {
-		
+		LogHelper.info("PostInitialization Completed");
 	}
 }
