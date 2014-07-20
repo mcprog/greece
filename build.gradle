@@ -22,7 +22,7 @@ group= "com.mcprog.greece" // http://maven.apache.org/guides/mini/guide-naming-c
 archivesBaseName = "greece(alpha)"
 
 minecraft {
-    version = "1.7.10-10.13.0.1160"
+    version = "1.7.10-10.13.0.1170"
     assetDir = "eclipse/assets"
 }
 
