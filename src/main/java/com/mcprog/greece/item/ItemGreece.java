@@ -1,5 +1,6 @@
 package com.mcprog.greece.item;
 
+import com.mcprog.greece.creativetab.CreativeTabGreece;
 import com.mcprog.greece.reference.Textures;
 
 import cpw.mods.fml.relauncher.Side;
@@ -11,7 +12,7 @@ import net.minecraft.item.ItemStack;
 public class ItemGreece extends Item {
 
 	public ItemGreece () {
-		
+		setCreativeTab(CreativeTabGreece.GREECE_TAB);
 	}
 	
 	@Override
