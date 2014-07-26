@@ -1,8 +1,11 @@
 package com.mcprog.greece;
 
+import net.minecraftforge.oredict.OreDictionary;
+
 import com.mcprog.greece.handler.ConfigHandler;
 import com.mcprog.greece.init.ModBlocks;
 import com.mcprog.greece.init.ModItems;
+import com.mcprog.greece.init.Recipes;
 import com.mcprog.greece.proxy.IProxy;
 import com.mcprog.greece.reference.Reference;
 import com.mcprog.greece.utility.LogHelper;
@@ -37,11 +40,17 @@ public class Greece {
 	
 	@Mod.EventHandler
 	public void init (FMLInitializationEvent event) {
+		Recipes.init();
+		
 		LogHelper.info("Initialization Completed");
 	}
 	
 	@Mod.EventHandler
 	public void postInit (FMLPostInitializationEvent event) {
+//		for (String oreName: OreDictionary.getOreNames()) {
+//			LogHelper.info(oreName);
+//		}
+		
 		LogHelper.info("PostInitialization Completed");
 	}
 }
