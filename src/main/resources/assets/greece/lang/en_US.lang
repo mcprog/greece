@@ -5,6 +5,11 @@ item.greece:copperIngot.name=Cyprium Ingot
 item.greece:tinIngot.name=White Lead Ingot
 item.greece:classicBronzeIngot.name=Classic Bronze Ingot
 item.greece:mildBronzeIngot.name=Mild Bronze Ingot
+item.greece:copperDust.name=Cyprium Dust
+item.greece:tinDust.name=White Lead Dust
+item.greece:classicBronzeDust.name=Classic Bronze Dust
+item.greece:mildBronzeDust.name=Mild Bronze Dust
 
 tile.greece:copperBlock.name=Block of Cyprium
+tile.greece:copperDustBlock.name=Block of Cyprium Dust
 tile.greece:column.name=Column
