@@ -20,6 +20,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class ModItems {
 
 	public static final ItemGreece obol = new ItemCoin();
+	public static final ItemGreece drachma = new ItemCoin();
 	public static final ItemMetal copperIngot = new ItemMetal();
 	public static final ItemMetal tinIngot = new ItemMetal();
 	public static final ItemMetal classicBronzeIngot = new ItemMetal();
@@ -55,6 +56,7 @@ public class ModItems {
 		OreDictionary.registerOre(Names.OreDictionary.DUST_TIN, tinDust);
 		
 		GameRegistry.registerItem(obol, Names.Items.COIN);
+		GameRegistry.registerItem(drachma, Names.Items.COIN);
 		GameRegistry.registerItem(copperIngot, Names.Items.COPPER_INGOT);
 		GameRegistry.registerItem(tinIngot, Names.Items.TIN_INGOT);
 		GameRegistry.registerItem(classicBronzeIngot, Names.Items.CLASSIC_BRONZE_INGOT);
