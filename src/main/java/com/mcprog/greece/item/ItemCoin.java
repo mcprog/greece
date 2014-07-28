@@ -30,4 +30,8 @@ public class ItemCoin extends ItemGreece {
     public void addInformation (ItemStack p_77624_1_, EntityPlayer p_77624_2_, List p_77624_3_, boolean p_77624_4_) {
         p_77624_3_.add(denomination);
     }
+	
+	public void setDenomination (String denomination) {
+		this.denomination = denomination;
+	}
 }
