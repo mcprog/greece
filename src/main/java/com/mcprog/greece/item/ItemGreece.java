@@ -9,6 +9,11 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class ItemGreece extends Item {
 
 	public ItemGreece () {

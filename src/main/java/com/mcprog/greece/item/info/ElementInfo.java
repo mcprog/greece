@@ -1,5 +1,10 @@
 package com.mcprog.greece.item.info;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class ElementInfo {
 	
 	public String name;

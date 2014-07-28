@@ -10,6 +10,11 @@ import net.minecraft.block.BlockSand;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.client.renderer.texture.IIconRegister;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class BlockDust extends BlockFalling {
 	
 	private MapColor mapColor;

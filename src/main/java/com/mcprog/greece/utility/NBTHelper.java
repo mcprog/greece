@@ -3,6 +3,11 @@ package com.mcprog.greece.utility;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class NBTHelper {
 
 	/**

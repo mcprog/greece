@@ -1,5 +1,10 @@
 package com.mcprog.greece.reference;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class Names {
 	
 	public class Items {

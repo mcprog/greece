@@ -10,6 +10,11 @@ import net.minecraftforge.common.config.ConfigElement;
 import cpw.mods.fml.client.config.GuiConfig;
 import cpw.mods.fml.client.config.IConfigElement;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class ModGuiConfig extends GuiConfig {
 
 	public ModGuiConfig(GuiScreen guiScreen) {

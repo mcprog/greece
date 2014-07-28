@@ -1,5 +1,10 @@
 package com.mcprog.greece.reference;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class Reference {
 	
 	public static final String MOD_ID = "greece";

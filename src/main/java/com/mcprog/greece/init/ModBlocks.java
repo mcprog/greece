@@ -13,6 +13,11 @@ import com.mcprog.greece.reference.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModBlocks {
 

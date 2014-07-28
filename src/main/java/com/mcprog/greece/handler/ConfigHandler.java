@@ -8,7 +8,11 @@ import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.common.config.Configuration;
 
-
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class ConfigHandler {
 	
 	public static Configuration config;

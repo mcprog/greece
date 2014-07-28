@@ -2,6 +2,11 @@ package com.mcprog.greece.item.info;
 
 import com.mcprog.greece.reference.Elements;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class SpecificInfo {
 
 	public static final ElementInfo[] copper = {

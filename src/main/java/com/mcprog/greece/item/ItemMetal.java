@@ -11,6 +11,11 @@ import net.minecraft.util.StatCollector;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class ItemMetal extends ItemGreece {
 
 	private ElementInfo[] elements;

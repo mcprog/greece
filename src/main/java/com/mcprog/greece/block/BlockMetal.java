@@ -4,6 +4,11 @@ import net.minecraft.block.BlockCompressed;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class BlockMetal extends BlockGreece {
 	
 	private MapColor mapColor;

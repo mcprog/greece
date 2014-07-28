@@ -1,5 +1,10 @@
 package com.mcprog.greece.reference;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class Elements {
 	public static final String CARBON = "C";
 	public static final String CHROMIUM = "Cr";

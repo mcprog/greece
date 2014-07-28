@@ -6,6 +6,11 @@ import com.mcprog.greece.reference.Reference;
 
 import cpw.mods.fml.common.FMLLog;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class LogHelper {
 	
 	public static void log (Level logLevel, Object object) {
