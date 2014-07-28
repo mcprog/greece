@@ -4,7 +4,7 @@ import net.minecraftforge.oredict.OreDictionary;
 
 import com.mcprog.greece.item.ItemGreece;
 import com.mcprog.greece.item.ItemMetal;
-import com.mcprog.greece.item.ItemObol;
+import com.mcprog.greece.item.ItemCoin;
 import com.mcprog.greece.item.info.SpecificInfo;
 import com.mcprog.greece.reference.Names;
 import com.mcprog.greece.reference.Reference;
@@ -19,7 +19,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModItems {
 
-	public static final ItemGreece obol = new ItemObol();
+	public static final ItemGreece obol = new ItemCoin();
 	public static final ItemMetal copperIngot = new ItemMetal();
 	public static final ItemMetal tinIngot = new ItemMetal();
 	public static final ItemMetal classicBronzeIngot = new ItemMetal();
@@ -54,7 +54,7 @@ public class ModItems {
 		OreDictionary.registerOre(Names.OreDictionary.DUST_COPPER, copperDust);
 		OreDictionary.registerOre(Names.OreDictionary.DUST_TIN, tinDust);
 		
-		GameRegistry.registerItem(obol, Names.Items.OBOL);
+		GameRegistry.registerItem(obol, Names.Items.COIN);
 		GameRegistry.registerItem(copperIngot, Names.Items.COPPER_INGOT);
 		GameRegistry.registerItem(tinIngot, Names.Items.TIN_INGOT);
 		GameRegistry.registerItem(classicBronzeIngot, Names.Items.CLASSIC_BRONZE_INGOT);
