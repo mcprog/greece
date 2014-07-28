@@ -1,0 +1,13 @@
+package com.mcprog.greece.init;
+
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class Recipes {
+
+	public static void init () {
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.copperDustBlock), "iii", "iii", "iii", 'i', new ItemStack(ModItems.copperDust));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.classicBronzeDust, 10), new ItemStack(ModItems.tinDust), new ItemStack(ModBlocks.copperDustBlock));
+	}
+}

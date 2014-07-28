@@ -1,0 +1,13 @@
+package com.mcprog.greece.reference;
+
+public class Names {
+	
+	public class Items {
+		public static final String OBOL = "obol";
+		public static final String CLASSIC_BRONZE_INGOT = "classicBronzeIngot";
+	}
+	
+	public class Blocks {
+		public static final String COLUMN = "column";
+	}
+}

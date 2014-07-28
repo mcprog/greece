@@ -2,10 +2,10 @@ package com.mcprog.greece.init;
 
 import net.minecraftforge.oredict.OreDictionary;
 
-import com.mcprog.greece.item.ItemDust;
 import com.mcprog.greece.item.ItemGreece;
-import com.mcprog.greece.item.ItemIngot;
+import com.mcprog.greece.item.ItemMetal;
 import com.mcprog.greece.item.ItemObol;
+import com.mcprog.greece.item.info.SpecificInfo;
 import com.mcprog.greece.reference.Names;
 import com.mcprog.greece.reference.Reference;
 
@@ -15,14 +15,14 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class ModItems {
 
 	public static final ItemGreece obol = new ItemObol();
-	public static final ItemGreece copperIngot = new ItemIngot();
-	public static final ItemGreece tinIngot = new ItemIngot();
-	public static final ItemGreece classicBronzeIngot = new ItemIngot();
-	public static final ItemGreece mildBronzeIngot = new ItemIngot();
-	public static final ItemGreece copperDust = new ItemDust();
-	public static final ItemGreece tinDust = new ItemDust();
-	public static final ItemGreece classicBronzeDust = new ItemDust();
-	public static final ItemGreece mildBronzeDust = new ItemDust();
+	public static final ItemMetal copperIngot = new ItemMetal();
+	public static final ItemMetal tinIngot = new ItemMetal();
+	public static final ItemMetal classicBronzeIngot = new ItemMetal();
+	public static final ItemMetal mildBronzeIngot = new ItemMetal();
+	public static final ItemMetal copperDust = new ItemMetal();
+	public static final ItemMetal tinDust = new ItemMetal();
+	public static final ItemMetal classicBronzeDust = new ItemMetal();
+	public static final ItemMetal mildBronzeDust = new ItemMetal();
 	
 	public static void init () {
 		copperIngot.setUnlocalizedName(Names.Items.COPPER_INGOT);
@@ -33,6 +33,16 @@ public class ModItems {
 		tinDust.setUnlocalizedName(Names.Items.TIN_DUST);
 		classicBronzeDust.setUnlocalizedName(Names.Items.CLASSIC_BRONZE_DUST);
 		mildBronzeDust.setUnlocalizedName(Names.Items.MILD_BRONZE_DUST);
+		
+		copperIngot.setElementInfo(SpecificInfo.copper);
+		tinIngot.setElementInfo(SpecificInfo.tin);
+		classicBronzeIngot.setElementInfo(SpecificInfo.classicBronze);
+		mildBronzeIngot.setElementInfo(SpecificInfo.mildBronze);
+		copperDust.setElementInfo(SpecificInfo.copper);
+		tinDust.setElementInfo(SpecificInfo.tin);
+		classicBronzeDust.setElementInfo(SpecificInfo.classicBronze);
+		mildBronzeDust.setElementInfo(SpecificInfo.mildBronze);
+		
 		
 		OreDictionary.registerOre(Names.OreDictionary.INGOT_COPPER, copperIngot);
 		OreDictionary.registerOre(Names.OreDictionary.INGOT_TIN, tinIngot);

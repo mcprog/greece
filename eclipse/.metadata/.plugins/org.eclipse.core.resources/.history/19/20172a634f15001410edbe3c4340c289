@@ -1,0 +1,24 @@
+package com.mcprog.greece.item.info;
+
+import com.mcprog.greece.reference.Elements;
+
+public class SpecificInfo {
+
+	public static final ElementInfo[] copper = {
+		new ElementInfo(Elements.COPPER, 100)
+	};
+	
+	public static final ElementInfo[] tin = {
+		new ElementInfo(Elements.TIN, 100)
+	};
+	
+	public static final ElementInfo[] classicBronze = {
+		new ElementInfo(Elements.COPPER, 90),
+		new ElementInfo(Elements.TIN, 10)
+	};
+	
+	public static final ElementInfo[] mildBronze = {
+		new ElementInfo(Elements.COPPER, 94.12f),
+		new ElementInfo(Elements.TIN, 6)
+	};
+}

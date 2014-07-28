@@ -19,7 +19,18 @@ public class Recipes {
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.classicBronzeDust, 10), 
 				Names.OreDictionary.DUST_TIN, 
 				ModBlocks.copperDustBlock));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.copperDust, 9), new ItemStack(ModBlocks.copperDustBlock));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.mildBronzeDust, 17), 
+				Names.OreDictionary.DUST_TIN,
+				Names.OreDictionary.DUST_COPPER,
+				Names.OreDictionary.DUST_COPPER,
+				Names.OreDictionary.DUST_COPPER,
+				Names.OreDictionary.DUST_COPPER,
+				Names.OreDictionary.DUST_COPPER,
+				Names.OreDictionary.DUST_COPPER,
+				Names.OreDictionary.DUST_COPPER,
+				ModBlocks.copperDustBlock));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.copperDust, 9), ModBlocks.copperDustBlock);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.copperBlock), "iii", "iii", "iii", 'i', new ItemStack(ModItems.copperIngot));
 		
 		GameRegistry.addSmelting(ModItems.copperDust, new ItemStack(ModItems.copperIngot), 0F);
 		GameRegistry.addSmelting(ModItems.tinDust, new ItemStack(ModItems.tinIngot), 0F);

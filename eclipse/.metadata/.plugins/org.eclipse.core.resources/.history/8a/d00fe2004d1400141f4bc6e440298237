@@ -1,0 +1,60 @@
+package com.mcprog.greece.utility;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+
+public class NBTHelper {
+
+	/**
+	 * Returns true if itemStack has key kyName
+	 * @param itemStack: target stack
+	 * @param keyName: key to check
+	 * @return whether stack has key
+	 */
+	public static boolean hasTag (ItemStack itemStack, String keyName) {
+		return itemStack != null && itemStack.stackTagCompound != null && itemStack.stackTagCompound.hasKey(keyName);
+	}
+	
+	/**
+	 * Removes key from stack
+	 * @param itemStack: stack to remove key from
+	 * @param keyName: key to remove
+	 */
+	public static void removeTag (ItemStack itemStack, String keyName) {
+		if (itemStack.stackTagCompound != null) {
+			itemStack.stackTagCompound.removeTag(keyName);
+		}
+	}
+	
+	private static void initNBTTagCompound (ItemStack itemStack) {
+		if (itemStack.stackTagCompound == null) {
+			itemStack.setTagCompound(new NBTTagCompound());
+		}
+	}
+	
+	public static byte getByte (ItemStack itemStack, String keyName) {
+		initNBTTagCompound(itemStack);
+		
+		if (!itemStack.stackTagCompound.hasKey(keyName)) {
+			//TODO
+		}
+		
+		return itemStack.stackTagCompound.getByte(keyName);
+		
+	}
+	
+	public static short getShort (ItemStack itemStack, String keyName) {
+		return 0;
+		
+	}
+	
+	public static int getInt (ItemStack itemStack, String keyName) {
+		return 0;
+	
+	}
+
+	public static long getLong (ItemStack itemStack, String keyName) {
+		return 0;
+	
+	}
+}

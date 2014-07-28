@@ -1,0 +1,21 @@
+[
+{
+  "modid": "greece",
+  "name": "Greece Mod",
+  "description": "This is ALPHA! Don't worry about it",
+  "version": "1.1(alpha)",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "mcprog"
+  ],
+  "credits": " Created by mcprog",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]

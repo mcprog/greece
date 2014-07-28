@@ -1,0 +1,10 @@
+package com.mcprog.greece.block;
+
+import net.minecraft.block.BlockCompressed;
+
+public class BlockMetal extends BlockGreece {
+	
+	public BlockMetal () {
+		
+	}
+}

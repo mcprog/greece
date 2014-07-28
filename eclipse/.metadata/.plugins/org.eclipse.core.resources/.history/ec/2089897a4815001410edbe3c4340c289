@@ -1,0 +1,8 @@
+package com.mcprog.greece.item.info;
+
+public class ElementInfo {
+	
+	public ElementInfo (String name, float percent) {
+		
+	}
+}

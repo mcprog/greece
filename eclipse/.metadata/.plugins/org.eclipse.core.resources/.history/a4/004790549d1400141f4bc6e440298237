@@ -1,0 +1,7 @@
+package com.mcprog.greece.item;
+
+import net.minecraft.server.management.ItemInWorldManager;
+
+public class ItemIngot extends ItemInWorldManager {
+
+}

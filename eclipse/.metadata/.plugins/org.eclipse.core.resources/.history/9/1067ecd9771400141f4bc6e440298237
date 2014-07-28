@@ -1,0 +1,133 @@
+package com.mcprog.greece.utility;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+
+public class NBTHelper {
+
+	/**
+	 * Returns true if itemStack has key kyName
+	 * @param itemStack: target stack
+	 * @param keyName: key to check
+	 * @return whether stack has key
+	 */
+	public static boolean hasTag (ItemStack itemStack, String keyName) {
+		return itemStack != null && itemStack.stackTagCompound != null && itemStack.stackTagCompound.hasKey(keyName);
+	}
+	
+	/**
+	 * Removes key from stack
+	 * @param itemStack: stack to remove key from
+	 * @param keyName: key to remove
+	 */
+	public static void removeTag (ItemStack itemStack, String keyName) {
+		if (itemStack.stackTagCompound != null) {
+			itemStack.stackTagCompound.removeTag(keyName);
+		}
+	}
+	
+	private static void initNBTTagCompound (ItemStack itemStack) {
+		if (itemStack.stackTagCompound == null) {
+			itemStack.setTagCompound(new NBTTagCompound());
+		}
+	}
+	
+	/*
+	 * Getters
+	 */
+	public static boolean getBoolean (ItemStack itemStack, String keyName) {
+		initNBTTagCompound(itemStack);
+		
+		if (!itemStack.stackTagCompound.hasKey(keyName)) {
+			setBoolean(itemStack, keyName, false);
+		}
+		
+		return itemStack.stackTagCompound.getBoolean(keyName);
+		
+	}
+	
+	public static byte getByte (ItemStack itemStack, String keyName) {
+		initNBTTagCompound(itemStack);
+		
+		if (!itemStack.stackTagCompound.hasKey(keyName)) {
+			setByte(itemStack, keyName, (byte) 0);
+		}
+		
+		return itemStack.stackTagCompound.getByte(keyName);
+		
+	}
+	
+	public static short getShort (ItemStack itemStack, String keyName) {
+		initNBTTagCompound(itemStack);
+		
+		if (!itemStack.stackTagCompound.hasKey(keyName)) {
+			setShort(itemStack, keyName, (short) 0);
+		}
+		
+		return itemStack.stackTagCompound.getShort(keyName);
+	}
+	
+	public static int getInteger (ItemStack itemStack, String keyName) {
+		initNBTTagCompound(itemStack);
+		
+		if (!itemStack.stackTagCompound.hasKey(keyName)) {
+			setInterger(itemStack, keyName, 0);
+		}
+		
+		return itemStack.stackTagCompound.getInteger(keyName);
+	
+	}
+
+	public static long getLong (ItemStack itemStack, String keyName) {
+		initNBTTagCompound(itemStack);
+		
+		if (!itemStack.stackTagCompound.hasKey(keyName)) {
+			setLong(itemStack, keyName, 0L);
+		}
+		
+		return itemStack.stackTagCompound.getLong(keyName);
+	
+	}
+	
+	public static String getLong (ItemStack itemStack, String keyName) {
+		initNBTTagCompound(itemStack);
+		
+		if (!itemStack.stackTagCompound.hasKey(keyName)) {
+			setString(itemStack, keyName, "");
+		}
+		
+		return itemStack.stackTagCompound.getLong(keyName);
+	
+	}
+	
+	/*
+	 * Setters
+	 */
+	public static void setBoolean (ItemStack itemStack, String keyName, boolean keyValue) {
+		initNBTTagCompound(itemStack);
+		
+		itemStack.stackTagCompound.setBoolean(keyName, keyValue);
+	}
+	
+	public static void setByte (ItemStack itemStack, String keyName, byte keyValue) {
+		initNBTTagCompound(itemStack);
+		
+		itemStack.stackTagCompound.setByte(keyName, keyValue);
+	}
+	
+	public static void setShort (ItemStack itemStack, String keyName, short keyValue) {
+		initNBTTagCompound(itemStack);
+		
+		itemStack.stackTagCompound.setShort(keyName, keyValue);
+	}
+	public static void setInterger (ItemStack itemStack, String keyName, int keyValue) {
+		initNBTTagCompound(itemStack);
+		
+		itemStack.stackTagCompound.setInteger(keyName, keyValue);
+	}
+	public static void setLong (ItemStack itemStack, String keyName, long keyValue) {
+		initNBTTagCompound(itemStack);
+		
+		itemStack.stackTagCompound.setLong(keyName, keyValue);
+	}
+}

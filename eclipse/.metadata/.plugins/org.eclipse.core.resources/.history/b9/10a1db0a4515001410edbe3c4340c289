@@ -1,0 +1,11 @@
+package com.mcprog.greece.reference;
+
+public class Elements {
+	public static final String CARBON = "C";
+	public static final String CHROMIUM = "Cr";
+	public static final String IRON = "Fe";
+	public static final String COPPER = "Cu";
+	public static final String ZINC = "Zn";
+	public static final String ARSENIC = "As";
+	
+}

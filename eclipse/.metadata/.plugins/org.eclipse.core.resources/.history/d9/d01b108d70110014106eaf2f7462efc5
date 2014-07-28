@@ -1,0 +1,10 @@
+package com.mcprog.greece.init;
+
+import net.minecraft.block.Block;
+
+import com.mcprog.greece.blocks.BlockColumn;
+
+public class ModBlocks {
+
+	public static final Block column = new BlockColumn();
+}

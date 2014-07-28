@@ -1,0 +1,10 @@
+package com.mcprog.greece.item;
+
+public class ItemIngot extends ItemGreece {
+
+	public ItemIngot() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+}

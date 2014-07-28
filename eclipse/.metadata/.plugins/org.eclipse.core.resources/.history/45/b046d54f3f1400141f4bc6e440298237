@@ -1,0 +1,16 @@
+package com.mcprog.greece.creativetab;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class CreativeTabGreece {
+
+	public static final CreativeTabs GREECE_TAB = new CreativeTabs() {
+		
+		@Override
+		public Item getTabIconItem() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+	};
+}

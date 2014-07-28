@@ -1,0 +1,5 @@
+package com.mcprog.greece.reference;
+
+public class Elements {
+	public static final String CARBON = "C";
+}

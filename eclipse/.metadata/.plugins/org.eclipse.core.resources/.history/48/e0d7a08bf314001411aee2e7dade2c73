@@ -1,0 +1,12 @@
+itemGroup.greece=Greece Mod
+
+item.greece:obol.name=Obol
+item.greece:copperIngot.name=Cyprium Ingot
+item.greece:tinIngot.name=White Lead Ingot
+item.greece:classicBronzeIngot.name=Classic Bronze Ingot
+item.greece:mildBronzeIngot.name=Mild Bronze Ingot
+item.greece:copperDust.name=Cyprium Dust
+item.greece:tinDust.name=White Lead Dust
+
+tile.greece:copperBlock.name=Block of Cyprium
+tile.greece:column.name=Column

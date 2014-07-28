@@ -1,0 +1,8 @@
+package com.mcprog.greece.init;
+
+public class Recipes {
+
+	public static void init () {
+		
+	}
+}

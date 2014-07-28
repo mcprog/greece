@@ -1,0 +1,10 @@
+package com.mcprog.greece.block;
+
+import net.minecraft.block.BlockSand;
+
+public class BlockDust extends BlockSand {
+	
+	public BlockDust (MapColor color) {
+		
+	}
+}
