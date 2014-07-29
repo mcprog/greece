@@ -1,6 +1,8 @@
 itemGroup.greece=Greece Mod
 
 item.greece:obol.name=Obol
+item.greece:drachma.name=Drachma
+item.greece:stater.name=Stater
 item.greece:copperIngot.name=Cyprium Ingot
 item.greece:tinIngot.name=White Lead Ingot
 item.greece:classicBronzeIngot.name=Classic Bronze Ingot

@@ -19,6 +19,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class ItemCoin extends ItemGreece {
 
 	private String denomination;
+	private String comparison;
 	
 	public ItemCoin () {
 		setMaxStackSize(60);
@@ -28,9 +29,11 @@ public class ItemCoin extends ItemGreece {
 	@SideOnly(Side.CLIENT)
     public void addInformation (ItemStack p_77624_1_, EntityPlayer p_77624_2_, List p_77624_3_, boolean p_77624_4_) {
         p_77624_3_.add(denomination);
+        p_77624_3_.add(comparison);
     }
 	
-	public void setDenomination (String denomination) {
+	public void setDenomination (String denomination, String comparison) {
 		this.denomination = denomination;
+		this.comparison = comparison;
 	}
 }

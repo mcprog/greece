@@ -17,7 +17,7 @@ public class CreativeTabGreece {
 		
 		@Override
 		public Item getTabIconItem() {
-			return ModItems.obol;
+			return ModItems.stater;
 		}
 	};
 }

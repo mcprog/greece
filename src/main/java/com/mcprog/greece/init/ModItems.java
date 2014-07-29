@@ -6,6 +6,7 @@ import com.mcprog.greece.item.ItemGreece;
 import com.mcprog.greece.item.ItemMetal;
 import com.mcprog.greece.item.ItemCoin;
 import com.mcprog.greece.item.info.SpecificInfo;
+import com.mcprog.greece.reference.Money;
 import com.mcprog.greece.reference.Names;
 import com.mcprog.greece.reference.Reference;
 
@@ -19,9 +20,9 @@ import cpw.mods.fml.common.registry.GameRegistry;
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModItems {
 
-	public static final ItemGreece obol = new ItemCoin();
-	public static final ItemGreece drachma = new ItemCoin();
-	public static final ItemGreece stater = new ItemCoin();
+	public static final ItemCoin obol = new ItemCoin();
+	public static final ItemCoin drachma = new ItemCoin();
+	public static final ItemCoin stater = new ItemCoin();
 	
 	public static final ItemMetal copperIngot = new ItemMetal();
 	public static final ItemMetal tinIngot = new ItemMetal();
@@ -44,6 +45,10 @@ public class ModItems {
 		tinDust.setUnlocalizedName(Names.Items.TIN_DUST);
 		classicBronzeDust.setUnlocalizedName(Names.Items.CLASSIC_BRONZE_DUST);
 		mildBronzeDust.setUnlocalizedName(Names.Items.MILD_BRONZE_DUST);
+		
+		obol.setDenomination(Money.OBOL, Money.Comparison.OBOL);
+		drachma.setDenomination(Money.DRACHMA, Money.Comparison.DRACHMA);
+		stater.setDenomination(Money.STATER, Money.Comparison.STATER);
 		
 		copperIngot.setElementInfo(SpecificInfo.copper);
 		tinIngot.setElementInfo(SpecificInfo.tin);
