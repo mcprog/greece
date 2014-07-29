@@ -8,9 +8,12 @@ package com.mcprog.greece.reference;
 public class Names {
 	
 	public class Items {
-		public static final String OBOL = "obol";
-		public static final String DRACHMA = "drachma";
-		public static final String STATER = "stater";
+		public static final String SILVER_OBOL = "silverObol";
+		public static final String SILVER_DRACHMA = "silverDrachma";
+		public static final String SILVER_STATER = "silverStater";
+		public static final String ELECTRUM_OBOL = "electrumObol";
+		public static final String ELECTRUM_DRACHMA = "electrumDrachma";
+		public static final String ELECTRUM_STATER = "electrumStater";
 		public static final String COPPER_INGOT = "copperIngot";
 		public static final String TIN_INGOT = "tinIngot";
 		public static final String CLASSIC_BRONZE_INGOT = "classicBronzeIngot";
