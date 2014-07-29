@@ -21,6 +21,8 @@ public class ModItems {
 
 	public static final ItemGreece obol = new ItemCoin();
 	public static final ItemGreece drachma = new ItemCoin();
+	public static final ItemGreece stater = new ItemCoin();
+	
 	public static final ItemMetal copperIngot = new ItemMetal();
 	public static final ItemMetal tinIngot = new ItemMetal();
 	public static final ItemMetal classicBronzeIngot = new ItemMetal();
@@ -31,6 +33,9 @@ public class ModItems {
 	public static final ItemMetal mildBronzeDust = new ItemMetal();
 	
 	public static void init () {
+		obol.setUnlocalizedName(Names.Items.OBOL);
+		drachma.setUnlocalizedName(Names.Items.DRACHMA);
+		stater.setUnlocalizedName(Names.Items.STATER);
 		copperIngot.setUnlocalizedName(Names.Items.COPPER_INGOT);
 		tinIngot.setUnlocalizedName(Names.Items.TIN_INGOT);
 		classicBronzeIngot.setUnlocalizedName(Names.Items.CLASSIC_BRONZE_INGOT);
@@ -55,8 +60,9 @@ public class ModItems {
 		OreDictionary.registerOre(Names.OreDictionary.DUST_COPPER, copperDust);
 		OreDictionary.registerOre(Names.OreDictionary.DUST_TIN, tinDust);
 		
-		GameRegistry.registerItem(obol, Names.Items.COIN);
-		GameRegistry.registerItem(drachma, Names.Items.COIN);
+		GameRegistry.registerItem(obol, Names.Items.OBOL);
+		GameRegistry.registerItem(drachma, Names.Items.DRACHMA);
+		GameRegistry.registerItem(stater, Names.Items.STATER);
 		GameRegistry.registerItem(copperIngot, Names.Items.COPPER_INGOT);
 		GameRegistry.registerItem(tinIngot, Names.Items.TIN_INGOT);
 		GameRegistry.registerItem(classicBronzeIngot, Names.Items.CLASSIC_BRONZE_INGOT);
