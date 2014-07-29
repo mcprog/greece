@@ -22,7 +22,6 @@ public class ItemCoin extends ItemGreece {
 	private String comparison;
 	
 	public ItemCoin () {
-		setMaxStackSize(60);
 	}
 	
 	@Override

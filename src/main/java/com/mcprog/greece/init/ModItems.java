@@ -33,6 +33,8 @@ public class ModItems {
 	public static final ItemMetal classicBronzeDust = new ItemMetal();
 	public static final ItemMetal mildBronzeDust = new ItemMetal();
 	
+	public static final ItemGreece coalDust = new ItemGreece();
+	
 	public static void init () {
 		obol.setUnlocalizedName(Names.Items.OBOL);
 		drachma.setUnlocalizedName(Names.Items.DRACHMA);
@@ -45,6 +47,7 @@ public class ModItems {
 		tinDust.setUnlocalizedName(Names.Items.TIN_DUST);
 		classicBronzeDust.setUnlocalizedName(Names.Items.CLASSIC_BRONZE_DUST);
 		mildBronzeDust.setUnlocalizedName(Names.Items.MILD_BRONZE_DUST);
+		coalDust.setUnlocalizedName(Names.Items.COAL_DUST);
 		
 		obol.setDenomination(Money.OBOL, Money.Comparison.OBOL);
 		drachma.setDenomination(Money.DRACHMA, Money.Comparison.DRACHMA);
@@ -76,5 +79,6 @@ public class ModItems {
 		GameRegistry.registerItem(tinDust, Names.Items.TIN_DUST);
 		GameRegistry.registerItem(classicBronzeDust, Names.Items.CLASSIC_BRONZE_DUST);
 		GameRegistry.registerItem(mildBronzeDust, Names.Items.MILD_BRONZE_DUST);
+		GameRegistry.registerItem(coalDust, Names.Items.COAL_DUST);
 	}
 }

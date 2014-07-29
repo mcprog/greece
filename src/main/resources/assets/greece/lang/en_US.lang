@@ -17,6 +17,7 @@ item.greece:copperDust.name=Cyprium Dust
 item.greece:tinDust.name=White Lead Dust
 item.greece:classicBronzeDust.name=Classic Bronze Dust
 item.greece:mildBronzeDust.name=Mild Bronze Dust
+item.greece:coalDust.name=Coal Dust
 
 #blocks
 tile.greece:copperBlock.name=Block of Cyprium
