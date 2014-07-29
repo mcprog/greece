@@ -24,14 +24,23 @@ public class ModBlocks {
 	public static final BlockGreece column = new BlockColumn();
 	public static final BlockGreece copperBlock = new BlockMetal(MapColor.adobeColor);
 	public static final BlockGreece tinBlock = new BlockMetal(MapColor.snowColor);
+	public static final BlockGreece classicBronzeBlock = new BlockMetal(MapColor.goldColor);
+	public static final BlockGreece mildBronzeBlock = new BlockMetal(MapColor.adobeColor);
 	public static final Block copperDustBlock = new BlockDust(MapColor.adobeColor);
 	
 	public static void init () {
 		copperBlock.setBlockName(Names.Blocks.COPPER_BLOCK);
+		tinBlock.setBlockName(Names.Blocks.TIN_BLOCK);
+		classicBronzeBlock.setBlockName(Names.Blocks.CLASSIC_BRONZE_BLOCK);
+		mildBronzeBlock.setBlockName(Names.Blocks.MILD_BRONZE_BLOCK);
 		copperDustBlock.setBlockName(Names.Blocks.COPPER_DUST_BLOCK);
+		
 		
 		GameRegistry.registerBlock(column, Names.Blocks.COLUMN);
 		GameRegistry.registerBlock(copperBlock, Names.Blocks.COPPER_BLOCK);
+		GameRegistry.registerBlock(tinBlock, Names.Blocks.TIN_BLOCK);
+		GameRegistry.registerBlock(classicBronzeBlock, Names.Blocks.CLASSIC_BRONZE_BLOCK);
+		GameRegistry.registerBlock(mildBronzeBlock, Names.Blocks.MILD_BRONZE_BLOCK);
 		GameRegistry.registerBlock(copperDustBlock, Names.Blocks.COPPER_DUST_BLOCK);
 	}
 }

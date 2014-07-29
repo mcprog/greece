@@ -1,6 +1,7 @@
 package com.mcprog.greece.block;
 
 import com.mcprog.greece.creativetab.CreativeTabGreece;
+import com.mcprog.greece.reference.Names;
 import com.mcprog.greece.reference.Textures;
 
 import cpw.mods.fml.relauncher.Side;
@@ -39,6 +40,7 @@ public class BlockDust extends BlockFalling {
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
         blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
+        System.err.println(getUnwrappedUnlocalizedName(this.getUnlocalizedName()));
     }
 
     protected String getUnwrappedUnlocalizedName(String unlocalizedName) {

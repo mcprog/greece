@@ -24,6 +24,8 @@ public class Names {
 	public class Blocks {
 		public static final String COPPER_BLOCK = "copperBlock";
 		public static final String TIN_BLOCK = "tinBlock";
+		public static final String CLASSIC_BRONZE_BLOCK = "classicBronzeBlock";
+		public static final String MILD_BRONZE_BLOCK = "mildBronzeBlock";
 		public static final String COPPER_DUST_BLOCK = "copperDustBlock";
 		public static final String COLUMN = "column";
 	}
