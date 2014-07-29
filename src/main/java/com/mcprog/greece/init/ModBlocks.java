@@ -32,6 +32,8 @@ public class ModBlocks {
 	public static final BlockLetter letterBlockBeta = new BlockLetter();
 	public static final BlockLetter letterBlockGamma = new BlockLetter();
 	public static final BlockLetter letterBlockDelta = new BlockLetter();
+	public static final BlockLetter letterBlockEpsilon = new BlockLetter();
+	public static final BlockLetter letterBlockZeta = new BlockLetter();
 	
 	public static void init () {
 		copperBlock.setBlockName(Names.Blocks.COPPER_BLOCK);
