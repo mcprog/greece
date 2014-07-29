@@ -67,6 +67,7 @@ public class ModItems {
 		OreDictionary.registerOre(Names.OreDictionary.INGOT_TIN, tinIngot);
 		OreDictionary.registerOre(Names.OreDictionary.DUST_COPPER, copperDust);
 		OreDictionary.registerOre(Names.OreDictionary.DUST_TIN, tinDust);
+		OreDictionary.registerOre(Names.OreDictionary.DUST_COAL, coalDust);
 		
 		GameRegistry.registerItem(obol, Names.Items.OBOL);
 		GameRegistry.registerItem(drachma, Names.Items.DRACHMA);

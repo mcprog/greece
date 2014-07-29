@@ -62,10 +62,53 @@ public class Recipes {
 				"iii", 
 				"iii", 
 				'i', new ItemStack(ModItems.copperIngot));
+		
+		/*
+		 * tin block
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.tinBlock), 
+				"iii", 
+				"iii", 
+				"iii", 
+				'i', new ItemStack(ModItems.tinIngot));
+		
+		/*
+		 * classic bronze block
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.classicBronzeBlock), 
+				"iii", 
+				"iii", 
+				"iii", 
+				'i', new ItemStack(ModItems.classicBronzeIngot));
+		
+		/*
+		 * mild bronze block
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.mildBronzeBlock), 
+				"iii", 
+				"iii", 
+				"iii", 
+				'i', new ItemStack(ModItems.mildBronzeIngot));
+		
 		/*
 		 * copper ingots from block
 		 */
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.copperIngot, 9), ModBlocks.copperBlock));
+		
+		/*
+		 * tin ingots from block
+		 */
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.tinIngot, 9), ModBlocks.tinBlock));
+		
+		/*
+		 * classic bronze ingots from block
+		 */
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.classicBronzeIngot, 9), ModBlocks.classicBronzeBlock));
+		
+		/*
+		 * mild bronze ingots from block
+		 */
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.mildBronzeIngot, 9), ModBlocks.mildBronzeBlock));
 		
 		//***********************
 		//*      Smelting       *

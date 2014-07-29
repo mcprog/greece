@@ -36,5 +36,6 @@ public class Names {
 		public static final String INGOT_TIN = "ingotTin";
 		public static final String DUST_COPPER = "dustCopper";
 		public static final String DUST_TIN = "dustTin";
+		public static final String DUST_COAL = "dustCoal";
 	}
 }
