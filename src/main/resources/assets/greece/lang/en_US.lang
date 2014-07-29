@@ -1,17 +1,27 @@
+#creative tab
 itemGroup.greece=Greece Mod
 
+#coins
 item.greece:obol.name=Obol
 item.greece:drachma.name=Drachma
 item.greece:stater.name=Stater
+
+#ingots
 item.greece:copperIngot.name=Cyprium Ingot
 item.greece:tinIngot.name=White Lead Ingot
 item.greece:classicBronzeIngot.name=Classic Bronze Ingot
 item.greece:mildBronzeIngot.name=Mild Bronze Ingot
+
+#dusts
 item.greece:copperDust.name=Cyprium Dust
 item.greece:tinDust.name=White Lead Dust
 item.greece:classicBronzeDust.name=Classic Bronze Dust
 item.greece:mildBronzeDust.name=Mild Bronze Dust
 
+#blocks
 tile.greece:copperBlock.name=Block of Cyprium
+tile.greece:tinBlock.name=Block of White Lead
+tile.greece:classicBronzeBlock.name=Block of Classic Bronze
+tile.greece:mildBronzeBlock.name=Block of Mild Bronze
 tile.greece:copperDustBlock.name=Block of Cyprium Dust
 tile.greece:column.name=Column
