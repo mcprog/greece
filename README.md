@@ -5,7 +5,7 @@
 * Metals
   * Copper
   * Tin
-  * Bismuth
+  * // Bismuth
   * Antimony
   * Sulphur
   * Mercury
