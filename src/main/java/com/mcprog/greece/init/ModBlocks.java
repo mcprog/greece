@@ -23,6 +23,7 @@ public class ModBlocks {
 
 	public static final BlockGreece column = new BlockColumn();
 	public static final BlockGreece copperBlock = new BlockMetal(MapColor.adobeColor);
+	public static final BlockGreece tinBlock = new BlockMetal(MapColor.snowColor);
 	public static final Block copperDustBlock = new BlockDust(MapColor.adobeColor);
 	
 	public static void init () {

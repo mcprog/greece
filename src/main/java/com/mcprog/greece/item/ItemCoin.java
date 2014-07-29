@@ -21,7 +21,6 @@ public class ItemCoin extends ItemGreece {
 	private String denomination;
 	
 	public ItemCoin () {
-		setUnlocalizedName(Names.Items.COIN);
 		setMaxStackSize(60);
 	}
 	
