@@ -23,6 +23,7 @@ public class Names {
 		public static final String CLASSIC_BRONZE_DUST = "classicBronzeDust";
 		public static final String MILD_BRONZE_DUST = "mildBronzeDust";
 		public static final String COAL_DUST = "coalDust";
+		public static final String SPEAR = "spear";
 	}
 	
 	public class Blocks {

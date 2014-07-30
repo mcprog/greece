@@ -14,4 +14,7 @@ public class Reference {
 	public static final String SERVER_PROXY_PATH = "com.mcprog.greece.proxy.ServerProxy";
 	public static final String GUI_FACTORY_PATH = "com.mcprog.greece.client.gui.GuiFactory";
 	public static final String DESC_SUFFIX = ".desc";
+	
+	
+	
 }

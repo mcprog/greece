@@ -6,6 +6,7 @@ import net.minecraftforge.oredict.OreDictionary;
 import com.mcprog.greece.item.ItemGreece;
 import com.mcprog.greece.item.ItemMetal;
 import com.mcprog.greece.item.ItemCoin;
+import com.mcprog.greece.item.ItemSpear;
 import com.mcprog.greece.item.info.SpecificInfo;
 import com.mcprog.greece.reference.Money;
 import com.mcprog.greece.reference.Names;
@@ -37,8 +38,9 @@ public class ModItems {
 	public static final ItemMetal tinDust = new ItemMetal();
 	public static final ItemMetal classicBronzeDust = new ItemMetal();
 	public static final ItemMetal mildBronzeDust = new ItemMetal();
-	
 	public static final ItemGreece coalDust = new ItemGreece();
+	
+	public static final ItemSpear spear = new ItemSpear();
 	
 	public static void init () {
 		silverObol.setUnlocalizedName(Names.Items.SILVER_OBOL);
@@ -57,6 +59,8 @@ public class ModItems {
 		classicBronzeDust.setUnlocalizedName(Names.Items.CLASSIC_BRONZE_DUST);
 		mildBronzeDust.setUnlocalizedName(Names.Items.MILD_BRONZE_DUST);
 		coalDust.setUnlocalizedName(Names.Items.COAL_DUST);
+		
+		spear.setUnlocalizedName(Names.Items.SPEAR);
 		
 		silverObol.setDenomination(Money.SILVER_OBOL, Money.Comparison.SILVER_OBOL);
 		silverDrachma.setDenomination(Money.SILVER_DRACHMA, Money.Comparison.SILVER_DRACHMA);
@@ -96,5 +100,6 @@ public class ModItems {
 		GameRegistry.registerItem(classicBronzeDust, Names.Items.CLASSIC_BRONZE_DUST);
 		GameRegistry.registerItem(mildBronzeDust, Names.Items.MILD_BRONZE_DUST);
 		GameRegistry.registerItem(coalDust, Names.Items.COAL_DUST);
+		GameRegistry.registerItem(spear, Names.Items.SPEAR);
 	}
 }
