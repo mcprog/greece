@@ -18,6 +18,11 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class BlockLetter extends BlockDirectional{
 
 	@SideOnly(Side.CLIENT)
