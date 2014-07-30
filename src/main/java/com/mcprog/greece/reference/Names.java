@@ -32,6 +32,12 @@ public class Names {
 		public static final String MILD_BRONZE_BLOCK = "mildBronzeBlock";
 		public static final String COPPER_DUST_BLOCK = "copperDustBlock";
 		public static final String COLUMN = "column";
+		public static final String LETTER_BLOCK_ALPHA = "letterBlockAlpha";
+		public static final String LETTER_BLOCK_BETA = "letterBlockBeta";
+		public static final String LETTER_BLOCK_GAMMA = "letterBlockGamma";
+		public static final String LETTER_BLOCK_DELTA = "letterBlockDelta";
+		public static final String LETTER_BLOCK_EPSILON = "letterBlockEpsilon";
+		public static final String LETTER_BLOCK_ZETA = "letterBlockZeta";
 	}
 	
 	public class OreDictionary {

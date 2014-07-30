@@ -17,6 +17,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 /**
  * 
  * @author mcprog
+ * @author ime990
  *
  */
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
@@ -41,8 +42,12 @@ public class ModBlocks {
 		classicBronzeBlock.setBlockName(Names.Blocks.CLASSIC_BRONZE_BLOCK);
 		mildBronzeBlock.setBlockName(Names.Blocks.MILD_BRONZE_BLOCK);
 		copperDustBlock.setBlockName(Names.Blocks.COPPER_DUST_BLOCK);
-		letterBlockAlpha.setBlockName("letterBlockAlpha");
-		letterBlockBeta.setBlockName("letterBlockBeta");
+		letterBlockAlpha.setBlockName(Names.Blocks.LETTER_BLOCK_ALPHA);
+		letterBlockBeta.setBlockName(Names.Blocks.LETTER_BLOCK_BETA);
+		letterBlockGamma.setBlockName(Names.Blocks.LETTER_BLOCK_GAMMA);
+		letterBlockDelta.setBlockName(Names.Blocks.LETTER_BLOCK_DELTA);
+		letterBlockEpsilon.setBlockName(Names.Blocks.LETTER_BLOCK_EPSILON);
+		letterBlockZeta.setBlockName(Names.Blocks.LETTER_BLOCK_ZETA);
 		
 		
 		GameRegistry.registerBlock(column, Names.Blocks.COLUMN);
@@ -51,7 +56,11 @@ public class ModBlocks {
 		GameRegistry.registerBlock(classicBronzeBlock, Names.Blocks.CLASSIC_BRONZE_BLOCK);
 		GameRegistry.registerBlock(mildBronzeBlock, Names.Blocks.MILD_BRONZE_BLOCK);
 		GameRegistry.registerBlock(copperDustBlock, Names.Blocks.COPPER_DUST_BLOCK);
-		GameRegistry.registerBlock(letterBlockAlpha, "letterBlockAlpha");
-		GameRegistry.registerBlock(letterBlockBeta, "letterBlockBeta");
+		GameRegistry.registerBlock(letterBlockAlpha, Names.Blocks.LETTER_BLOCK_ALPHA);
+		GameRegistry.registerBlock(letterBlockBeta, Names.Blocks.LETTER_BLOCK_BETA);
+		GameRegistry.registerBlock(letterBlockGamma, Names.Blocks.LETTER_BLOCK_GAMMA);
+		GameRegistry.registerBlock(letterBlockDelta, Names.Blocks.LETTER_BLOCK_DELTA);
+		GameRegistry.registerBlock(letterBlockEpsilon, Names.Blocks.LETTER_BLOCK_EPSILON);
+		GameRegistry.registerBlock(letterBlockZeta, Names.Blocks.LETTER_BLOCK_ZETA);
 	}
 }

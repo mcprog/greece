@@ -2,9 +2,12 @@
 itemGroup.greece=Greece Mod
 
 #coins
-item.greece:obol.name=Obol
-item.greece:drachma.name=Drachma
-item.greece:stater.name=Stater
+item.greece:silverObol.name=Silver Obol
+item.greece:silverDrachma.name=Silver Drachma
+item.greece:silverStater.name=Silver Stater
+item.greece:electrumObol.name=Electrum Obol
+item.greece:electrumDrachma.name=Electrum Drachma
+item.greece:electrumStater.name=Electrum Stater
 
 #ingots
 item.greece:copperIngot.name=Cyprium Ingot
@@ -26,3 +29,9 @@ tile.greece:classicBronzeBlock.name=Block of Classic Bronze
 tile.greece:mildBronzeBlock.name=Block of Mild Bronze
 tile.greece:copperDustBlock.name=Block of Cyprium Dust
 tile.greece:column.name=Column
+tile.greece:letterBlockAlpha.name=Alpha Block
+tile.greece:letterBlockBeta.name=Beta Block
+tile.greece:letterBlockGamma.name=Gamma Block
+tile.greece:letterBlockDelta.name=Delta Block
+tile.greece:letterBlockEpsilon.name=Epsilon Block
+tile.greece:letterBlockZeta.name=Zeta Block
