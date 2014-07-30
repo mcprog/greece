@@ -15,4 +15,7 @@ public class Reference {
 	public static final String GUI_FACTORY_PATH = "com.mcprog.greece.client.gui.GuiFactory";
 	public static final String DESC_SUFFIX = ".desc";
 	
+	
+	
+	
 }
