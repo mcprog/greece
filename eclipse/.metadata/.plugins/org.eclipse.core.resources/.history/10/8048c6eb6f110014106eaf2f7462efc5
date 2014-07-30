@@ -1,8 +1,0 @@
-package com.mcprog.greece.blocks;
-
-public class BlockColumn extends BlockGreece {
-	
-	public BlockColumn () {
-		
-	}
-}

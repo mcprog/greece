@@ -1,0 +1,12 @@
+package com.mcprog.greece.init;
+
+import net.minecraft.item.Item.ToolMaterial;
+
+public class Materials {
+	
+	public static final ToolMaterial classicBronzeMaterial;
+	
+	public static void init () {
+		
+	}
+}

@@ -1,0 +1,8 @@
+package com.mcprog.greece.init;
+
+public class Materials {
+	
+	public static void init () {
+		
+	}
+}

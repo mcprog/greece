@@ -1,0 +1,27 @@
+package com.mcprog.greece.block;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.BlockDirectional;
+import net.minecraft.block.BlockLog;
+import net.minecraft.block.BlockPumpkin;
+import net.minecraft.block.BlockRotatedPillar;
+import net.minecraft.block.material.Material;
+import net.minecraft.util.IIcon;
+
+public class BlockLetter extends BlockDirectional {
+
+	@SideOnly(Side.CLIENT)
+	private IIcon face;
+	
+	protected BlockLetter() {
+		super(Material.rock);
+	}
+	
+	@SideOnly(Side.CLIENT)
+    public IIcon getIcon(int p_149691_1_, int p_149691_2_) {
+        return p_149691_1_ == 1 ? this.field_149984_b : (p_149691_1_ == 0 ? this.field_149984_b : (p_149691_2_ == 2 && p_149691_1_ == 2 ? this.field_149986_M : (p_149691_2_ == 3 && p_149691_1_ == 5 ? this.field_149986_M : (p_149691_2_ == 0 && p_149691_1_ == 3 ? this.field_149986_M : (p_149691_2_ == 1 && p_149691_1_ == 4 ? this.field_149986_M : this.blockIcon)))));
+    }
+
+	
+}

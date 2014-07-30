@@ -1,0 +1,32 @@
+package com.mcprog.greece.block;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.BlockLog;
+import net.minecraft.block.BlockRotatedPillar;
+import net.minecraft.block.material.Material;
+import net.minecraft.util.IIcon;
+
+public class BlockLetter extends BlockRotatedPillar {
+
+	protected BlockLetter() {
+		super(Material.rock);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	@SideOnly(Side.CLIENT)
+    protected IIcon getSideIcon(int p_150163_1_)
+    {
+        return this.field_150167_a[p_150163_1_ % this.field_150167_a.length];
+    }
+	
+	@Override
+    @SideOnly(Side.CLIENT)
+    protected IIcon getTopIcon(int p_150161_1_)
+    {
+        return this.field_150166_b[p_150161_1_ % this.field_150166_b.length];
+    }
+	
+	
+}

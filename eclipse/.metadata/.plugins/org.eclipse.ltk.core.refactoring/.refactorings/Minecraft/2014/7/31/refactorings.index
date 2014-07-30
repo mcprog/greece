@@ -1,2 +1,17 @@
 1406429225562	Rename type 'ItemIngot'
 1406429785446	Delete element
+1406571420408	Rename type 'ItemObol'
+1406571599583	Rename field 'OBOL'
+1406597557182	Rename field 'COIN'
+1406651116898	Rename local variable 'p_149691_1_'
+1406651128059	Rename local variable 'p_149691_2_'
+1406652261777	Rename local variable 'p_149651_1_'
+1406662504081	Delete element
+1406698611970	Delete element
+1406701167281	Delete element
+1406737709236	Rename local variable 'p_77615_1_'
+1406737717712	Rename local variable 'p_77615_2_'
+1406737726794	Rename local variable 'p_77615_3_'
+1406738466578	Rename local variable 'p_77659_1_'
+1406738473601	Rename local variable 'p_77659_2_'
+1406738482135	Rename local variable 'p_77659_3_'

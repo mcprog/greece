@@ -1,33 +1,8 @@
-[23:02:57] [main/INFO]: Setting user: ForgeDevName
-[23:02:58] [Client thread/INFO]: LWJGL Version: 2.9.1
-[23:03:03] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Greece Mod, FMLFileResourcePack:IndustrialCraft 2
-[23:03:06] [Sound Library Loader/INFO]: Sound engine started
-[23:03:07] [Client thread/ERROR]: Using missing texture, unable to load greece:textures/blocks/copperDustBlock.png
-java.io.FileNotFoundException: greece:textures/blocks/copperDustBlock.png
-	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
-	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
-	at net.minecraft.client.Minecraft.startGame(Minecraft.java:592) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_40]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_40]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_40]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_40]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_40]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_40]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_40]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_40]
-	at GradleStart.bounce(GradleStart.java:108) [start/:?]
-	at GradleStart.startClient(GradleStart.java:101) [start/:?]
-	at GradleStart.main(GradleStart.java:56) [start/:?]
-[23:03:08] [Client thread/ERROR]: Using missing texture, unable to load greece:textures/blocks/column.png
+[09:38:47] [main/INFO]: Setting user: ForgeDevName
+[09:38:48] [Client thread/INFO]: LWJGL Version: 2.9.1
+[09:38:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Greece Mod, FMLFileResourcePack:IndustrialCraft 2
+[09:38:56] [Sound Library Loader/INFO]: Sound engine started
+[09:38:58] [Client thread/ERROR]: Using missing texture, unable to load greece:textures/blocks/column.png
 java.io.FileNotFoundException: greece:textures/blocks/column.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -52,12 +27,36 @@ java.io.FileNotFoundException: greece:textures/blocks/column.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[23:03:08] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
-[23:03:09] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[23:03:09] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Greece Mod, FMLFileResourcePack:IndustrialCraft 2
-[23:03:09] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[23:03:09] [Client thread/ERROR]: Using missing texture, unable to load greece:textures/blocks/copperDustBlock.png
-java.io.FileNotFoundException: greece:textures/blocks/copperDustBlock.png
+[09:38:59] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[09:38:59] [Client thread/ERROR]: Using missing texture, unable to load greece:textures/items/spear.png
+java.io.FileNotFoundException: greece:textures/items/spear.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:593) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_40]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_40]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_40]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_40]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_40]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_40]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_40]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_40]
+	at GradleStart.bounce(GradleStart.java:108) [start/:?]
+	at GradleStart.startClient(GradleStart.java:101) [start/:?]
+	at GradleStart.main(GradleStart.java:56) [start/:?]
+[09:38:59] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[09:38:59] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Greece Mod, FMLFileResourcePack:IndustrialCraft 2
+[09:38:59] [Client thread/ERROR]: Using missing texture, unable to load greece:textures/items/spear.png
+java.io.FileNotFoundException: greece:textures/items/spear.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
@@ -84,7 +83,8 @@ java.io.FileNotFoundException: greece:textures/blocks/copperDustBlock.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[23:03:10] [Client thread/ERROR]: Using missing texture, unable to load greece:textures/blocks/column.png
+[09:38:59] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[09:39:00] [Client thread/ERROR]: Using missing texture, unable to load greece:textures/blocks/column.png
 java.io.FileNotFoundException: greece:textures/blocks/column.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -112,23 +112,29 @@ java.io.FileNotFoundException: greece:textures/blocks/column.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[23:03:10] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
-[23:03:11] [Sound Library Loader/INFO]: Sound engine started
-[23:03:20] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[23:03:20] [Server thread/INFO]: Generating keypair
-[23:03:21] [Server thread/INFO]: Preparing start region for level 0
-[23:03:22] [Server thread/INFO]: Preparing spawn area: 59%
-[23:03:23] [Server thread/INFO]: Changing view distance to 12, from 10
-[23:03:23] [Server thread/INFO]: ForgeDevName[local:E:2852a0fd] logged in with entity id 249 at (-170.69999998807907, 65.0, 412.8430374135468)
-[23:03:23] [Server thread/INFO]: ForgeDevName joined the game
-[23:03:43] [Server thread/INFO]: Saving and pausing game...
-[23:03:43] [Server thread/INFO]: Saving chunks for level '1test'/Overworld
-[23:03:43] [Server thread/INFO]: Saving chunks for level '1test'/Nether
-[23:03:43] [Server thread/INFO]: Saving chunks for level '1test'/The End
-[23:03:44] [Server thread/INFO]: Stopping server
-[23:03:44] [Server thread/INFO]: Saving players
-[23:03:44] [Server thread/INFO]: Saving worlds
-[23:03:44] [Server thread/INFO]: Saving chunks for level '1test'/Overworld
-[23:03:44] [Server thread/INFO]: Saving chunks for level '1test'/Nether
-[23:03:44] [Server thread/INFO]: Saving chunks for level '1test'/The End
-[23:03:45] [Client thread/INFO]: Stopping!
+[09:39:00] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[09:39:01] [Sound Library Loader/INFO]: Sound engine started
+[09:39:09] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[09:39:09] [Server thread/INFO]: Generating keypair
+[09:39:10] [Server thread/INFO]: Preparing start region for level 0
+[09:39:11] [Server thread/INFO]: Preparing spawn area: 59%
+[09:39:12] [Server thread/INFO]: Changing view distance to 12, from 10
+[09:39:12] [Server thread/INFO]: ForgeDevName[local:E:6d4fe834] logged in with entity id 485 at (202.31580725458394, 69.0, 319.31565354005465)
+[09:39:12] [Server thread/INFO]: ForgeDevName joined the game
+[09:39:24] [Client thread/INFO]: [CHAT] /gamemode, /give, /gamerule
+[09:39:26] [Server thread/INFO]: [ForgeDevName: Set own game mode to Creative Mode]
+[09:39:26] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[09:39:39] [Client thread/INFO]: [CHAT] /gamemode, /give, /gamerule
+[09:39:43] [Server thread/INFO]: [ForgeDevName: Set own game mode to Survival Mode]
+[09:39:43] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[09:40:46] [Server thread/INFO]: Saving and pausing game...
+[09:40:46] [Server thread/INFO]: Saving chunks for level '3test'/Overworld
+[09:40:46] [Server thread/INFO]: Saving chunks for level '3test'/Nether
+[09:40:46] [Server thread/INFO]: Saving chunks for level '3test'/The End
+[09:40:46] [Server thread/INFO]: Stopping server
+[09:40:46] [Server thread/INFO]: Saving players
+[09:40:46] [Server thread/INFO]: Saving worlds
+[09:40:46] [Server thread/INFO]: Saving chunks for level '3test'/Overworld
+[09:40:46] [Server thread/INFO]: Saving chunks for level '3test'/Nether
+[09:40:46] [Server thread/INFO]: Saving chunks for level '3test'/The End
+[09:40:49] [Client thread/INFO]: Stopping!

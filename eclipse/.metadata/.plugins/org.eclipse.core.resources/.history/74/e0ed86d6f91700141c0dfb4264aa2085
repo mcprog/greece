@@ -1,0 +1,14 @@
+package com.mcprog.greece.item;
+
+import com.mcprog.greece.init.Materials;
+
+import net.minecraft.item.ItemSword;
+
+public class SwordGreece extends ItemSword {
+
+	public SwordGreece() {
+		super(Materials.classicBronzeMaterial);
+		// TODO Auto-generated constructor stub
+	}
+
+}

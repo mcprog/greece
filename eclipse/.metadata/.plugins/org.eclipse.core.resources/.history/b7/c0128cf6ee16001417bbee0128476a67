@@ -1,0 +1,22 @@
+package com.mcprog.greece.block;
+
+import net.minecraft.block.BlockLog;
+import net.minecraft.block.BlockRotatedPillar;
+import net.minecraft.block.material.Material;
+import net.minecraft.util.IIcon;
+
+public class BlockLetter extends BlockRotatedPillar {
+
+	protected BlockLetter() {
+		super(Material.rock);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	protected IIcon getSideIcon(int p_150163_1_) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+}
