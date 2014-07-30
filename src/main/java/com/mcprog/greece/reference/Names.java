@@ -55,7 +55,7 @@ public class Names {
 		public static final String LETTER_BLOCK_PHI = "letterBlockPhi";
 		public static final String LETTER_BLOCK_CHI = "letterBlockChi";
 		public static final String LETTER_BLOCK_PSI = "letterBlockPsi";
-		public static final String LETTER_BLOCK_OMEGA = "letterBlockOMEGA";
+		public static final String LETTER_BLOCK_OMEGA = "letterBlockOmega";
 	}
 	
 	public class OreDictionary {
