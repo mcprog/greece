@@ -65,4 +65,8 @@ public class Names {
 		public static final String DUST_TIN = "dustTin";
 		public static final String DUST_COAL = "dustCoal";
 	}
+	
+	public class Material {
+		public static final String CLASSIC_BRONZE_MATERIAL = "classicBronzeMaterial";
+	}
 }
