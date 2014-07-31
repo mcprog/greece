@@ -1,9 +1,0 @@
-package com.mcprog.greece.block;
-
-public class BlockLetter extends BlockGreece {
-	
-	public BlockLetter () {
-		
-	}
-	
-}

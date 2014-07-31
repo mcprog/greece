@@ -1,9 +1,0 @@
-package com.mcprog.greece.item;
-
-public class ItemMetal extends ItemGreece {
-
-	public ItemMetal() {
-		
-	}
-
-}

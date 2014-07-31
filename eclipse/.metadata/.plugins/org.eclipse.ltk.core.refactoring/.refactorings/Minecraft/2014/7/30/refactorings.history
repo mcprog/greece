@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;com.mcprog.greece.blocks&apos; to &apos;com.mcprog.greece.block&apos;&#x0D;&#x0A;- Original project: &apos;Minecraft&apos;&#x0D;&#x0A;- Original element: &apos;Minecraft/src/main/java/com.mcprog.greece.blocks&apos;&#x0D;&#x0A;- Renamed element: &apos;Minecraft/src/main/java/com.mcprog.greece.block&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.mcprog.greece.blocks&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.mcprog.greece.blocks" name="com.mcprog.greece.block" qualified="false" references="true" stamp="1406322065310" textual="false" version="1.0"/>
-</session>

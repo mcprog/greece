@@ -1,7 +1,0 @@
-package com.mcprog.greece.item;
-
-import net.minecraft.item.ItemSword;
-
-public class ItemSpear extends ItemSword {
-
-}

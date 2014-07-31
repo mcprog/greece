@@ -1,6 +1,0 @@
-package com.mcprog.greece.reference;
-
-public class Money {
-
-	public static final String OBOL = "1/6 GRD";
-}
