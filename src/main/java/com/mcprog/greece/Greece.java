@@ -9,6 +9,7 @@ import com.mcprog.greece.init.Recipes;
 import com.mcprog.greece.proxy.IProxy;
 import com.mcprog.greece.reference.Reference;
 import com.mcprog.greece.utility.LogHelper;
+import com.mcprog.greece.worldgen.OreGen;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
@@ -17,6 +18,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 /**
  * 
@@ -46,6 +48,7 @@ public class Greece {
 	@Mod.EventHandler
 	public void init (FMLInitializationEvent event) {
 		Recipes.init();
+		GameRegistry.registerWorldGenerator(new OreGen(), 0);
 		
 		LogHelper.info("Initialization Completed");
 	}
