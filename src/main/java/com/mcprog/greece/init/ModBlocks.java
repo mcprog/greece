@@ -9,6 +9,7 @@ import com.mcprog.greece.block.BlockDust;
 import com.mcprog.greece.block.BlockGreece;
 import com.mcprog.greece.block.BlockLetter;
 import com.mcprog.greece.block.BlockMetal;
+import com.mcprog.greece.block.OreGreece;
 import com.mcprog.greece.reference.Names;
 import com.mcprog.greece.reference.Reference;
 
@@ -53,6 +54,8 @@ public class ModBlocks {
 	public static final BlockLetter letterBlockChi = new BlockLetter();
 	public static final BlockLetter letterBlockPsi = new BlockLetter();
 	public static final BlockLetter letterBlockOmega = new BlockLetter();
+	public static final OreGreece copperOre = new OreGreece();
+	public static final OreGreece tinOre = new OreGreece();
 	
 	public static void init () {
 		copperBlock.setBlockName(Names.Blocks.COPPER_BLOCK);
@@ -84,6 +87,8 @@ public class ModBlocks {
 		letterBlockChi.setBlockName(Names.Blocks.LETTER_BLOCK_CHI);
 		letterBlockPsi.setBlockName(Names.Blocks.LETTER_BLOCK_PSI);
 		letterBlockOmega.setBlockName(Names.Blocks.LETTER_BLOCK_OMEGA);
+		copperOre.setBlockName(Names.Blocks.COPPER_ORE);
+		tinOre.setBlockName(Names.Blocks.TIN_ORE);
 		
 		
 		GameRegistry.registerBlock(column, Names.Blocks.COLUMN);
@@ -116,5 +121,7 @@ public class ModBlocks {
 		GameRegistry.registerBlock(letterBlockPsi, Names.Blocks.LETTER_BLOCK_PSI);
 		GameRegistry.registerBlock(letterBlockChi, Names.Blocks.LETTER_BLOCK_CHI);
 		GameRegistry.registerBlock(letterBlockOmega, Names.Blocks.LETTER_BLOCK_OMEGA);
+		GameRegistry.registerBlock(copperOre, Names.Blocks.COPPER_ORE);
+		GameRegistry.registerBlock(tinOre, Names.Blocks.TIN_ORE);
 	}
 }
