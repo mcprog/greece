@@ -4,9 +4,11 @@ import net.minecraft.item.Item;
 import net.minecraftforge.oredict.OreDictionary;
 
 import com.mcprog.greece.item.ItemGreece;
+import com.mcprog.greece.item.ItemKnife;
 import com.mcprog.greece.item.ItemMetal;
 import com.mcprog.greece.item.ItemCoin;
 import com.mcprog.greece.item.ItemSpear;
+import com.mcprog.greece.item.SwordGreece;
 import com.mcprog.greece.item.info.SpecificInfo;
 import com.mcprog.greece.reference.Money;
 import com.mcprog.greece.reference.Names;
@@ -41,6 +43,7 @@ public class ModItems {
 	public static final ItemGreece coalDust = new ItemGreece();
 	
 	public static final ItemSpear spear = new ItemSpear();
+	public static final SwordGreece knife = new ItemKnife();
 	
 	public static void init () {
 		silverObol.setUnlocalizedName(Names.Items.SILVER_OBOL);
@@ -61,6 +64,7 @@ public class ModItems {
 		coalDust.setUnlocalizedName(Names.Items.COAL_DUST);
 		
 		spear.setUnlocalizedName(Names.Items.SPEAR);
+		knife.setUnlocalizedName(Names.Items.KNIFE);
 		
 		silverObol.setDenomination(Money.SILVER_OBOL, Money.Comparison.SILVER_OBOL);
 		silverDrachma.setDenomination(Money.SILVER_DRACHMA, Money.Comparison.SILVER_DRACHMA);
@@ -101,5 +105,6 @@ public class ModItems {
 		GameRegistry.registerItem(mildBronzeDust, Names.Items.MILD_BRONZE_DUST);
 		GameRegistry.registerItem(coalDust, Names.Items.COAL_DUST);
 		GameRegistry.registerItem(spear, Names.Items.SPEAR);
+		GameRegistry.registerItem(knife, Names.Items.KNIFE);
 	}
 }

@@ -24,6 +24,7 @@ public class Names {
 		public static final String MILD_BRONZE_DUST = "mildBronzeDust";
 		public static final String COAL_DUST = "coalDust";
 		public static final String SPEAR = "spear";
+		public static final String KNIFE = "knife";
 	}
 	
 	public class Blocks {
