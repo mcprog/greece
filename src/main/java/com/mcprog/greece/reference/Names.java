@@ -15,6 +15,9 @@ public class Names {
 		public static final String ELECTRUM_OBOL = "electrumObol";
 		public static final String ELECTRUM_DRACHMA = "electrumDrachma";
 		public static final String ELECTRUM_STATER = "electrumStater";
+		public static final String STONE_BASE = "stoneBase";
+		public static final String GRIND_WHEEL = "grindWheel";
+		public static final String GRINDSTONE = "grindstone";
 		public static final String COPPER_INGOT = "copperIngot";
 		public static final String TIN_INGOT = "tinIngot";
 		public static final String CLASSIC_BRONZE_INGOT = "classicBronzeIngot";
