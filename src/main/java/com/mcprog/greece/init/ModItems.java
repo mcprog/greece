@@ -3,8 +3,8 @@ package com.mcprog.greece.init;
 import net.minecraft.item.Item;
 import net.minecraftforge.oredict.OreDictionary;
 
+import com.mcprog.greece.item.ItemDamagable;
 import com.mcprog.greece.item.ItemGreece;
-import com.mcprog.greece.item.ItemGrindstone;
 import com.mcprog.greece.item.ItemKnife;
 import com.mcprog.greece.item.ItemMetal;
 import com.mcprog.greece.item.ItemCoin;
@@ -20,6 +20,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 /**
  * 
  * @author mcprog
+ * @author ime990
  *
  */
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
@@ -35,7 +36,7 @@ public class ModItems {
 	
 	public static final ItemGreece stoneBase = new ItemGreece();
 	public static final ItemGreece grindWheel = new ItemGreece();
-	public static final ItemGrindstone grindstone = new ItemGrindstone();
+	public static final ItemDamagable grindstone = new ItemDamagable(48);
 	
 	public static final ItemMetal copperIngot = new ItemMetal();
 	public static final ItemMetal tinIngot = new ItemMetal();
