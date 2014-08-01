@@ -76,10 +76,10 @@ public class RenderSpear extends Render {
             GL11.glRotatef(90.0F, 1.0F, 0.0F, 0.0F);
             GL11.glNormal3f(0.0F, 0.0F, f10);
             tessellator.startDrawingQuads();
-            tessellator.addVertexWithUV(-8.0D * 4, -2.0D, 0.0D, (double)f2, (double)f4);
-            tessellator.addVertexWithUV(8.0D * 4, -2.0D, 0.0D, (double)f3, (double)f4);
-            tessellator.addVertexWithUV(8.0D * 4, 2.0D, 0.0D, (double)f3, (double)f5);
-            tessellator.addVertexWithUV(-8.0D * 4, 2.0D, 0.0D, (double)f2, (double)f5);
+            tessellator.addVertexWithUV(-8.0D * 2, -2.0D, 0.0D, (double)f2, (double)f4);
+            tessellator.addVertexWithUV(8.0D * 2, -2.0D, 0.0D, (double)f3, (double)f4);
+            tessellator.addVertexWithUV(8.0D * 2, 2.0D, 0.0D, (double)f3, (double)f5);
+            tessellator.addVertexWithUV(-8.0D * 2, 2.0D, 0.0D, (double)f2, (double)f5);
             tessellator.draw();
         }
 
