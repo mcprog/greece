@@ -2,6 +2,12 @@ package com.mcprog.greece.item;
 
 import net.minecraft.item.ItemStack;
 
+/**
+ * 
+ * @author ime990
+ *
+ */
+
 public class ItemDamagable extends ItemGreece {
 	
 	public ItemDamagable (int maxDamage) {

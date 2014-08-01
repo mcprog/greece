@@ -1,6 +1,12 @@
 #creative tab
 itemGroup.greece=Greece Mod
 
+#items
+item.greece:stoneBase.name=Stone Base
+item.greece:grindWheel.name=Grind Wheel
+item.greece:grindstone.name=Grindstone
+item.greece:chisel.name=Chisel
+
 #coins
 item.greece:silverObol.name=Silver Obol
 item.greece:silverDrachma.name=Silver Drachma
