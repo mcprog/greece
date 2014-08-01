@@ -133,5 +133,15 @@ public class Recipes {
 		 * mild bronze ingots
 		 */
 		GameRegistry.addSmelting(ModItems.mildBronzeDust, new ItemStack(ModItems.mildBronzeIngot), 0F);
+		
+		/*
+		 * copper ore
+		 */
+		GameRegistry.addSmelting(ModBlocks.copperOre, new ItemStack(ModItems.copperIngot), 0F);
+		
+		/*
+		 * tin ore
+		 */
+		GameRegistry.addSmelting(ModBlocks.tinOre, new ItemStack(ModItems.tinIngot), 0F);
 	}
 }
