@@ -38,6 +38,8 @@ public class ModItems {
 	public static final ItemGreece grindWheel = new ItemGreece();
 	public static final ItemDamagable grindstone = new ItemDamagable(48);
 	
+	public static final ItemDamagable chisel = new ItemDamagable(100);
+	
 	public static final ItemMetal copperIngot = new ItemMetal();
 	public static final ItemMetal tinIngot = new ItemMetal();
 	public static final ItemMetal classicBronzeIngot = new ItemMetal();
@@ -62,6 +64,8 @@ public class ModItems {
 		stoneBase.setUnlocalizedName(Names.Items.STONE_BASE);
 		grindWheel.setUnlocalizedName(Names.Items.GRIND_WHEEL);
 		grindstone.setUnlocalizedName(Names.Items.GRINDSTONE);
+		
+		chisel.setUnlocalizedName(Names.Items.CHISEL);
 		
 		copperIngot.setUnlocalizedName(Names.Items.COPPER_INGOT);
 		tinIngot.setUnlocalizedName(Names.Items.TIN_INGOT);
@@ -108,6 +112,7 @@ public class ModItems {
 		GameRegistry.registerItem(stoneBase, Names.Items.STONE_BASE);
 		GameRegistry.registerItem(grindWheel, Names.Items.GRIND_WHEEL);
 		GameRegistry.registerItem(grindstone, Names.Items.GRINDSTONE);
+		GameRegistry.registerItem(chisel, Names.Items.CHISEL);
 		GameRegistry.registerItem(copperIngot, Names.Items.COPPER_INGOT);
 		GameRegistry.registerItem(tinIngot, Names.Items.TIN_INGOT);
 		GameRegistry.registerItem(classicBronzeIngot, Names.Items.CLASSIC_BRONZE_INGOT);

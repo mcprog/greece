@@ -18,6 +18,7 @@ public class Names {
 		public static final String STONE_BASE = "stoneBase";
 		public static final String GRIND_WHEEL = "grindWheel";
 		public static final String GRINDSTONE = "grindstone";
+		public static final String CHISEL = "chisel";
 		public static final String COPPER_INGOT = "copperIngot";
 		public static final String TIN_INGOT = "tinIngot";
 		public static final String CLASSIC_BRONZE_INGOT = "classicBronzeIngot";
