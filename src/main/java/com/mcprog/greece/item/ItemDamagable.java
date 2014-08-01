@@ -2,13 +2,13 @@ package com.mcprog.greece.item;
 
 import net.minecraft.item.ItemStack;
 
-public class ItemGrindstone extends ItemGreece {
+public class ItemDamagable extends ItemGreece {
 	
-	public ItemGrindstone () {
+	public ItemDamagable (int maxDamage) {
 		this.setMaxStackSize(1);
-		this.setMaxDamage(48);
+		this.setMaxDamage(maxDamage);
 	}
-
+	
 	@Override
 	public boolean doesContainerItemLeaveCraftingGrid(ItemStack itemStack) {
 		return false;
