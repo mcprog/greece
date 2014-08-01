@@ -4,11 +4,14 @@ import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
 
 import com.mcprog.greece.entity.EntitySpear;
+import com.mcprog.greece.reference.Reference;
+import com.mcprog.greece.reference.Textures;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.entity.Render;
+import net.minecraft.client.renderer.entity.RenderArrow;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.ResourceLocation;
@@ -20,14 +23,12 @@ import net.minecraft.util.ResourceLocation;
  */
 public class RenderSpear extends Render {
 
-	private static final ResourceLocation spearTextures = new ResourceLocation("assets/greece/textures/entity/arrowTest.png");
-    private static final String __OBFID = "CL_00000978";
+	private static final ResourceLocation spearTextures = new ResourceLocation(Reference.MOD_ID, Textures.SPEAR_TEX);
 
     @SideOnly(Side.CLIENT)
     public void doRender(EntitySpear entity, double p_76986_2_, double p_76986_4_, double p_76986_6_, float p_76986_8_, float p_76986_9_)
     {
-    	System.err.println("RenderSpear.java");
-        this.bindEntityTexture(entity);
+    	this.bindEntityTexture(entity);
         GL11.glPushMatrix();
         GL11.glTranslatef((float)p_76986_2_, (float)p_76986_4_, (float)p_76986_6_);
         GL11.glRotatef(entity.prevRotationYaw + (entity.rotationYaw - entity.prevRotationYaw) * p_76986_9_ - 90.0F, 0.0F, 1.0F, 0.0F);

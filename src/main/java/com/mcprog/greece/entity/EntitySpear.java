@@ -6,6 +6,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import java.util.List;
 
 import com.mcprog.greece.init.ModItems;
+import com.mcprog.greece.utility.ModDamage;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -16,6 +17,7 @@ import net.minecraft.entity.IProjectile;
 import net.minecraft.entity.monster.EntityEnderman;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.play.server.S2BPacketChangeGameState;
@@ -26,9 +28,14 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class EntitySpear extends Entity implements IProjectile
 {
-    private int field_145791_d = -1;
+	private int field_145791_d = -1;
     private int field_145792_e = -1;
     private int field_145789_f = -1;
     private Block field_145790_g;
@@ -45,13 +52,14 @@ public class EntitySpear extends Entity implements IProjectile
     private double damage = 2.0D;
     /** The amount of knockback an arrow applies when it hits a mob. */
     private int knockbackStrength;
-    private static final String __OBFID = "CL_00001715";
+    
+    protected int itemDamage;
 
     public EntitySpear(World p_i1753_1_)
     {
         super(p_i1753_1_);
-        this.canBePickedUp = 1;
         this.renderDistanceWeight = 10.0D;
+        this.canBePickedUp = 1;
         this.setSize(0.5F, 0.5F);
     }
 
@@ -98,6 +106,27 @@ public class EntitySpear extends Entity implements IProjectile
         this.renderDistanceWeight = 10.0D;
         this.shootingEntity = p_i1756_2_;
 
+        this.canBePickedUp = 1;
+
+        this.setSize(0.5F, 0.5F);
+        this.setLocationAndAngles(p_i1756_2_.posX, p_i1756_2_.posY + (double)p_i1756_2_.getEyeHeight(), p_i1756_2_.posZ, p_i1756_2_.rotationYaw, p_i1756_2_.rotationPitch);
+        this.posX -= (double)(MathHelper.cos(this.rotationYaw / 180.0F * (float)Math.PI) * 0.16F);
+        this.posY -= 0.10000000149011612D;
+        this.posZ -= (double)(MathHelper.sin(this.rotationYaw / 180.0F * (float)Math.PI) * 0.16F);
+        this.setPosition(this.posX, this.posY, this.posZ);
+        this.yOffset = 0.0F;
+        this.motionX = (double)(-MathHelper.sin(this.rotationYaw / 180.0F * (float)Math.PI) * MathHelper.cos(this.rotationPitch / 180.0F * (float)Math.PI));
+        this.motionZ = (double)(MathHelper.cos(this.rotationYaw / 180.0F * (float)Math.PI) * MathHelper.cos(this.rotationPitch / 180.0F * (float)Math.PI));
+        this.motionY = (double)(-MathHelper.sin(this.rotationPitch / 180.0F * (float)Math.PI));
+        this.setThrowableHeading(this.motionX, this.motionY, this.motionZ, p_i1756_3_ * 1.5F, 1.0F);
+    }
+    
+    public EntitySpear(World p_i1756_1_, EntityLivingBase p_i1756_2_, float p_i1756_3_, int itemDamage)
+    {
+        super(p_i1756_1_);
+        this.renderDistanceWeight = 10.0D;
+        this.shootingEntity = p_i1756_2_;
+        this.itemDamage = itemDamage;
         this.canBePickedUp = 1;
 
         this.setSize(0.5F, 0.5F);
@@ -307,11 +336,11 @@ public class EntitySpear extends Entity implements IProjectile
 
                     if (this.shootingEntity == null)
                     {
-                        damagesource = DamageSource.causeThrownDamage(this, this);
+                        damagesource = ModDamage.causeSpearDamage(this, this);
                     }
                     else
                     {
-                        damagesource = DamageSource.causeThrownDamage(this, this.shootingEntity);
+                        damagesource = ModDamage.causeSpearDamage(this, this.shootingEntity);
                     }
 
                     if (this.isBurning() && !(movingobjectposition.entityHit instanceof EntityEnderman))
@@ -354,10 +383,10 @@ public class EntitySpear extends Entity implements IProjectile
 
                         this.playSound("random.bowhit", 1.0F, 1.2F / (this.rand.nextFloat() * 0.2F + 0.9F));
 
-                        if (!(movingobjectposition.entityHit instanceof EntityEnderman))
-                        {
-                            this.setDead();
-                        }
+//                        if (!(movingobjectposition.entityHit instanceof EntityEnderman))
+//                        {
+//                            this.setDead();
+//                        }
                     }
                     else
                     {
@@ -462,46 +491,48 @@ public class EntitySpear extends Entity implements IProjectile
     /**
      * (abstract) Protected helper method to write subclass entity data to NBT.
      */
-    public void writeEntityToNBT(NBTTagCompound p_70014_1_)
+    public void writeEntityToNBT(NBTTagCompound compound)
     {
-        p_70014_1_.setShort("xTile", (short)this.field_145791_d);
-        p_70014_1_.setShort("yTile", (short)this.field_145792_e);
-        p_70014_1_.setShort("zTile", (short)this.field_145789_f);
-        p_70014_1_.setShort("life", (short)this.ticksInGround);
-        p_70014_1_.setByte("inTile", (byte)Block.getIdFromBlock(this.field_145790_g));
-        p_70014_1_.setByte("inData", (byte)this.inData);
-        p_70014_1_.setByte("shake", (byte)this.arrowShake);
-        p_70014_1_.setByte("inGround", (byte)(this.inGround ? 1 : 0));
-        p_70014_1_.setByte("pickup", (byte)this.canBePickedUp);
-        p_70014_1_.setDouble("damage", this.damage);
+        compound.setShort("xTile", (short)this.field_145791_d);
+        compound.setShort("yTile", (short)this.field_145792_e);
+        compound.setShort("zTile", (short)this.field_145789_f);
+        compound.setShort("life", (short)this.ticksInGround);
+        compound.setByte("inTile", (byte)Block.getIdFromBlock(this.field_145790_g));
+        compound.setByte("inData", (byte)this.inData);
+        compound.setByte("shake", (byte)this.arrowShake);
+        compound.setByte("inGround", (byte)(this.inGround ? 1 : 0));
+        compound.setByte("pickup", (byte)this.canBePickedUp);
+        compound.setDouble("damage", this.damage);
+        compound.setInteger("itemDamage", itemDamage);
     }
 
     /**
      * (abstract) Protected helper method to read subclass entity data from NBT.
      */
-    public void readEntityFromNBT(NBTTagCompound p_70037_1_)
+    public void readEntityFromNBT(NBTTagCompound compound)
     {
-        this.field_145791_d = p_70037_1_.getShort("xTile");
-        this.field_145792_e = p_70037_1_.getShort("yTile");
-        this.field_145789_f = p_70037_1_.getShort("zTile");
-        this.ticksInGround = p_70037_1_.getShort("life");
-        this.field_145790_g = Block.getBlockById(p_70037_1_.getByte("inTile") & 255);
-        this.inData = p_70037_1_.getByte("inData") & 255;
-        this.arrowShake = p_70037_1_.getByte("shake") & 255;
-        this.inGround = p_70037_1_.getByte("inGround") == 1;
+        this.field_145791_d = compound.getShort("xTile");
+        this.field_145792_e = compound.getShort("yTile");
+        this.field_145789_f = compound.getShort("zTile");
+        this.ticksInGround = compound.getShort("life");
+        this.field_145790_g = Block.getBlockById(compound.getByte("inTile") & 255);
+        this.inData = compound.getByte("inData") & 255;
+        this.arrowShake = compound.getByte("shake") & 255;
+        this.inGround = compound.getByte("inGround") == 1;
+        this.itemDamage = compound.getInteger("itemDamage");
 
-        if (p_70037_1_.hasKey("damage", 99))
+        if (compound.hasKey("damage", 99))
         {
-            this.damage = p_70037_1_.getDouble("damage");
+            this.damage = compound.getDouble("damage");
         }
 
-        if (p_70037_1_.hasKey("pickup", 99))
+        if (compound.hasKey("pickup", 99))
         {
-            this.canBePickedUp = p_70037_1_.getByte("pickup");
+            this.canBePickedUp = compound.getByte("pickup");
         }
-        else if (p_70037_1_.hasKey("player", 99))
+        else if (compound.hasKey("player", 99))
         {
-            this.canBePickedUp = p_70037_1_.getBoolean("player") ? 1 : 0;
+            this.canBePickedUp = compound.getBoolean("player") ? 1 : 0;
         }
     }
 
@@ -514,7 +545,7 @@ public class EntitySpear extends Entity implements IProjectile
         {
             boolean flag = this.canBePickedUp == 1 || this.canBePickedUp == 2 && p_70100_1_.capabilities.isCreativeMode;
 
-            if (this.canBePickedUp == 1 && !p_70100_1_.inventory.addItemStackToInventory(new ItemStack(ModItems.spear, 1)))
+            if (this.canBePickedUp == 1 && !p_70100_1_.inventory.addItemStackToInventory(new ItemStack(ModItems.spear, 1, itemDamage + 1)))
             {
                 flag = false;
             }

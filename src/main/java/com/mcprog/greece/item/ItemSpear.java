@@ -21,7 +21,7 @@ public class ItemSpear extends SwordGreece {
 
 	public ItemSpear() {
 		super(Materials.classicBronzeMaterial);
-		
+		setMaxDamage(59);
 	}
 	
 	public void onPlayerStoppedUsing(ItemStack itemStack, World world, EntityPlayer player, int p_77615_4_)
@@ -53,7 +53,7 @@ public class ItemSpear extends SwordGreece {
                 f = 1.0F;
             }
 
-            EntitySpear entityspear = new EntitySpear(world, player, f * 2.0F);
+            EntitySpear entityspear = new EntitySpear(world, player, f * 2.0F, player.getItemInUse().getItemDamage());
 
             if (f == 1.0F)
             {
