@@ -1,5 +1,6 @@
 package com.mcprog.greece.item;
 
+import com.mcprog.greece.entity.EntitySpear;
 import com.mcprog.greece.init.Materials;
 import com.mcprog.greece.init.ModItems;
 
@@ -52,30 +53,30 @@ public class ItemSpear extends SwordGreece {
                 f = 1.0F;
             }
 
-            EntityArrow entityarrow = new EntityArrow(world, player, f * 2.0F);
+            EntitySpear entityspear = new EntitySpear(world, player, f * 2.0F);
 
             if (f == 1.0F)
             {
-                entityarrow.setIsCritical(true);
+                entityspear.setIsCritical(true);
             }
 
             int k = EnchantmentHelper.getEnchantmentLevel(Enchantment.power.effectId, itemStack);
 
             if (k > 0)
             {
-                entityarrow.setDamage(entityarrow.getDamage() + (double)k * 0.5D + 0.5D);
+                entityspear.setDamage(entityspear.getDamage() + (double)k * 0.5D + 0.5D);
             }
 
             int l = EnchantmentHelper.getEnchantmentLevel(Enchantment.punch.effectId, itemStack);
 
             if (l > 0)
             {
-                entityarrow.setKnockbackStrength(l);
+                entityspear.setKnockbackStrength(l);
             }
 
             if (EnchantmentHelper.getEnchantmentLevel(Enchantment.flame.effectId, itemStack) > 0)
             {
-                entityarrow.setFire(100);
+                entityspear.setFire(100);
             }
 
             itemStack.damageItem(1, player);
@@ -83,7 +84,7 @@ public class ItemSpear extends SwordGreece {
 
             if (flag)
             {
-                entityarrow.canBePickedUp = 2;
+                entityspear.canBePickedUp = 2;
             }
             else
             {
@@ -92,7 +93,7 @@ public class ItemSpear extends SwordGreece {
 
             if (!world.isRemote)
             {
-                world.spawnEntityInWorld(entityarrow);
+                world.spawnEntityInWorld(entityspear);
             }
         }
     }

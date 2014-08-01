@@ -2,6 +2,7 @@ package com.mcprog.greece;
 
 import net.minecraftforge.oredict.OreDictionary;
 
+import com.mcprog.greece.entity.EntitySpear;
 import com.mcprog.greece.handler.ConfigHandler;
 import com.mcprog.greece.init.ModBlocks;
 import com.mcprog.greece.init.ModItems;
@@ -19,6 +20,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.EntityRegistry;
 
 /**
  * 
@@ -49,6 +51,9 @@ public class Greece {
 	public void init (FMLInitializationEvent event) {
 		Recipes.init();
 		GameRegistry.registerWorldGenerator(new OreGen(), 0);
+		
+		proxy.initRenderingAndTextures();
+		EntityRegistry.registerModEntity(EntitySpear.class, "entitySpear", 0, Greece.instance, 128, 5, true);
 		
 		LogHelper.info("Initialization Completed");
 	}
