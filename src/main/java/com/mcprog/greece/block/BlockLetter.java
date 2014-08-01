@@ -38,7 +38,7 @@ public class BlockLetter extends BlockDirectional{
 	@Override
 	@SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int meta) {
-        return side == 1 ? Blocks.stone.getIcon(side, meta) : (side == 0 ? Blocks.stone.getIcon(side, meta): (meta == 2 && side == 2 ? this.blockIcon : (meta == 3 && side == 5 ? this.blockIcon : (meta == 0 && side == 3 ? this.blockIcon : (meta == 1 && side == 4 ? this.face: Blocks.stone.getIcon(side, meta))))));
+		return side == 1 ? Blocks.stone.getIcon(side, meta) : (side == 0 ? Blocks.stone.getIcon(side, meta) : (meta == 2 && side == 2 ? this.blockIcon : (meta == 3 && side == 5 ? this.blockIcon : (meta == 0 && side == 3 ? this.blockIcon : (meta == 1 && side == 4 ? this.blockIcon : Blocks.stone.getIcon(side, meta))))));
     }
 	
 	@Override
@@ -48,8 +48,9 @@ public class BlockLetter extends BlockDirectional{
     }
 	
 	public boolean rotateBlock (World world, EntityPlayer player, int x, int y, int z, ForgeDirection side) {
-		int l = MathHelper.floor_double((double)(player.rotationYaw * 4.0F / 360.0F) + 2.5D) & 3;
-		world.setBlockMetadataWithNotify(x, y, z, l, 2);
+//		int l = MathHelper.floor_double((double)(player.rotationYaw * 4.0F / 360.0F) + 2.5D) & 3;
+//		world.setBlockMetadataWithNotify(x, y, z, l, 2);
+		onBlockPlacedBy(world, x, y, z, player, player.getCurrentEquippedItem());
 		return true;
 	}
 	
