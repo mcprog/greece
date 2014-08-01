@@ -3,6 +3,7 @@ package com.mcprog.greece.reference;
 /**
  * 
  * @author mcprog
+ * @author ime990
  *
  */
 public class Names {
@@ -58,6 +59,8 @@ public class Names {
 		public static final String LETTER_BLOCK_CHI = "letterBlockChi";
 		public static final String LETTER_BLOCK_PSI = "letterBlockPsi";
 		public static final String LETTER_BLOCK_OMEGA = "letterBlockOmega";
+		public static final String COPPER_ORE = "copperOre";
+		public static final String TIN_ORE = "tinOre";
 	}
 	
 	public class OreDictionary {

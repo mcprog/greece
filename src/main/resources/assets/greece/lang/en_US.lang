@@ -22,6 +22,10 @@ item.greece:classicBronzeDust.name=Classic Bronze Dust
 item.greece:mildBronzeDust.name=Mild Bronze Dust
 item.greece:coalDust.name=Coal Dust
 
+#weapons
+item.greece:spear.name=Spear
+item.greece:knife.name=Xiphos
+
 #blocks
 tile.greece:copperBlock.name=Block of Cyprium
 tile.greece:tinBlock.name=Block of White Lead
@@ -53,3 +57,7 @@ tile.greece:letterBlockPhi.name=Phi Block
 tile.greece:letterBlockPsi.name=Psi Block
 tile.greece:letterBlockChi.name=Chi Block
 tile.greece:letterBlockOmega.name=Omega Block
+
+#ores
+tile.greece:copperOre.name=Cyprium Ore
+tile.greece:tinOre.name=White Lead Ore
