@@ -4,6 +4,7 @@ import net.minecraft.item.Item;
 import net.minecraftforge.oredict.OreDictionary;
 
 import com.mcprog.greece.item.ItemGreece;
+import com.mcprog.greece.item.ItemGrindstone;
 import com.mcprog.greece.item.ItemKnife;
 import com.mcprog.greece.item.ItemMetal;
 import com.mcprog.greece.item.ItemCoin;
@@ -32,6 +33,10 @@ public class ModItems {
 	public static final ItemCoin electrumDrachma = new ItemCoin();
 	public static final ItemCoin electrumStater = new ItemCoin();
 	
+	public static final ItemGreece stoneBase = new ItemGreece();
+	public static final ItemGreece grindWheel = new ItemGreece();
+	public static final ItemGrindstone grindstone = new ItemGrindstone();
+	
 	public static final ItemMetal copperIngot = new ItemMetal();
 	public static final ItemMetal tinIngot = new ItemMetal();
 	public static final ItemMetal classicBronzeIngot = new ItemMetal();
@@ -52,6 +57,10 @@ public class ModItems {
 		electrumObol.setUnlocalizedName(Names.Items.ELECTRUM_OBOL);
 		electrumDrachma.setUnlocalizedName(Names.Items.ELECTRUM_DRACHMA);
 		electrumStater.setUnlocalizedName(Names.Items.ELECTRUM_STATER);
+		
+		stoneBase.setUnlocalizedName(Names.Items.STONE_BASE);
+		grindWheel.setUnlocalizedName(Names.Items.GRIND_WHEEL);
+		grindstone.setUnlocalizedName(Names.Items.GRINDSTONE);
 		
 		copperIngot.setUnlocalizedName(Names.Items.COPPER_INGOT);
 		tinIngot.setUnlocalizedName(Names.Items.TIN_INGOT);
@@ -95,6 +104,9 @@ public class ModItems {
 		GameRegistry.registerItem(electrumObol, Names.Items.ELECTRUM_OBOL);
 		GameRegistry.registerItem(electrumDrachma, Names.Items.ELECTRUM_DRACHMA);
 		GameRegistry.registerItem(electrumStater, Names.Items.ELECTRUM_STATER);
+		GameRegistry.registerItem(stoneBase, Names.Items.STONE_BASE);
+		GameRegistry.registerItem(grindWheel, Names.Items.GRIND_WHEEL);
+		GameRegistry.registerItem(grindstone, Names.Items.GRINDSTONE);
 		GameRegistry.registerItem(copperIngot, Names.Items.COPPER_INGOT);
 		GameRegistry.registerItem(tinIngot, Names.Items.TIN_INGOT);
 		GameRegistry.registerItem(classicBronzeIngot, Names.Items.CLASSIC_BRONZE_INGOT);

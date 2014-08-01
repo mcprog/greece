@@ -2,13 +2,14 @@
 {
   "modid": "greece",
   "name": "Greece Mod",
-  "description": "This is ALPHA! Don't worry about it",
+  "description": "This mod brings ancient greece to minecraft by adding time accurate tools, metals, and ores",
   "version": "1.1(alpha)",
   "mcversion": "1.7.10",
   "url": "",
   "updateUrl": "",
   "authorList": [
-    "mcprog"
+    "mcprog",
+    "ime990"
   ],
   "credits": " Created by mcprog",
   "logoFile": "",

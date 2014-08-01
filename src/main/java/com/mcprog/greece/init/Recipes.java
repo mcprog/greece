@@ -1,7 +1,12 @@
 package com.mcprog.greece.init;
 
 import com.mcprog.greece.reference.Names;
+import com.mcprog.greece.reference.Names.Items;
 
+import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
@@ -48,11 +53,20 @@ public class Recipes {
 				Names.OreDictionary.DUST_COPPER,
 				Names.OreDictionary.DUST_COPPER,
 				ModBlocks.copperDustBlock));
+		/*
+		 * copper dust from ore
+		 */
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.copperDust, 2), ModBlocks.copperOre, new ItemStack(ModItems.grindstone, 1, OreDictionary.WILDCARD_VALUE));
 		
 		/*
 		 * copper dust from block
 		 */
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.copperDust, 9), ModBlocks.copperDustBlock);
+		
+		/*
+		 * tin dust from ore
+		 */
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.tinDust, 2), ModBlocks.tinOre, new ItemStack(ModItems.grindstone, 1, OreDictionary.WILDCARD_VALUE));
 		
 		/*
 		 * copper block
@@ -109,6 +123,31 @@ public class Recipes {
 		 * mild bronze ingots from block
 		 */
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.mildBronzeIngot, 9), ModBlocks.mildBronzeBlock));
+		
+		/*
+		 * stone base
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.stoneBase), 
+				"   ",
+				"i i",
+				"iii",
+				'i', new ItemStack(Blocks.stone));
+		
+		/*
+		 * grinding wheel
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.grindWheel),
+				" i",
+				"kk",
+				'i', new ItemStack(net.minecraft.init.Items.stick), 'k', new ItemStack(Blocks.stone));
+		
+		/*
+		 * grindstone
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.grindstone),
+				"i",
+				"k",
+				'i', new ItemStack(ModItems.grindWheel), 'k', new ItemStack(ModItems.stoneBase));
 		
 		//***********************
 		//*      Smelting       *
