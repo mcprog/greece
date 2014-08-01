@@ -19,11 +19,8 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-<<<<<<< HEAD
 import cpw.mods.fml.common.registry.EntityRegistry;
-=======
 import cpw.mods.fml.common.registry.GameRegistry;
->>>>>>> a867ed00a7e4aec6f9f81dd34b2ba22b229e4480
 
 /**
  * 
