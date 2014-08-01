@@ -149,6 +149,14 @@ public class Recipes {
 				"k",
 				'i', new ItemStack(ModItems.grindWheel), 'k', new ItemStack(ModItems.stoneBase));
 		
+		/*
+		 * chisel
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.chisel),
+				" i",
+				"i ",
+				'i', new ItemStack(ModItems.classicBronzeIngot));
+		
 		//***********************
 		//*      Smelting       *
 		//***********************

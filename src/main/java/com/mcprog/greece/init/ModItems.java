@@ -1,8 +1,10 @@
 package com.mcprog.greece.init;
 
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraftforge.oredict.OreDictionary;
 
+import com.mcprog.greece.item.ItemChisel;
 import com.mcprog.greece.item.ItemDamagable;
 import com.mcprog.greece.item.ItemGreece;
 import com.mcprog.greece.item.ItemKnife;
@@ -38,7 +40,7 @@ public class ModItems {
 	public static final ItemGreece grindWheel = new ItemGreece();
 	public static final ItemDamagable grindstone = new ItemDamagable(48);
 	
-	public static final ItemDamagable chisel = new ItemDamagable(100);
+	public static final ItemChisel chisel = new ItemChisel(100);
 	
 	public static final ItemMetal copperIngot = new ItemMetal();
 	public static final ItemMetal tinIngot = new ItemMetal();
