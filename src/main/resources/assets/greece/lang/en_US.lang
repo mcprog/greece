@@ -1,6 +1,10 @@
 #creative tab
 itemGroup.greece=Greece Mod
 
+#achievements
+achievement.oldOreMiner=Old Ore Miner
+achievement.oldOreMiner.desc=Mine Cyprium Ore deep within the mines of Cyprus
+
 #items
 item.greece:stoneBase.name=Stone Base
 item.greece:grindWheel.name=Grind Wheel

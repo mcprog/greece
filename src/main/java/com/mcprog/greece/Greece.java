@@ -1,11 +1,13 @@
 package com.mcprog.greece;
 
+import net.minecraftforge.common.AchievementPage;
 import net.minecraftforge.oredict.OreDictionary;
 
 import com.mcprog.greece.entity.EntitySpear;
 import com.mcprog.greece.handler.ConfigHandler;
 import com.mcprog.greece.init.ModBlocks;
 import com.mcprog.greece.init.ModItems;
+import com.mcprog.greece.init.ModStats;
 import com.mcprog.greece.init.Recipes;
 import com.mcprog.greece.proxy.IProxy;
 import com.mcprog.greece.reference.Reference;
@@ -52,6 +54,8 @@ public class Greece {
 	
 	@Mod.EventHandler
 	public void init (FMLInitializationEvent event) {
+		AchievementPage.registerAchievementPage(ModStats.GREECE_PAGE);
+		ModStats.init();
 		Recipes.init();
 		GameRegistry.registerWorldGenerator(new OreGen(), 0);
 		
