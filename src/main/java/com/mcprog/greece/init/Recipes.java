@@ -1,11 +1,11 @@
 package com.mcprog.greece.init;
 
 import com.mcprog.greece.reference.Names;
-import com.mcprog.greece.reference.Names.Items;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
@@ -139,7 +139,7 @@ public class Recipes {
 		GameRegistry.addRecipe(new ItemStack(ModItems.grindWheel),
 				" i",
 				"kk",
-				'i', new ItemStack(net.minecraft.init.Items.stick), 'k', new ItemStack(Blocks.stone));
+				'i', new ItemStack(Items.stick), 'k', new ItemStack(Blocks.stone));
 		
 		/*
 		 * grindstone
@@ -156,6 +156,23 @@ public class Recipes {
 				" i",
 				"i ",
 				'i', new ItemStack(ModItems.classicBronzeIngot));
+		/*
+		 * xiphos
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.knife),
+				"i",
+				"i",
+				"k",
+				'i', new ItemStack(ModItems.classicBronzeIngot), 'k', new ItemStack(Items.stick));
+		
+		/*
+		 * spear
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.spear),
+				"  i",
+				" k ",
+				"k  ",
+				'i', new ItemStack(ModItems.classicBronzeIngot), 'k', new ItemStack(Items.stick));
 		
 		//***********************
 		//*      Smelting       *
