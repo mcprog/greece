@@ -1,6 +1,7 @@
 package com.mcprog.greece.item;
 
 import com.mcprog.greece.block.BlockLetter;
+import com.mcprog.greece.handler.NameHandler;
 import com.mcprog.greece.init.ModBlocks;
 
 import net.minecraft.block.Block;
@@ -30,13 +31,13 @@ public class ItemChisel extends ItemDamagable{
 			player.swingItem();
 			if (player.isSneaking()) {
 				if (block == Blocks.stone) {
-					world.setBlock(x, y, z, ModBlocks.letterBlockOmega);
+					world.setBlock(x, y, z, ModBlocks.letterBlocks.get(0));
 				} else {
 					previousLetter(block, world, x, y, z);
 				}
 			} else {
 				if (block == Blocks.stone) {
-					world.setBlock(x, y, z, ModBlocks.letterBlockAlpha);
+					world.setBlock(x, y, z, ModBlocks.letterBlocks.get(0));
 				} else {
 					nextLetter(block, world, x, y, z);
 				}
@@ -49,150 +50,141 @@ public class ItemChisel extends ItemDamagable{
 	}
 	
 	protected void nextLetter (Block block, World world, int x, int y, int z) {
-		if (block == ModBlocks.letterBlockAlpha) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockBeta);
+		if (block == ModBlocks.letterBlocks.get(NameHandler.length())) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(0));
 		}
-		else if (block == ModBlocks.letterBlockBeta) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockGamma);
+		else if (block == ModBlocks.letterBlocks.get(0)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(1));
 		}
-		else if (block == ModBlocks.letterBlockGamma) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockDelta);
+		else if (block == ModBlocks.letterBlocks.get(1)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(2));
 		}
-		else if (block == ModBlocks.letterBlockDelta) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockEpsilon);
+		else if (block == ModBlocks.letterBlocks.get(2)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(3));
 		}
-		else if (block == ModBlocks.letterBlockEpsilon) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockZeta);
+		else if (block == ModBlocks.letterBlocks.get(3)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(4));
 		}
-		else if (block == ModBlocks.letterBlockZeta) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockEta);
+		else if (block == ModBlocks.letterBlocks.get(4)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(5));
 		}
-		else if (block == ModBlocks.letterBlockEta) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockTheta);
+		else if (block == ModBlocks.letterBlocks.get(5)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(6));
 		}
-		else if (block == ModBlocks.letterBlockTheta) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockIota);
+		else if (block == ModBlocks.letterBlocks.get(6)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(7));
 		}
-		else if (block == ModBlocks.letterBlockIota) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockKappa);
+		else if (block == ModBlocks.letterBlocks.get(7)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(8));
 		}
-		else if (block == ModBlocks.letterBlockKappa) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockLambda);
+		else if (block == ModBlocks.letterBlocks.get(8)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(9));
 		}
-		else if (block == ModBlocks.letterBlockLambda) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockMu);
+		else if (block == ModBlocks.letterBlocks.get(9)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(10));
 		}
-		else if (block == ModBlocks.letterBlockMu) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockNu);
+		else if (block == ModBlocks.letterBlocks.get(10)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(11));
 		}
-		else if (block == ModBlocks.letterBlockNu) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockXi);
+		else if (block == ModBlocks.letterBlocks.get(11)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(12));
 		}
-		else if (block == ModBlocks.letterBlockXi) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockOmicron);
+		else if (block == ModBlocks.letterBlocks.get(12)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(13));
 		}
-		else if (block == ModBlocks.letterBlockOmicron) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockPi);
+		else if (block == ModBlocks.letterBlocks.get(13)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(14));
 		}
-		else if (block == ModBlocks.letterBlockPi) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockRho);
+		else if (block == ModBlocks.letterBlocks.get(14)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(15));
 		}
-		else if (block == ModBlocks.letterBlockRho) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockSigma);
+		else if (block == ModBlocks.letterBlocks.get(15)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(16));
 		}
-		else if (block == ModBlocks.letterBlockSigma) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockTau);
+		else if (block == ModBlocks.letterBlocks.get(16)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(17));
 		}
-		else if (block == ModBlocks.letterBlockTau) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockUpsilon);
+		else if (block == ModBlocks.letterBlocks.get(17)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(18));
 		}
-		else if (block == ModBlocks.letterBlockUpsilon) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockPhi);
+		else if (block == ModBlocks.letterBlocks.get(18)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(19));
 		}
-		else if (block == ModBlocks.letterBlockPhi) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockChi);
+		else if (block == ModBlocks.letterBlocks.get(19)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(20));
 		}
-		else if (block == ModBlocks.letterBlockChi) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockPsi);
-		} 
-		else if (block == ModBlocks.letterBlockPsi) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockOmega);
+		else if (block == ModBlocks.letterBlocks.get(20)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(21));
 		} else {
-			world.setBlock(x, y, z, ModBlocks.letterBlockAlpha);
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(NameHandler.length()));
 		}
 	}
 	
 	protected void previousLetter (Block block, World world, int x, int y, int z) {
-		if (block == ModBlocks.letterBlockOmega) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockPsi);
+		if (block == ModBlocks.letterBlocks.get(NameHandler.length())) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(21));
 		}
-		else if (block == ModBlocks.letterBlockPsi) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockChi);
+		else if (block == ModBlocks.letterBlocks.get(21)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(20));
 		}
-		else if (block == ModBlocks.letterBlockChi) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockPhi);
+		else if (block == ModBlocks.letterBlocks.get(20)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(19));
 		}
-		else if (block == ModBlocks.letterBlockPhi) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockUpsilon);
+		else if (block == ModBlocks.letterBlocks.get(19)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(18));
 		}
-		else if (block == ModBlocks.letterBlockUpsilon) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockTau);
+		else if (block == ModBlocks.letterBlocks.get(18)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(17));
 		}
-		else if (block == ModBlocks.letterBlockTau) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockSigma);
+		else if (block == ModBlocks.letterBlocks.get(17)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(16));
 		}
-		else if (block == ModBlocks.letterBlockSigma) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockRho);
+		else if (block == ModBlocks.letterBlocks.get(16)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(15));
 		}
-		else if (block == ModBlocks.letterBlockRho) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockPi);
+		else if (block == ModBlocks.letterBlocks.get(15)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(14));
 		}
-		else if (block == ModBlocks.letterBlockPi) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockOmicron);
+		else if (block == ModBlocks.letterBlocks.get(14)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(13));
 		}
-		else if (block == ModBlocks.letterBlockOmicron) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockXi);
+		else if (block == ModBlocks.letterBlocks.get(13)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(12));
 		}
-		else if (block == ModBlocks.letterBlockXi) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockNu);
+		else if (block == ModBlocks.letterBlocks.get(12)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(11));
 		}
-		else if (block == ModBlocks.letterBlockNu) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockMu);
+		else if (block == ModBlocks.letterBlocks.get(11)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(10));
 		}
-		else if (block == ModBlocks.letterBlockMu) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockLambda);
+		else if (block == ModBlocks.letterBlocks.get(10)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(9));
 		}
-		else if (block == ModBlocks.letterBlockLambda) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockKappa);
+		else if (block == ModBlocks.letterBlocks.get(9)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(8));
 		}
-		else if (block == ModBlocks.letterBlockKappa) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockIota);
+		else if (block == ModBlocks.letterBlocks.get(8)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(7));
 		}
-		else if (block == ModBlocks.letterBlockIota) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockTheta);
+		else if (block == ModBlocks.letterBlocks.get(7)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(6));
 		}
-		else if (block == ModBlocks.letterBlockTheta) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockEta);
+		else if (block == ModBlocks.letterBlocks.get(6)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(5));
 		}
-		else if (block == ModBlocks.letterBlockEta) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockZeta);
+		else if (block == ModBlocks.letterBlocks.get(5)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(4));
 		}
-		else if (block == ModBlocks.letterBlockZeta) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockEpsilon);
+		else if (block == ModBlocks.letterBlocks.get(4)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(3));
 		}
-		else if (block == ModBlocks.letterBlockEpsilon) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockDelta);
+		else if (block == ModBlocks.letterBlocks.get(3)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(2));
 		}
-		else if (block == ModBlocks.letterBlockDelta) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockGamma);
-		}
-		else if (block == ModBlocks.letterBlockGamma) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockBeta);
-		} 
-		else if (block == ModBlocks.letterBlockBeta) {
-			world.setBlock(x, y, z, ModBlocks.letterBlockAlpha);
+		else if (block == ModBlocks.letterBlocks.get(2)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(1));
 		} else {
-			world.setBlock(x, y, z, ModBlocks.letterBlockOmega);
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(0));
 		}
 	}
 	

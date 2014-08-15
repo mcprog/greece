@@ -1,5 +1,7 @@
 package com.mcprog.greece.init;
 
+import java.util.ArrayList;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
@@ -10,6 +12,7 @@ import com.mcprog.greece.block.BlockGreece;
 import com.mcprog.greece.block.BlockLetter;
 import com.mcprog.greece.block.BlockMetal;
 import com.mcprog.greece.block.OreGreece;
+import com.mcprog.greece.handler.NameHandler;
 import com.mcprog.greece.reference.Names;
 import com.mcprog.greece.reference.Reference;
 
@@ -21,7 +24,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
  * @author ime990
  *
  */
-@GameRegistry.ObjectHolder(Reference.MOD_ID)
+//@GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModBlocks {
 
 	public static final BlockGreece column = new BlockColumn();
@@ -30,7 +33,8 @@ public class ModBlocks {
 	public static final BlockGreece classicBronzeBlock = new BlockMetal(MapColor.goldColor);
 	public static final BlockGreece mildBronzeBlock = new BlockMetal(MapColor.adobeColor);
 	public static final Block copperDustBlock = new BlockDust(MapColor.adobeColor);
-	public static final BlockLetter letterBlockAlpha = new BlockLetter();
+	public static final ArrayList<BlockLetter> letterBlocks = new ArrayList<BlockLetter>();
+	/*public static final BlockLetter letterBlockAlpha = new BlockLetter();
 	public static final BlockLetter letterBlockBeta = new BlockLetter();
 	public static final BlockLetter letterBlockGamma = new BlockLetter();
 	public static final BlockLetter letterBlockDelta = new BlockLetter();
@@ -53,17 +57,26 @@ public class ModBlocks {
 	public static final BlockLetter letterBlockPhi = new BlockLetter();
 	public static final BlockLetter letterBlockChi = new BlockLetter();
 	public static final BlockLetter letterBlockPsi = new BlockLetter();
-	public static final BlockLetter letterBlockOmega = new BlockLetter();
+	public static final BlockLetter letterBlockOmega = new BlockLetter();*/
 	public static final OreGreece copperOre = new OreGreece();
 	public static final OreGreece tinOre = new OreGreece();
 	
 	public static void init () {
+		
+		for (int i = 0; i <= NameHandler.length(); ++i) {
+			BlockLetter bL = new BlockLetter();
+			String name = NameHandler.getNameFromIndex(i);
+			bL.setBlockName(name);
+			GameRegistry.registerBlock(bL, name);
+			letterBlocks.add(bL);
+		}
+		
 		copperBlock.setBlockName(Names.Blocks.COPPER_BLOCK);
 		tinBlock.setBlockName(Names.Blocks.TIN_BLOCK);
 		classicBronzeBlock.setBlockName(Names.Blocks.CLASSIC_BRONZE_BLOCK);
 		mildBronzeBlock.setBlockName(Names.Blocks.MILD_BRONZE_BLOCK);
 		copperDustBlock.setBlockName(Names.Blocks.COPPER_DUST_BLOCK);
-		letterBlockAlpha.setBlockName(Names.Blocks.LETTER_BLOCK_ALPHA);
+		/*letterBlockAlpha.setBlockName(Names.Blocks.LETTER_BLOCK_ALPHA);
 		letterBlockBeta.setBlockName(Names.Blocks.LETTER_BLOCK_BETA);
 		letterBlockGamma.setBlockName(Names.Blocks.LETTER_BLOCK_GAMMA);
 		letterBlockDelta.setBlockName(Names.Blocks.LETTER_BLOCK_DELTA);
@@ -86,7 +99,7 @@ public class ModBlocks {
 		letterBlockPhi.setBlockName(Names.Blocks.LETTER_BLOCK_PHI);
 		letterBlockChi.setBlockName(Names.Blocks.LETTER_BLOCK_CHI);
 		letterBlockPsi.setBlockName(Names.Blocks.LETTER_BLOCK_PSI);
-		letterBlockOmega.setBlockName(Names.Blocks.LETTER_BLOCK_OMEGA);
+		letterBlockOmega.setBlockName(Names.Blocks.LETTER_BLOCK_OMEGA);*/
 		copperOre.setBlockName(Names.Blocks.COPPER_ORE);
 		tinOre.setBlockName(Names.Blocks.TIN_ORE);
 		
@@ -97,7 +110,7 @@ public class ModBlocks {
 		GameRegistry.registerBlock(classicBronzeBlock, Names.Blocks.CLASSIC_BRONZE_BLOCK);
 		GameRegistry.registerBlock(mildBronzeBlock, Names.Blocks.MILD_BRONZE_BLOCK);
 		GameRegistry.registerBlock(copperDustBlock, Names.Blocks.COPPER_DUST_BLOCK);
-		GameRegistry.registerBlock(letterBlockAlpha, Names.Blocks.LETTER_BLOCK_ALPHA);
+		/*GameRegistry.registerBlock(letterBlockAlpha, Names.Blocks.LETTER_BLOCK_ALPHA);
 		GameRegistry.registerBlock(letterBlockBeta, Names.Blocks.LETTER_BLOCK_BETA);
 		GameRegistry.registerBlock(letterBlockGamma, Names.Blocks.LETTER_BLOCK_GAMMA);
 		GameRegistry.registerBlock(letterBlockDelta, Names.Blocks.LETTER_BLOCK_DELTA);
@@ -120,7 +133,7 @@ public class ModBlocks {
 		GameRegistry.registerBlock(letterBlockPhi, Names.Blocks.LETTER_BLOCK_PHI);
 		GameRegistry.registerBlock(letterBlockPsi, Names.Blocks.LETTER_BLOCK_PSI);
 		GameRegistry.registerBlock(letterBlockChi, Names.Blocks.LETTER_BLOCK_CHI);
-		GameRegistry.registerBlock(letterBlockOmega, Names.Blocks.LETTER_BLOCK_OMEGA);
+		GameRegistry.registerBlock(letterBlockOmega, Names.Blocks.LETTER_BLOCK_OMEGA);*/
 		GameRegistry.registerBlock(copperOre, Names.Blocks.COPPER_ORE);
 		GameRegistry.registerBlock(tinOre, Names.Blocks.TIN_ORE);
 	}
