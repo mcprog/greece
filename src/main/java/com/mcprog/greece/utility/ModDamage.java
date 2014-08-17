@@ -7,6 +7,11 @@ import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EntityDamageSourceIndirect;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class ModDamage extends DamageSource {
 
 	public ModDamage(String type) {
