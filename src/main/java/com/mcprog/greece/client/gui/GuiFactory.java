@@ -11,6 +11,8 @@ import cpw.mods.fml.client.IModGuiFactory;
 /**
  * 
  * @author mcprog
+ * 
+ * Class for creating config GUIs
  *
  */
 public class GuiFactory implements IModGuiFactory {

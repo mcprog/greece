@@ -9,6 +9,12 @@ import net.minecraft.stats.AchievementList;
 import net.minecraftforge.common.AchievementPage;
 import net.minecraftforge.common.MinecraftForge;
 
+/**
+ * 
+ * @author mcprog
+ * achivement code
+ *
+ */
 public class ModStats {
 	public static final Achievement oldOreMiner = 
 			new Achievement("achievement.oldOreMiner", "oldOreMiner", 0, 0, ModBlocks.copperOre, (Achievement) null);

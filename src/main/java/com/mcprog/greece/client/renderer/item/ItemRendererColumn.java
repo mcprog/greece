@@ -40,7 +40,7 @@ public class ItemRendererColumn implements IItemRenderer {
 		GL11.glPushMatrix();
 		switch (type) {
 		case INVENTORY:
-			GL11.glTranslatef(0, -1f, 0);
+			GL11.glTranslatef(0, -1, 0);
 			break;
 		case ENTITY:
 			GL11.glTranslatef(0, -1, 0);		

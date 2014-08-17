@@ -62,6 +62,12 @@ public class ModItems {
 	public static final ItemSpear spear = new ItemSpear();
 	public static final SwordGreece knife = new ItemKnife();
 	
+	/**
+	 * init of items and registration
+	 * naming
+	 * oredict
+	 * gameregistry
+	 */
 	public static void init () {
 		silverObol.setUnlocalizedName(Names.Items.SILVER_OBOL);
 		silverDrachma.setUnlocalizedName(Names.Items.SILVER_DRACHMA);

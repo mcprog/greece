@@ -1,5 +1,6 @@
 #creative tab
 itemGroup.greece=Greece Mod
+itemGroup.greece.decor=Greece Mod: Aesthetics
 
 #achievements
 achievement.oldOreMiner=Old Ore Miner
@@ -31,6 +32,12 @@ item.greece:tinDust.name=White Lead Dust
 item.greece:classicBronzeDust.name=Classic Bronze Dust
 item.greece:mildBronzeDust.name=Mild Bronze Dust
 item.greece:coalDust.name=Coal Dust
+
+#nuggets
+item.greece:copperNugget.name=Cyprium Nugget
+item.greece:tinNugget.name=White Lead Nugget
+item.greece:classicBronzeNugget.name=Classic Bronze Nugget
+item.greece:mildBronzeNugget.name=Mild Bronze Nugget
 
 #weapons
 item.greece:spear.name=Spear

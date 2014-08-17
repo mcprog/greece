@@ -5,6 +5,7 @@ import com.mcprog.greece.item.info.SpecificInfo;
 /**
  * 
  * @author mcprog
+ * contains preset materials
  *
  */
 public class Materials {

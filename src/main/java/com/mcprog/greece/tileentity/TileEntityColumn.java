@@ -8,5 +8,6 @@ import net.minecraft.tileentity.TileEntity;
  *
  */
 public class TileEntityColumn extends TileEntity {
-
+	//no specieal code yet, maybe later
+	//do not delete
 }

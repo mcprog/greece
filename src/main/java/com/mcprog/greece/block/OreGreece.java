@@ -18,7 +18,6 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 public class OreGreece extends BlockOre{
 	
 	public OreGreece() {
-		super();
 		setCreativeTab(CreativeTabGreece.GREECE_TAB);
 	}
 	

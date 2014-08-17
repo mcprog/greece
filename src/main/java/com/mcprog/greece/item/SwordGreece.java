@@ -14,6 +14,7 @@ import net.minecraft.item.ItemSword;
 /**
  * 
  * @author mcprog
+ * parent class for all greece mod's melee weapons
  *
  */
 public class SwordGreece extends ItemSword {

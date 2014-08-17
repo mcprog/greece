@@ -5,6 +5,7 @@ import com.mcprog.greece.init.ToolMaterials;
 /**
  * 
  * @author mcprog
+ * Xiphos
  *
  */
 public class ItemKnife extends SwordGreece {

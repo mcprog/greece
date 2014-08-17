@@ -6,6 +6,7 @@ import net.minecraft.client.particle.EffectRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
+import com.mcprog.greece.creativetab.CreativeTabGreece;
 import com.mcprog.greece.reference.Names;
 import com.mcprog.greece.reference.RenderIds;
 import com.mcprog.greece.tileentity.TileEntityColumn;
@@ -23,7 +24,8 @@ public class BlockColumn extends BlockGreece implements ITileEntityProvider {
 	
 	public BlockColumn () {
 		setBlockName(Names.Blocks.COLUMN);
-		setBlockBounds(0.0625f, 0.0f, 0.0625f, 0.9375f, 1, 0.9375f);
+		setBlockBounds(0.0625f, 0.0f, 0.0625f, 0.9375f, 1, 0.9375f);// mins then maxes
+		setCreativeTab(CreativeTabGreece.GREECE_TAB_DECOR);
 	}
 
 	@Override
@@ -38,7 +40,7 @@ public class BlockColumn extends BlockGreece implements ITileEntityProvider {
 
     @Override
     public int getRenderType () {
-        return RenderIds.column;
+        return RenderIds.column;// initialized in clientproxy
     }
 
     @Override

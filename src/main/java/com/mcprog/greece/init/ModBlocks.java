@@ -24,7 +24,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
  * @author ime990
  *
  */
-public class ModBlocks {
+public class ModBlocks {// no object holder annotation becuase of arraylist
 
 	public static final BlockGreece column = new BlockColumn();
 	
@@ -39,6 +39,12 @@ public class ModBlocks {
 	public static final OreGreece copperOre = new OreGreece();
 	public static final OreGreece tinOre = new OreGreece();
 	
+	/**
+	 * init of blocks and registration
+	 * naming
+	 * oredict
+	 * gameregistry
+	 */
 	public static void init () {
 		
 		/*

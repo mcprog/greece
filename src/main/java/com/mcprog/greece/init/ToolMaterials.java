@@ -8,6 +8,7 @@ import net.minecraftforge.common.util.EnumHelper;
 /**
  * 
  * @author mcprog
+ * for custom weapons
  *
  */
 public class ToolMaterials {

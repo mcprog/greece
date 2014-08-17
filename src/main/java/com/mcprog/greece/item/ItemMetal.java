@@ -25,6 +25,9 @@ public class ItemMetal extends ItemGreece {
 		this.material = material;
 	}
 	
+	/**
+	 * Element makeup is added to all items that extend this
+	 */
 	@Override
 	@SideOnly(Side.CLIENT)
     public void addInformation (ItemStack itemStack, EntityPlayer player, List list, boolean p_77624_4_) {

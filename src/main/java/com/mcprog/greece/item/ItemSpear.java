@@ -22,7 +22,7 @@ import net.minecraftforge.event.entity.player.ArrowNockEvent;
  * @author mcprog
  *
  */
-public class ItemSpear extends SwordGreece {
+public class ItemSpear extends SwordGreece {// lot of vanilla bow code
 
 	public ItemSpear() {
 		super(ToolMaterials.classicBronzeMaterial);

@@ -9,6 +9,11 @@ import com.mcprog.greece.reference.Names;
  */
 public class NameHandler {
 	
+	/**
+	 * Used for letter blocks
+	 * @param index in letter block arraylist
+	 * @return the string corresponding to the name of the letter block in the cell at the index
+	 */
 	public static String getNameFromIndex (int index) {
 		switch (index) {
 			case 0:

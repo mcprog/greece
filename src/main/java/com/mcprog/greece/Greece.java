@@ -39,7 +39,7 @@ public class Greece {
 	public static Greece instance;
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_PATH, serverSide = Reference.SERVER_PROXY_PATH)
-	public static IProxy proxy;
+	public static IProxy proxy;// annotation provides client and server sides
 	
 	@Mod.EventHandler
 	public void preInit (FMLPreInitializationEvent event) {
@@ -60,7 +60,7 @@ public class Greece {
 		GameRegistry.registerWorldGenerator(new OreGen(), 0);
 		
 		proxy.initRenderingAndTextures();
-		EntityRegistry.registerModEntity(EntitySpear.class, "entitySpear", 0, Greece.instance, 128, 5, true);
+		EntityRegistry.registerModEntity(EntitySpear.class, "entitySpear", 0, Greece.instance, 128, 5, true);// needs to be moved
 		
 		LogHelper.info("Initialization Completed");
 	}

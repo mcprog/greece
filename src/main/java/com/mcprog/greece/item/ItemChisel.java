@@ -16,7 +16,7 @@ import net.minecraftforge.common.util.ForgeDirection;
  * @author mcprog
  *
  */
-public class ItemChisel extends ItemDamagable{
+public class ItemChisel extends ItemDamagable{// class may have corrupt logic
 
 	public ItemChisel(int maxDamage) {
 		super(maxDamage);
@@ -36,13 +36,13 @@ public class ItemChisel extends ItemDamagable{
 			player.swingItem();
 			if (player.isSneaking()) {
 				if (block == Blocks.stone) {
-					world.setBlock(x, y, z, ModBlocks.letterBlocks.get(0));
+					world.setBlock(x, y, z, ModBlocks.letterBlocks.get(0));// change to block alpha
 				} else {
 					previousLetter(block, world, x, y, z);
 				}
 			} else {
 				if (block == Blocks.stone) {
-					world.setBlock(x, y, z, ModBlocks.letterBlocks.get(0));
+					world.setBlock(x, y, z, ModBlocks.letterBlocks.get(0));// wrong?
 				} else {
 					nextLetter(block, world, x, y, z);
 				}

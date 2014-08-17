@@ -31,6 +31,7 @@ import net.minecraft.world.World;
 /**
  * 
  * @author mcprog
+ * most copied from EntityArrow
  *
  */
 public class EntitySpear extends Entity implements IProjectile

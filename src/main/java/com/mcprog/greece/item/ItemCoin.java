@@ -26,9 +26,9 @@ public class ItemCoin extends ItemGreece {
 	
 	@Override
 	@SideOnly(Side.CLIENT)
-    public void addInformation (ItemStack p_77624_1_, EntityPlayer p_77624_2_, List p_77624_3_, boolean p_77624_4_) {
-        p_77624_3_.add(denomination);
-        p_77624_3_.add(comparison);
+    public void addInformation (ItemStack itemStack, EntityPlayer player, List list, boolean p_77624_4_) {
+        list.add(denomination);
+        list.add(comparison);
     }
 	
 	public void setDenomination (String denomination, String comparison) {

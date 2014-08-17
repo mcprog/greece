@@ -18,7 +18,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
  * @author mcprog
  *
  */
-public class Recipes {
+public class Recipes {// needs consolidation / reorganization
 
 	public static void init () {
 		//***********************

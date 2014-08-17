@@ -32,7 +32,7 @@ public class BlockLetter extends BlockDirectional{
 	
 	public BlockLetter() {
 		super(Material.rock);
-		setCreativeTab(CreativeTabGreece.GREECE_TAB);
+		setCreativeTab(CreativeTabGreece.GREECE_TAB_DECOR);
 	}
 	
 	@Override

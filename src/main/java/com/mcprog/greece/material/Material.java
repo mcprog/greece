@@ -7,6 +7,7 @@ import com.mcprog.greece.item.info.ElementInfo;
 /**
  * 
  * @author mcprog
+ * used as holder for description info
  *
  */
 public class Material {

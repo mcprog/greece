@@ -22,7 +22,7 @@ public class BlockGreece extends Block {
 	}
 	
 	public BlockGreece () {
-		this(Material.rock);
+		this(Material.rock);// defaults to rock material
 	}
 	
 	@Override
