@@ -1,9 +1,9 @@
-package com.mcprog.greece.renderer;
+package com.mcprog.greece.client.renderer;
 
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
 
-import com.mcprog.greece.client.ModelSpear;
+import com.mcprog.greece.client.renderer.model.ModelSpear;
 import com.mcprog.greece.entity.EntitySpear;
 import com.mcprog.greece.reference.Reference;
 import com.mcprog.greece.reference.Textures;
@@ -26,7 +26,6 @@ import net.minecraft.util.ResourceLocation;
  */
 public class RenderSpear extends Render {
 
-	private static final ResourceLocation texture = new ResourceLocation(Reference.MOD_ID, Textures.SPEAR_TEX);
 
 	private ModelSpear model;
 	
@@ -63,7 +62,7 @@ public class RenderSpear extends Render {
 
 	@Override
 	protected ResourceLocation getEntityTexture(Entity entity) {
-		return texture;
+		return Textures.Model.SPEAR;
 	}
 
 	@Override

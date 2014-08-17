@@ -1,7 +1,7 @@
 package com.mcprog.greece.item;
 
 import com.mcprog.greece.entity.EntitySpear;
-import com.mcprog.greece.init.Materials;
+import com.mcprog.greece.init.ToolMaterials;
 import com.mcprog.greece.init.ModItems;
 
 import net.minecraft.enchantment.Enchantment;
@@ -17,10 +17,15 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.ArrowLooseEvent;
 import net.minecraftforge.event.entity.player.ArrowNockEvent;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class ItemSpear extends SwordGreece {
 
 	public ItemSpear() {
-		super(Materials.classicBronzeMaterial);
+		super(ToolMaterials.classicBronzeMaterial);
 		setMaxDamage(59);
 	}
 	
