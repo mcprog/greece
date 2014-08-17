@@ -11,6 +11,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class ItemChisel extends ItemDamagable{
 
 	public ItemChisel(int maxDamage) {

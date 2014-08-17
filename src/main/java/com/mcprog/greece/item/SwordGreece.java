@@ -1,7 +1,7 @@
 package com.mcprog.greece.item;
 
 import com.mcprog.greece.creativetab.CreativeTabGreece;
-import com.mcprog.greece.init.Materials;
+import com.mcprog.greece.init.ToolMaterials;
 import com.mcprog.greece.reference.Textures;
 
 import cpw.mods.fml.relauncher.Side;
@@ -11,6 +11,11 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class SwordGreece extends ItemSword {
 
 	public SwordGreece (ToolMaterial material) {
@@ -19,7 +24,7 @@ public class SwordGreece extends ItemSword {
 	}
 	
 	public SwordGreece() {
-		this(Materials.classicBronzeMaterial);
+		this(ToolMaterials.classicBronzeMaterial);
 	}
 	
 	@Override

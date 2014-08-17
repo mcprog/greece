@@ -13,6 +13,7 @@ import com.mcprog.greece.item.ItemCoin;
 import com.mcprog.greece.item.ItemSpear;
 import com.mcprog.greece.item.SwordGreece;
 import com.mcprog.greece.item.info.SpecificInfo;
+import com.mcprog.greece.material.Materials;
 import com.mcprog.greece.reference.Money;
 import com.mcprog.greece.reference.Names;
 import com.mcprog.greece.reference.Reference;
@@ -42,15 +43,21 @@ public class ModItems {
 	
 	public static final ItemChisel chisel = new ItemChisel(100);
 	
-	public static final ItemMetal copperIngot = new ItemMetal();
-	public static final ItemMetal tinIngot = new ItemMetal();
-	public static final ItemMetal classicBronzeIngot = new ItemMetal();
-	public static final ItemMetal mildBronzeIngot = new ItemMetal();
-	public static final ItemMetal copperDust = new ItemMetal();
-	public static final ItemMetal tinDust = new ItemMetal();
-	public static final ItemMetal classicBronzeDust = new ItemMetal();
-	public static final ItemMetal mildBronzeDust = new ItemMetal();
+	public static final ItemMetal copperIngot = new ItemMetal(Materials.copper);
+	public static final ItemMetal tinIngot = new ItemMetal(Materials.tin);
+	public static final ItemMetal classicBronzeIngot = new ItemMetal(Materials.classicBronze);
+	public static final ItemMetal mildBronzeIngot = new ItemMetal(Materials.mildBronze);
+	
+	public static final ItemMetal copperDust = new ItemMetal(Materials.copper);
+	public static final ItemMetal tinDust = new ItemMetal(Materials.tin);
+	public static final ItemMetal classicBronzeDust = new ItemMetal(Materials.classicBronze);
+	public static final ItemMetal mildBronzeDust = new ItemMetal(Materials.mildBronze);
 	public static final ItemGreece coalDust = new ItemGreece();
+	
+	public static final ItemMetal copperNugget = new ItemMetal(Materials.copper);
+	public static final ItemMetal tinNugget = new ItemMetal(Materials.tin);
+	public static final ItemMetal classicBronzeNugget = new ItemMetal(Materials.classicBronze);
+	public static final ItemMetal mildBronzeNugget = new ItemMetal(Materials.mildBronze);
 	
 	public static final ItemSpear spear = new ItemSpear();
 	public static final SwordGreece knife = new ItemKnife();
@@ -79,6 +86,11 @@ public class ModItems {
 		mildBronzeDust.setUnlocalizedName(Names.Items.MILD_BRONZE_DUST);
 		coalDust.setUnlocalizedName(Names.Items.COAL_DUST);
 		
+		copperNugget.setUnlocalizedName(Names.Items.COPPER_NUGGET);
+		tinNugget.setUnlocalizedName(Names.Items.TIN_NUGGET);
+		classicBronzeNugget.setUnlocalizedName(Names.Items.CLASSIC_BRONZE_NUGGET);
+		mildBronzeNugget.setUnlocalizedName(Names.Items.MILD_BRONZE_NUGGET);
+		
 		spear.setUnlocalizedName(Names.Items.SPEAR);
 		knife.setUnlocalizedName(Names.Items.KNIFE);
 		
@@ -89,21 +101,13 @@ public class ModItems {
 		electrumDrachma.setDenomination(Money.ELECTRUM_DRACHMA, Money.Comparison.ELECTRUM_DRACHMA);
 		electrumStater.setDenomination(Money.ELECTRUM_STATER, Money.Comparison.ELECTRUM_STATER);
 		
-		copperIngot.setElementInfo(SpecificInfo.copper);
-		tinIngot.setElementInfo(SpecificInfo.tin);
-		classicBronzeIngot.setElementInfo(SpecificInfo.classicBronze);
-		mildBronzeIngot.setElementInfo(SpecificInfo.mildBronze);
-		copperDust.setElementInfo(SpecificInfo.copper);
-		tinDust.setElementInfo(SpecificInfo.tin);
-		classicBronzeDust.setElementInfo(SpecificInfo.classicBronze);
-		mildBronzeDust.setElementInfo(SpecificInfo.mildBronze);
-		
-		
 		OreDictionary.registerOre(Names.OreDictionary.INGOT_COPPER, copperIngot);
 		OreDictionary.registerOre(Names.OreDictionary.INGOT_TIN, tinIngot);
 		OreDictionary.registerOre(Names.OreDictionary.DUST_COPPER, copperDust);
 		OreDictionary.registerOre(Names.OreDictionary.DUST_TIN, tinDust);
 		OreDictionary.registerOre(Names.OreDictionary.DUST_COAL, coalDust);
+		OreDictionary.registerOre(Names.OreDictionary.NUGGET_COPPER, copperNugget);
+		OreDictionary.registerOre(Names.OreDictionary.NUGGET_TIN, tinNugget);
 		
 		GameRegistry.registerItem(silverObol, Names.Items.SILVER_OBOL);
 		GameRegistry.registerItem(silverDrachma, Names.Items.SILVER_DRACHMA);
@@ -123,6 +127,10 @@ public class ModItems {
 		GameRegistry.registerItem(tinDust, Names.Items.TIN_DUST);
 		GameRegistry.registerItem(classicBronzeDust, Names.Items.CLASSIC_BRONZE_DUST);
 		GameRegistry.registerItem(mildBronzeDust, Names.Items.MILD_BRONZE_DUST);
+		GameRegistry.registerItem(copperNugget, Names.Items.COPPER_NUGGET);
+		GameRegistry.registerItem(tinNugget, Names.Items.TIN_NUGGET);
+		GameRegistry.registerItem(classicBronzeNugget, Names.Items.CLASSIC_BRONZE_NUGGET);
+		GameRegistry.registerItem(mildBronzeNugget, Names.Items.MILD_BRONZE_NUGGET);
 		GameRegistry.registerItem(coalDust, Names.Items.COAL_DUST);
 		GameRegistry.registerItem(spear, Names.Items.SPEAR);
 		GameRegistry.registerItem(knife, Names.Items.KNIFE);

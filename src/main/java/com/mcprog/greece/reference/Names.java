@@ -28,6 +28,10 @@ public class Names {
 		public static final String CLASSIC_BRONZE_DUST = "classicBronzeDust";
 		public static final String MILD_BRONZE_DUST = "mildBronzeDust";
 		public static final String COAL_DUST = "coalDust";
+		public static final String COPPER_NUGGET = "copperNugget";
+		public static final String TIN_NUGGET = "tinNugget";
+		public static final String CLASSIC_BRONZE_NUGGET = "classicBronzeNugget";
+		public static final String MILD_BRONZE_NUGGET = "mildBronzeNugget";
 		public static final String SPEAR = "spear";
 		public static final String KNIFE = "knife";
 	}
@@ -75,6 +79,8 @@ public class Names {
 		public static final String DUST_COPPER = "dustCopper";
 		public static final String DUST_TIN = "dustTin";
 		public static final String DUST_COAL = "dustCoal";
+		public static final String NUGGET_COPPER = "nuggetCopper";
+		public static final String NUGGET_TIN = "nuggetTin";
 	}
 	
 	public class Material {

@@ -35,14 +35,11 @@ public class Recipes {
 				'd', Names.OreDictionary.DUST_COPPER));
 		
 		/*
-		 * classic bronze dust
+		 * bronze dust
 		 */
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.classicBronzeDust, 10), 
 				Names.OreDictionary.DUST_TIN, 
 				ModBlocks.copperDustBlock));
-		/*
-		 * mild bronze dust
-		 */
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.mildBronzeDust, 17), 
 				Names.OreDictionary.DUST_TIN,
 				Names.OreDictionary.DUST_COPPER,
@@ -103,47 +100,59 @@ public class Recipes {
 				"iii", 
 				"iii", 
 				'i', new ItemStack(ModItems.mildBronzeIngot));
+		/*
+		 * ingots from nuggets
+		 */
+		GameRegistry.addRecipe(new ShapedOreRecipe(ModItems.copperIngot,
+				"nnn",
+				"nnn",
+				"nnn",
+				'n', Names.OreDictionary.NUGGET_COPPER));
+		GameRegistry.addRecipe(new ShapedOreRecipe(ModItems.tinIngot,
+				"nnn",
+				"nnn",
+				"nnn",
+				'n', Names.OreDictionary.NUGGET_TIN));
+		GameRegistry.addRecipe(new ShapedOreRecipe(ModItems.classicBronzeIngot,
+				"nnn",
+				"nnn",
+				"nnn",
+				'n', ModItems.classicBronzeNugget));
+		GameRegistry.addRecipe(new ShapedOreRecipe(ModItems.mildBronzeIngot,
+				"nnn",
+				"nnn",
+				"nnn",
+				'n', ModItems.mildBronzeNugget));
 		
 		/*
-		 * copper ingots from block
+		 * ingots from blocks
 		 */
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.copperIngot, 9), ModBlocks.copperBlock));
-		
-		/*
-		 * tin ingots from block
-		 */
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.tinIngot, 9), ModBlocks.tinBlock));
-		
-		/*
-		 * classic bronze ingots from block
-		 */
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.classicBronzeIngot, 9), ModBlocks.classicBronzeBlock));
-		
-		/*
-		 * mild bronze ingots from block
-		 */
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.mildBronzeIngot, 9), ModBlocks.mildBronzeBlock));
 		
 		/*
-		 * stone base
+		 * nuggets from ingots
+		 */
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.copperNugget, 9), Names.OreDictionary.INGOT_COPPER));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.tinNugget, 9), Names.OreDictionary.INGOT_TIN));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.classicBronzeNugget, 9), new ItemStack(ModItems.classicBronzeIngot)));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.mildBronzeNugget, 9), new ItemStack(ModItems.mildBronzeIngot)));
+		
+		
+		/*
+		 * grindstone
 		 */
 		GameRegistry.addRecipe(new ItemStack(ModItems.stoneBase), 
 				"   ",
 				"i i",
 				"iii",
 				'i', new ItemStack(Blocks.stone));
-		
-		/*
-		 * grinding wheel
-		 */
 		GameRegistry.addRecipe(new ItemStack(ModItems.grindWheel),
 				" i",
 				"kk",
 				'i', new ItemStack(Items.stick), 'k', new ItemStack(Blocks.stone));
-		
-		/*
-		 * grindstone
-		 */
 		GameRegistry.addRecipe(new ItemStack(ModItems.grindstone),
 				"i",
 				"k",
@@ -179,33 +188,17 @@ public class Recipes {
 		//***********************
 		
 		/*
-		 * copper ingots
+		 * dusts
 		 */
 		GameRegistry.addSmelting(ModItems.copperDust, new ItemStack(ModItems.copperIngot), 0F);
-		
-		/*
-		 * tin ingots
-		 */
 		GameRegistry.addSmelting(ModItems.tinDust, new ItemStack(ModItems.tinIngot), 0F);
-		
-		/*
-		 * classic bronze ingots
-		 */
 		GameRegistry.addSmelting(ModItems.classicBronzeDust, new ItemStack(ModItems.classicBronzeIngot), 0F);
-		
-		/*
-		 * mild bronze ingots
-		 */
 		GameRegistry.addSmelting(ModItems.mildBronzeDust, new ItemStack(ModItems.mildBronzeIngot), 0F);
 		
 		/*
-		 * copper ore
+		 * ore
 		 */
 		GameRegistry.addSmelting(ModBlocks.copperOre, new ItemStack(ModItems.copperIngot), 0F);
-		
-		/*
-		 * tin ore
-		 */
 		GameRegistry.addSmelting(ModBlocks.tinOre, new ItemStack(ModItems.tinIngot), 0F);
 	}
 }

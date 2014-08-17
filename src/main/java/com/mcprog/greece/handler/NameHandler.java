@@ -2,6 +2,11 @@ package com.mcprog.greece.handler;
 
 import com.mcprog.greece.reference.Names;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class NameHandler {
 	
 	public static String getNameFromIndex (int index) {

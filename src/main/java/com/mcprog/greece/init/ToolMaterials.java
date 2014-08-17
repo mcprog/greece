@@ -5,7 +5,12 @@ import com.mcprog.greece.reference.Names;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 
-public class Materials {
+/**
+ * 
+ * @author mcprog
+ *
+ */
+public class ToolMaterials {
 	
 	public static ToolMaterial classicBronzeMaterial = EnumHelper.addToolMaterial(
 			Names.Material.CLASSIC_BRONZE_MATERIAL, 

@@ -1,5 +1,10 @@
 package com.mcprog.greece.reference;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class Money {
 
 	public static final String SILVER_OBOL = "1/6 GRD";

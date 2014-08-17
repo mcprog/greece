@@ -13,6 +13,11 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent.ItemPickupEvent;
 
+/**
+ * 
+ * @author mcprog
+ *
+ */
 public class GreeceEvent {
 
 	@SubscribeEvent
