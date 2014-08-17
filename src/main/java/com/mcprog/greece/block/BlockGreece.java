@@ -19,10 +19,13 @@ public class BlockGreece extends Block {
 	public BlockGreece (Material material) {
 		super(material);
 		setCreativeTab(CreativeTabGreece.GREECE_TAB);
+		
 	}
 	
 	public BlockGreece () {
 		this(Material.rock);// defaults to rock material
+		setHardness(1.5F);
+		setResistance(10.0F);
 	}
 	
 	@Override

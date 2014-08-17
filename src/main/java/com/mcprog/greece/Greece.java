@@ -54,10 +54,12 @@ public class Greece {
 	
 	@Mod.EventHandler
 	public void init (FMLInitializationEvent event) {
-		AchievementPage.registerAchievementPage(ModStats.GREECE_PAGE);
+		ModItems.oreDictionary();
+		ModBlocks.oreDictionary();
+		AchievementPage.registerAchievementPage(ModStats.GREECE_PAGE);//move this
 		ModStats.init();
 		Recipes.init();
-		GameRegistry.registerWorldGenerator(new OreGen(), 0);
+		GameRegistry.registerWorldGenerator(new OreGen(), 0);//move this
 		
 		proxy.initRenderingAndTextures();
 		EntityRegistry.registerModEntity(EntitySpear.class, "entitySpear", 0, Greece.instance, 128, 5, true);// needs to be moved

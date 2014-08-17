@@ -74,6 +74,7 @@ tile.greece:letterBlockPhi.name=Phi Block
 tile.greece:letterBlockPsi.name=Psi Block
 tile.greece:letterBlockChi.name=Chi Block
 tile.greece:letterBlockOmega.name=Omega Block
+tile.greece:marble.name=Pentelic Marble
 
 #ores
 tile.greece:copperOre.name=Cyprium Ore

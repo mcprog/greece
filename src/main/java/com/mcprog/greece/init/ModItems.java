@@ -107,13 +107,7 @@ public class ModItems {
 		electrumDrachma.setDenomination(Money.ELECTRUM_DRACHMA, Money.Comparison.ELECTRUM_DRACHMA);
 		electrumStater.setDenomination(Money.ELECTRUM_STATER, Money.Comparison.ELECTRUM_STATER);
 		
-		OreDictionary.registerOre(Names.OreDictionary.INGOT_COPPER, copperIngot);
-		OreDictionary.registerOre(Names.OreDictionary.INGOT_TIN, tinIngot);
-		OreDictionary.registerOre(Names.OreDictionary.DUST_COPPER, copperDust);
-		OreDictionary.registerOre(Names.OreDictionary.DUST_TIN, tinDust);
-		OreDictionary.registerOre(Names.OreDictionary.DUST_COAL, coalDust);
-		OreDictionary.registerOre(Names.OreDictionary.NUGGET_COPPER, copperNugget);
-		OreDictionary.registerOre(Names.OreDictionary.NUGGET_TIN, tinNugget);
+		
 		
 		GameRegistry.registerItem(silverObol, Names.Items.SILVER_OBOL);
 		GameRegistry.registerItem(silverDrachma, Names.Items.SILVER_DRACHMA);
@@ -140,5 +134,19 @@ public class ModItems {
 		GameRegistry.registerItem(coalDust, Names.Items.COAL_DUST);
 		GameRegistry.registerItem(spear, Names.Items.SPEAR);
 		GameRegistry.registerItem(knife, Names.Items.KNIFE);
+	}
+	
+	public static void oreDictionary () {
+		OreDictionary.registerOre(Names.OreDictionary.INGOT_COPPER, copperIngot);
+		OreDictionary.registerOre(Names.OreDictionary.INGOT_TIN, tinIngot);
+		OreDictionary.registerOre(Names.OreDictionary.INGOT_BRONZE_CLASSIC, classicBronzeIngot);
+		OreDictionary.registerOre(Names.OreDictionary.INGOT_BRONZE_MILD, mildBronzeIngot);
+		OreDictionary.registerOre(Names.OreDictionary.DUST_COPPER, copperDust);
+		OreDictionary.registerOre(Names.OreDictionary.DUST_TIN, tinDust);
+		OreDictionary.registerOre(Names.OreDictionary.DUST_BRONZE_CLASSIC, classicBronzeDust);
+		OreDictionary.registerOre(Names.OreDictionary.DUST_BRONZE_MILD, mildBronzeDust);
+		OreDictionary.registerOre(Names.OreDictionary.DUST_COAL, coalDust);
+		OreDictionary.registerOre(Names.OreDictionary.NUGGET_COPPER, copperNugget);
+		OreDictionary.registerOre(Names.OreDictionary.NUGGET_TIN, tinNugget);
 	}
 }

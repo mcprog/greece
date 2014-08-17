@@ -69,18 +69,27 @@ public class Names {
 		public static final String LETTER_BLOCK_OMEGA = "letterBlockOmega";
 		public static final String COPPER_ORE = "copperOre";
 		public static final String TIN_ORE = "tinOre";
-		
+		public static final String MARBLE = "marble";
 		
 	}
 	
 	public class OreDictionary {
 		public static final String INGOT_COPPER = "ingotCopper";
 		public static final String INGOT_TIN = "ingotTin";
+		public static final String INGOT_BRONZE_CLASSIC = "ingotBronzeClassic";
+		public static final String INGOT_BRONZE_MILD = "ingotBronzeMild";
+		
 		public static final String DUST_COPPER = "dustCopper";
 		public static final String DUST_TIN = "dustTin";
+		public static final String DUST_BRONZE_CLASSIC = "dustBronzeClassic";
+		public static final String DUST_BRONZE_MILD = "dustBronzeMild";
 		public static final String DUST_COAL = "dustCoal";
+		
 		public static final String NUGGET_COPPER = "nuggetCopper";
 		public static final String NUGGET_TIN = "nuggetTin";
+		
+		public static final String ORE_COPPER = "oreCopper";
+		public static final String ORE_TIN = "oreTin";
 	}
 	
 	public class Material {

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
+import net.minecraftforge.oredict.OreDictionary;
 
 import com.mcprog.greece.block.BlockColumn;
 import com.mcprog.greece.block.BlockDust;
@@ -39,6 +40,8 @@ public class ModBlocks {// no object holder annotation becuase of arraylist
 	public static final OreGreece copperOre = new OreGreece();
 	public static final OreGreece tinOre = new OreGreece();
 	
+	public static final Block marble = new BlockGreece();
+	
 	/**
 	 * init of blocks and registration
 	 * naming
@@ -67,6 +70,7 @@ public class ModBlocks {// no object holder annotation becuase of arraylist
 		copperOre.setBlockName(Names.Blocks.COPPER_ORE);
 		tinOre.setBlockName(Names.Blocks.TIN_ORE);
 		
+		marble.setBlockName(Names.Blocks.MARBLE);
 		
 		GameRegistry.registerBlock(column, Names.Blocks.COLUMN);
 		GameRegistry.registerBlock(copperBlock, Names.Blocks.COPPER_BLOCK);
@@ -77,5 +81,11 @@ public class ModBlocks {// no object holder annotation becuase of arraylist
 		
 		GameRegistry.registerBlock(copperOre, Names.Blocks.COPPER_ORE);
 		GameRegistry.registerBlock(tinOre, Names.Blocks.TIN_ORE);
+		GameRegistry.registerBlock(marble, Names.Blocks.MARBLE);
+	}
+	
+	public static void oreDictionary () {
+		OreDictionary.registerOre(Names.OreDictionary.ORE_COPPER, copperOre);
+		OreDictionary.registerOre(Names.OreDictionary.ORE_TIN, tinOre);
 	}
 }
