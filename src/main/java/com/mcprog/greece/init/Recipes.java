@@ -138,6 +138,30 @@ public class Recipes {// needs consolidation / reorganization
 				"k  ",
 				'i', new ItemStack(ModItems.classicBronzeIngot), 'k', new ItemStack(Items.stick));
 		
+		/*
+		 * Silver Stater (temp. recipes for coins)
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.silverStater),
+				" ik",
+				"ii ",
+				'i', new ItemStack(ModItems.tinNugget), 'k', new ItemStack(ModItems.tinIngot));
+		
+		/*
+		 * Silver Drachma
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.silverDrachma),
+				"i i",
+				"iii",
+				" i ",
+				'i', new ItemStack(ModItems.tinNugget));
+		
+		/*
+		 * Silver Obol
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.silverObol),
+				"i",
+				'i', new ItemStack(ModItems.tinNugget));
+		
 		//***********************
 		//*      Smelting       *
 		//***********************
