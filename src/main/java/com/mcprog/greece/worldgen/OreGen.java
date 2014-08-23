@@ -38,13 +38,12 @@ public class OreGen implements IWorldGenerator{
 	
 	private void generateSurface(World world, Random random, int i, int j) {
 		/*
-		 * CODE for Coppper
-		 * loop tries to genreate 20 times in each chunk
+		 * CODE for copper
 		 */
 		for(int t = 0; t < 20 ; ++t){
 			int copperOreXCord = i + random.nextInt(16);
 			int copperOreZCord = j + random.nextInt(16);
-			int copperOreYCord = random.nextInt(40);//spawn height limit
+			int copperOreYCord = random.nextInt(50);//spawn height limit
 			/*
 			 * WorldGenMInable class generates specified block to specific quantity
 			 */
@@ -56,9 +55,19 @@ public class OreGen implements IWorldGenerator{
 		 */
 		for(int t = 0; t < 10 ; ++t){
 			int tinOreXCord = i + random.nextInt(16);
-			int tinOreYCord = random.nextInt(30);
+			int tinOreYCord = random.nextInt(40);
 			int tinOreZCord = j + random.nextInt(16);
-			new WorldGenMinable(ModBlocks.tinOre, 4).generate(world, random, tinOreXCord, tinOreYCord, tinOreZCord);
+			new WorldGenMinable(ModBlocks.tinOre, 6).generate(world, random, tinOreXCord, tinOreYCord, tinOreZCord);
+		}
+		
+		/*
+		 * CODE for silver
+		 */
+		for(int t = 0; t < 4 ; ++t){
+			int silverOreXCord = i + random.nextInt(16);
+			int silverOreYCord = random.nextInt(32);
+			int silverOreZCord = j + random.nextInt(16);
+			new WorldGenMinable(ModBlocks.silverOre, 4).generate(world, random, silverOreXCord, silverOreYCord, silverOreZCord);
 		}
 	}
 	
