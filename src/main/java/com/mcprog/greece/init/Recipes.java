@@ -203,6 +203,30 @@ public class Recipes {// needs consolidation / reorganization
 				"i",
 				'i', new ItemStack(ModItems.silverNugget));
 		
+		/*
+		 * Electrum Stater
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.electrumStater),
+				" ik",
+				"ii ",
+				'i', new ItemStack(ModItems.electrumNugget), 'k', new ItemStack(ModItems.electrumIngot));
+		
+		/*
+		 * Electrum Drachma
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.electrumDrachma),
+				"i i",
+				"iii",
+				" i ",
+				'i', new ItemStack(ModItems.electrumNugget));
+		
+		/*
+		 * Electrum Obol
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.electrumObol),
+				"i",
+				'i', new ItemStack(ModItems.electrumNugget));
+		
 		//***********************
 		//*      Smelting       *
 		//***********************
