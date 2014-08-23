@@ -13,6 +13,7 @@ import com.mcprog.greece.item.ItemCoin;
 import com.mcprog.greece.item.ItemSpear;
 import com.mcprog.greece.item.SwordGreece;
 import com.mcprog.greece.item.info.SpecificInfo;
+import com.mcprog.greece.material.Material;
 import com.mcprog.greece.material.Materials;
 import com.mcprog.greece.reference.Money;
 import com.mcprog.greece.reference.Names;
@@ -52,6 +53,10 @@ public class ModItems {
 	public static final ItemMetal tinDust = new ItemMetal(Materials.tin);
 	public static final ItemMetal classicBronzeDust = new ItemMetal(Materials.classicBronze);
 	public static final ItemMetal mildBronzeDust = new ItemMetal(Materials.mildBronze);
+	public static final ItemMetal tinyPileOfCopperDust = new ItemMetal(Materials.copper);
+	public static final ItemMetal tinyPileOfTinDust = new ItemMetal(Materials.tin);
+	public static final ItemMetal tinyPileOfClassicBronzeDust = new ItemMetal(Materials.classicBronze);
+	public static final ItemMetal tinyPileOfMildBronzeDust = new ItemMetal(Materials.mildBronze);
 	public static final ItemGreece coalDust = new ItemGreece();
 	
 	public static final ItemMetal copperNugget = new ItemMetal(Materials.copper);
@@ -86,10 +91,15 @@ public class ModItems {
 		tinIngot.setUnlocalizedName(Names.Items.TIN_INGOT);
 		classicBronzeIngot.setUnlocalizedName(Names.Items.CLASSIC_BRONZE_INGOT);
 		mildBronzeIngot.setUnlocalizedName(Names.Items.MILD_BRONZE_INGOT);
+		
 		copperDust.setUnlocalizedName(Names.Items.COPPER_DUST);
 		tinDust.setUnlocalizedName(Names.Items.TIN_DUST);
 		classicBronzeDust.setUnlocalizedName(Names.Items.CLASSIC_BRONZE_DUST);
 		mildBronzeDust.setUnlocalizedName(Names.Items.MILD_BRONZE_DUST);
+		tinyPileOfCopperDust.setUnlocalizedName(Names.Items.TINY_PILE_OF_COPPER_DUST);
+		tinyPileOfTinDust.setUnlocalizedName(Names.Items.TINY_PILE_OF_TIN_DUST);
+		tinyPileOfClassicBronzeDust.setUnlocalizedName(Names.Items.TINY_PILE_OF_CLASSIC_BRONZE_DUST);
+		tinyPileOfMildBronzeDust.setUnlocalizedName(Names.Items.TINY_PILE_OF_MILD_BRONZE_DUST);
 		coalDust.setUnlocalizedName(Names.Items.COAL_DUST);
 		
 		copperNugget.setUnlocalizedName(Names.Items.COPPER_NUGGET);
@@ -127,6 +137,10 @@ public class ModItems {
 		GameRegistry.registerItem(tinDust, Names.Items.TIN_DUST);
 		GameRegistry.registerItem(classicBronzeDust, Names.Items.CLASSIC_BRONZE_DUST);
 		GameRegistry.registerItem(mildBronzeDust, Names.Items.MILD_BRONZE_DUST);
+		GameRegistry.registerItem(tinyPileOfCopperDust, Names.Items.TINY_PILE_OF_COPPER_DUST);
+		GameRegistry.registerItem(tinyPileOfTinDust, Names.Items.TINY_PILE_OF_TIN_DUST);
+		GameRegistry.registerItem(tinyPileOfClassicBronzeDust, Names.Items.TINY_PILE_OF_CLASSIC_BRONZE_DUST);
+		GameRegistry.registerItem(tinyPileOfMildBronzeDust, Names.Items.TINY_PILE_OF_MILD_BRONZE_DUST);
 		GameRegistry.registerItem(copperNugget, Names.Items.COPPER_NUGGET);
 		GameRegistry.registerItem(tinNugget, Names.Items.TIN_NUGGET);
 		GameRegistry.registerItem(classicBronzeNugget, Names.Items.CLASSIC_BRONZE_NUGGET);

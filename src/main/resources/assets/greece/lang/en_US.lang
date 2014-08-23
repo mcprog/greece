@@ -32,6 +32,10 @@ item.greece:tinDust.name=White Lead Dust
 item.greece:classicBronzeDust.name=Classic Bronze Dust
 item.greece:mildBronzeDust.name=Mild Bronze Dust
 item.greece:coalDust.name=Coal Dust
+item.greece:tinyPileOfCopperDust.name=Tiny Pile of Copper Dust
+item.greece:tinyPileOfTinDust.name=Tiny Pile of Tin Dust
+item.greece:tinyPileOfClassicBronzeDust.name=Tiny Pile of Classic Bronze Dust
+item.greece:tinyPileOfMildBronzeDust.name=Tiny Pile of Mild Bronze Dust
 
 #nuggets
 item.greece:copperNugget.name=Cyprium Nugget

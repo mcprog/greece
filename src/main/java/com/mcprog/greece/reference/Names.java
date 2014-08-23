@@ -27,6 +27,10 @@ public class Names {
 		public static final String TIN_DUST = "tinDust";
 		public static final String CLASSIC_BRONZE_DUST = "classicBronzeDust";
 		public static final String MILD_BRONZE_DUST = "mildBronzeDust";
+		public static final String TINY_PILE_OF_COPPER_DUST = "tinyPileOfCopperDust";
+		public static final String TINY_PILE_OF_TIN_DUST = "tinyPileOfTinDust";
+		public static final String TINY_PILE_OF_CLASSIC_BRONZE_DUST = "tinyPileOfClassicBronzeDust";
+		public static final String TINY_PILE_OF_MILD_BRONZE_DUST = "tinyPileOfMildBronzeDust";
 		public static final String COAL_DUST = "coalDust";
 		public static final String COPPER_NUGGET = "copperNugget";
 		public static final String TIN_NUGGET = "tinNugget";
