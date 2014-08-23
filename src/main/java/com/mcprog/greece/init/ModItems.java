@@ -46,21 +46,25 @@ public class ModItems {
 	
 	public static final ItemMetal copperIngot = new ItemMetal(Materials.copper);
 	public static final ItemMetal tinIngot = new ItemMetal(Materials.tin);
+	public static final ItemMetal silverIngot = new ItemMetal(Materials.silver);
 	public static final ItemMetal classicBronzeIngot = new ItemMetal(Materials.classicBronze);
 	public static final ItemMetal mildBronzeIngot = new ItemMetal(Materials.mildBronze);
 	
 	public static final ItemMetal copperDust = new ItemMetal(Materials.copper);
 	public static final ItemMetal tinDust = new ItemMetal(Materials.tin);
+	public static final ItemMetal silverDust = new ItemMetal(Materials.silver);
 	public static final ItemMetal classicBronzeDust = new ItemMetal(Materials.classicBronze);
 	public static final ItemMetal mildBronzeDust = new ItemMetal(Materials.mildBronze);
 	public static final ItemMetal tinyPileOfCopperDust = new ItemMetal(Materials.copper);
 	public static final ItemMetal tinyPileOfTinDust = new ItemMetal(Materials.tin);
+	public static final ItemMetal tinyPileOfSilverDust = new ItemMetal(Materials.silver);
 	public static final ItemMetal tinyPileOfClassicBronzeDust = new ItemMetal(Materials.classicBronze);
 	public static final ItemMetal tinyPileOfMildBronzeDust = new ItemMetal(Materials.mildBronze);
 	public static final ItemGreece coalDust = new ItemGreece();
 	
 	public static final ItemMetal copperNugget = new ItemMetal(Materials.copper);
 	public static final ItemMetal tinNugget = new ItemMetal(Materials.tin);
+	public static final ItemMetal silverNugget = new ItemMetal(Materials.silver);
 	public static final ItemMetal classicBronzeNugget = new ItemMetal(Materials.classicBronze);
 	public static final ItemMetal mildBronzeNugget = new ItemMetal(Materials.mildBronze);
 	
@@ -89,21 +93,25 @@ public class ModItems {
 		
 		copperIngot.setUnlocalizedName(Names.Items.COPPER_INGOT);
 		tinIngot.setUnlocalizedName(Names.Items.TIN_INGOT);
+		silverIngot.setUnlocalizedName(Names.Items.SILVER_INGOT);
 		classicBronzeIngot.setUnlocalizedName(Names.Items.CLASSIC_BRONZE_INGOT);
 		mildBronzeIngot.setUnlocalizedName(Names.Items.MILD_BRONZE_INGOT);
 		
 		copperDust.setUnlocalizedName(Names.Items.COPPER_DUST);
 		tinDust.setUnlocalizedName(Names.Items.TIN_DUST);
+		silverDust.setUnlocalizedName(Names.Items.SILVER_DUST);
 		classicBronzeDust.setUnlocalizedName(Names.Items.CLASSIC_BRONZE_DUST);
 		mildBronzeDust.setUnlocalizedName(Names.Items.MILD_BRONZE_DUST);
 		tinyPileOfCopperDust.setUnlocalizedName(Names.Items.TINY_PILE_OF_COPPER_DUST);
 		tinyPileOfTinDust.setUnlocalizedName(Names.Items.TINY_PILE_OF_TIN_DUST);
+		tinyPileOfSilverDust.setUnlocalizedName(Names.Items.TINY_PILE_OF_SILVER_DUST);
 		tinyPileOfClassicBronzeDust.setUnlocalizedName(Names.Items.TINY_PILE_OF_CLASSIC_BRONZE_DUST);
 		tinyPileOfMildBronzeDust.setUnlocalizedName(Names.Items.TINY_PILE_OF_MILD_BRONZE_DUST);
 		coalDust.setUnlocalizedName(Names.Items.COAL_DUST);
 		
 		copperNugget.setUnlocalizedName(Names.Items.COPPER_NUGGET);
 		tinNugget.setUnlocalizedName(Names.Items.TIN_NUGGET);
+		silverNugget.setUnlocalizedName(Names.Items.SILVER_NUGGET);
 		classicBronzeNugget.setUnlocalizedName(Names.Items.CLASSIC_BRONZE_NUGGET);
 		mildBronzeNugget.setUnlocalizedName(Names.Items.MILD_BRONZE_NUGGET);
 		
@@ -131,18 +139,22 @@ public class ModItems {
 		GameRegistry.registerItem(chisel, Names.Items.CHISEL);
 		GameRegistry.registerItem(copperIngot, Names.Items.COPPER_INGOT);
 		GameRegistry.registerItem(tinIngot, Names.Items.TIN_INGOT);
+		GameRegistry.registerItem(silverIngot, Names.Items.SILVER_INGOT);
 		GameRegistry.registerItem(classicBronzeIngot, Names.Items.CLASSIC_BRONZE_INGOT);
 		GameRegistry.registerItem(mildBronzeIngot, Names.Items.MILD_BRONZE_INGOT);
 		GameRegistry.registerItem(copperDust, Names.Items.COPPER_DUST);
 		GameRegistry.registerItem(tinDust, Names.Items.TIN_DUST);
+		GameRegistry.registerItem(silverDust, Names.Items.SILVER_DUST);
 		GameRegistry.registerItem(classicBronzeDust, Names.Items.CLASSIC_BRONZE_DUST);
 		GameRegistry.registerItem(mildBronzeDust, Names.Items.MILD_BRONZE_DUST);
 		GameRegistry.registerItem(tinyPileOfCopperDust, Names.Items.TINY_PILE_OF_COPPER_DUST);
 		GameRegistry.registerItem(tinyPileOfTinDust, Names.Items.TINY_PILE_OF_TIN_DUST);
+		GameRegistry.registerItem(tinyPileOfSilverDust, Names.Items.TINY_PILE_OF_SILVER_DUST);
 		GameRegistry.registerItem(tinyPileOfClassicBronzeDust, Names.Items.TINY_PILE_OF_CLASSIC_BRONZE_DUST);
 		GameRegistry.registerItem(tinyPileOfMildBronzeDust, Names.Items.TINY_PILE_OF_MILD_BRONZE_DUST);
 		GameRegistry.registerItem(copperNugget, Names.Items.COPPER_NUGGET);
 		GameRegistry.registerItem(tinNugget, Names.Items.TIN_NUGGET);
+		GameRegistry.registerItem(silverNugget, Names.Items.SILVER_NUGGET);
 		GameRegistry.registerItem(classicBronzeNugget, Names.Items.CLASSIC_BRONZE_NUGGET);
 		GameRegistry.registerItem(mildBronzeNugget, Names.Items.MILD_BRONZE_NUGGET);
 		GameRegistry.registerItem(coalDust, Names.Items.COAL_DUST);
@@ -153,14 +165,17 @@ public class ModItems {
 	public static void oreDictionary () {
 		OreDictionary.registerOre(Names.OreDictionary.INGOT_COPPER, copperIngot);
 		OreDictionary.registerOre(Names.OreDictionary.INGOT_TIN, tinIngot);
+		OreDictionary.registerOre(Names.OreDictionary.INGOT_SILVER, silverIngot);
 		OreDictionary.registerOre(Names.OreDictionary.INGOT_BRONZE_CLASSIC, classicBronzeIngot);
 		OreDictionary.registerOre(Names.OreDictionary.INGOT_BRONZE_MILD, mildBronzeIngot);
 		OreDictionary.registerOre(Names.OreDictionary.DUST_COPPER, copperDust);
 		OreDictionary.registerOre(Names.OreDictionary.DUST_TIN, tinDust);
+		OreDictionary.registerOre(Names.OreDictionary.DUST_SILVER, silverDust);
 		OreDictionary.registerOre(Names.OreDictionary.DUST_BRONZE_CLASSIC, classicBronzeDust);
 		OreDictionary.registerOre(Names.OreDictionary.DUST_BRONZE_MILD, mildBronzeDust);
 		OreDictionary.registerOre(Names.OreDictionary.DUST_COAL, coalDust);
 		OreDictionary.registerOre(Names.OreDictionary.NUGGET_COPPER, copperNugget);
 		OreDictionary.registerOre(Names.OreDictionary.NUGGET_TIN, tinNugget);
+		OreDictionary.registerOre(Names.OreDictionary.NUGGET_SILVER, silverNugget);
 	}
 }

@@ -23,23 +23,29 @@ item.greece:electrumStater.name=Electrum Stater
 #ingots
 item.greece:copperIngot.name=Cyprium Ingot
 item.greece:tinIngot.name=White Lead Ingot
+item.greece:silverIngot.name=White Gold Ingot
 item.greece:classicBronzeIngot.name=Classic Bronze Ingot
 item.greece:mildBronzeIngot.name=Mild Bronze Ingot
 
 #dusts
 item.greece:copperDust.name=Cyprium Dust
 item.greece:tinDust.name=White Lead Dust
+item.greece:silverDust.name=White Gold Dust
 item.greece:classicBronzeDust.name=Classic Bronze Dust
 item.greece:mildBronzeDust.name=Mild Bronze Dust
 item.greece:coalDust.name=Coal Dust
+
+#tiny piles of dust
 item.greece:tinyPileOfCopperDust.name=Tiny Pile of Copper Dust
 item.greece:tinyPileOfTinDust.name=Tiny Pile of Tin Dust
+item.greece:tinyPileOfSilverDust.name=Tiny Pile of White Gold Dust
 item.greece:tinyPileOfClassicBronzeDust.name=Tiny Pile of Classic Bronze Dust
 item.greece:tinyPileOfMildBronzeDust.name=Tiny Pile of Mild Bronze Dust
 
 #nuggets
 item.greece:copperNugget.name=Cyprium Nugget
 item.greece:tinNugget.name=White Lead Nugget
+item.greece:silverNugget.name=White Gold Nugget
 item.greece:classicBronzeNugget.name=Classic Bronze Nugget
 item.greece:mildBronzeNugget.name=Mild Bronze Nugget
 
@@ -50,6 +56,7 @@ item.greece:knife.name=Xiphos
 #blocks
 tile.greece:copperBlock.name=Block of Cyprium
 tile.greece:tinBlock.name=Block of White Lead
+tile.greece:silverBlock.name=Block of White Gold
 tile.greece:classicBronzeBlock.name=Block of Classic Bronze
 tile.greece:mildBronzeBlock.name=Block of Mild Bronze
 tile.greece:copperDustBlock.name=Block of Cyprium Dust
@@ -83,3 +90,4 @@ tile.greece:marble.name=Pentelic Marble
 #ores
 tile.greece:copperOre.name=Cyprium Ore
 tile.greece:tinOre.name=White Lead Ore
+tile.greece:silverOre.name=White Gold Ore

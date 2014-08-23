@@ -31,6 +31,7 @@ public class ModBlocks {// no object holder annotation becuase of arraylist
 	
 	public static final BlockGreece copperBlock = new BlockMetal(MapColor.adobeColor);
 	public static final BlockGreece tinBlock = new BlockMetal(MapColor.snowColor);
+	public static final BlockGreece silverBlock = new BlockMetal(MapColor.silverColor);
 	public static final BlockGreece classicBronzeBlock = new BlockMetal(MapColor.goldColor);
 	public static final BlockGreece mildBronzeBlock = new BlockMetal(MapColor.adobeColor);
 	public static final Block copperDustBlock = new BlockDust(MapColor.adobeColor);
@@ -39,6 +40,7 @@ public class ModBlocks {// no object holder annotation becuase of arraylist
 
 	public static final OreGreece copperOre = new OreGreece();
 	public static final OreGreece tinOre = new OreGreece();
+	public static final OreGreece silverOre = new OreGreece();
 	
 	public static final Block marble = new BlockGreece();
 	
@@ -63,29 +65,34 @@ public class ModBlocks {// no object holder annotation becuase of arraylist
 		
 		copperBlock.setBlockName(Names.Blocks.COPPER_BLOCK);
 		tinBlock.setBlockName(Names.Blocks.TIN_BLOCK);
+		silverBlock.setBlockName(Names.Blocks.SILVER_BLOCK);
 		classicBronzeBlock.setBlockName(Names.Blocks.CLASSIC_BRONZE_BLOCK);
 		mildBronzeBlock.setBlockName(Names.Blocks.MILD_BRONZE_BLOCK);
 		copperDustBlock.setBlockName(Names.Blocks.COPPER_DUST_BLOCK);
 		
 		copperOre.setBlockName(Names.Blocks.COPPER_ORE);
 		tinOre.setBlockName(Names.Blocks.TIN_ORE);
+		silverOre.setBlockName(Names.Blocks.SILVER_ORE);
 		
 		marble.setBlockName(Names.Blocks.MARBLE);
 		
 		GameRegistry.registerBlock(column, Names.Blocks.COLUMN);
 		GameRegistry.registerBlock(copperBlock, Names.Blocks.COPPER_BLOCK);
 		GameRegistry.registerBlock(tinBlock, Names.Blocks.TIN_BLOCK);
+		GameRegistry.registerBlock(silverBlock, Names.Blocks.SILVER_BLOCK);
 		GameRegistry.registerBlock(classicBronzeBlock, Names.Blocks.CLASSIC_BRONZE_BLOCK);
 		GameRegistry.registerBlock(mildBronzeBlock, Names.Blocks.MILD_BRONZE_BLOCK);
 		GameRegistry.registerBlock(copperDustBlock, Names.Blocks.COPPER_DUST_BLOCK);
 		
 		GameRegistry.registerBlock(copperOre, Names.Blocks.COPPER_ORE);
 		GameRegistry.registerBlock(tinOre, Names.Blocks.TIN_ORE);
+		GameRegistry.registerBlock(silverOre, Names.Blocks.SILVER_ORE);
 		GameRegistry.registerBlock(marble, Names.Blocks.MARBLE);
 	}
 	
 	public static void oreDictionary () {
 		OreDictionary.registerOre(Names.OreDictionary.ORE_COPPER, copperOre);
 		OreDictionary.registerOre(Names.OreDictionary.ORE_TIN, tinOre);
+		OreDictionary.registerOre(Names.OreDictionary.ORE_SILVER, silverOre);
 	}
 }

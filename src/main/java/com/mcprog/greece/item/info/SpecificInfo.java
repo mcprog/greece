@@ -17,6 +17,10 @@ public class SpecificInfo {
 		new ElementInfo(Elements.TIN, 1)
 	};
 	
+	public static final ElementInfo[] silver = {
+		new ElementInfo(Elements.SILVER, 1)
+	};
+	
 	public static final ElementInfo[] classicBronze = {
 		new ElementInfo(Elements.COPPER, 0.9f),
 		new ElementInfo(Elements.TIN, 0.1f)
