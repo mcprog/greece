@@ -2,8 +2,8 @@ greece
 ======
 
 ###TODO
-* tiny piles of dust
-* coin recipes
+Done  * tiny piles of dust
+Done  * coin recipes
 * marble added to world gen
 * fix achievements
 * fix world gen
