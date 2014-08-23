@@ -34,6 +34,7 @@ public class ModBlocks {// no object holder annotation becuase of arraylist
 	public static final BlockGreece silverBlock = new BlockMetal(MapColor.silverColor);
 	public static final BlockGreece classicBronzeBlock = new BlockMetal(MapColor.goldColor);
 	public static final BlockGreece mildBronzeBlock = new BlockMetal(MapColor.adobeColor);
+	public static final BlockGreece electrumBlock = new BlockMetal(MapColor.goldColor);
 	public static final Block copperDustBlock = new BlockDust(MapColor.adobeColor);
 	
 	public static final ArrayList<BlockLetter> letterBlocks = new ArrayList<BlockLetter>();
@@ -68,6 +69,7 @@ public class ModBlocks {// no object holder annotation becuase of arraylist
 		silverBlock.setBlockName(Names.Blocks.SILVER_BLOCK);
 		classicBronzeBlock.setBlockName(Names.Blocks.CLASSIC_BRONZE_BLOCK);
 		mildBronzeBlock.setBlockName(Names.Blocks.MILD_BRONZE_BLOCK);
+		electrumBlock.setBlockName(Names.Blocks.ELECTRUM_BLOCK);
 		copperDustBlock.setBlockName(Names.Blocks.COPPER_DUST_BLOCK);
 		
 		copperOre.setBlockName(Names.Blocks.COPPER_ORE);
@@ -82,6 +84,7 @@ public class ModBlocks {// no object holder annotation becuase of arraylist
 		GameRegistry.registerBlock(silverBlock, Names.Blocks.SILVER_BLOCK);
 		GameRegistry.registerBlock(classicBronzeBlock, Names.Blocks.CLASSIC_BRONZE_BLOCK);
 		GameRegistry.registerBlock(mildBronzeBlock, Names.Blocks.MILD_BRONZE_BLOCK);
+		GameRegistry.registerBlock(electrumBlock, Names.Blocks.ELECTRUM_BLOCK);
 		GameRegistry.registerBlock(copperDustBlock, Names.Blocks.COPPER_DUST_BLOCK);
 		
 		GameRegistry.registerBlock(copperOre, Names.Blocks.COPPER_ORE);
