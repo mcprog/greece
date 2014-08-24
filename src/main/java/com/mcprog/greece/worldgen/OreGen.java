@@ -15,8 +15,8 @@ import cpw.mods.fml.common.IWorldGenerator;
  * @author ime990
  *
  */
-public class OreGen implements IWorldGenerator{
-
+public class OreGen implements IWorldGenerator {
+	
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world,
 			IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {

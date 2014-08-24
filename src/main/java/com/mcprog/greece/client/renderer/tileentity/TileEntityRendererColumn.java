@@ -1,17 +1,16 @@
 package com.mcprog.greece.client.renderer.tileentity;
 
+import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.tileentity.TileEntity;
+
 import org.lwjgl.opengl.GL11;
 
 import com.mcprog.greece.client.renderer.model.ModelColumn;
-import com.mcprog.greece.client.renderer.model.ModelColumn;
-import com.mcprog.greece.client.renderer.model.ModelSpear;
 import com.mcprog.greece.reference.Textures;
 import com.mcprog.greece.tileentity.TileEntityColumn;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
-import net.minecraft.tileentity.TileEntity;
 
 /**
  * 
@@ -35,7 +34,6 @@ public class TileEntityRendererColumn extends TileEntitySpecialRenderer {
 			
 			
 			bindTexture(Textures.Model.COLUMN);
-			
 			model.render(null, 0, 0, 0, 0, 0, 0.0625f);
 			
 			GL11.glPopMatrix();

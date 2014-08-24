@@ -28,6 +28,10 @@ public class ResourceLocationHelper {
 	 * @return the resource location object
 	 */
 	public static ResourceLocation getModelLocation (String path) {
-		return new ResourceLocation(Reference.MOD_ID.toLowerCase(), Textures.Model.MODEL_DIR + path);
+		return getResourceLocation(Textures.Model.MODEL_DIR + path);
+	}
+	
+	public static ResourceLocation getGuiLocation (String path) {
+		return getResourceLocation("/textures/gui/" + path);
 	}
 }

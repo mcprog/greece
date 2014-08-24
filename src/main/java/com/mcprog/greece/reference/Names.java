@@ -17,7 +17,7 @@ public class Names {
 		public static final String ELECTRUM_STATER = "electrumStater";
 		public static final String STONE_BASE = "stoneBase";
 		public static final String GRIND_WHEEL = "grindWheel";
-		public static final String GRINDSTONE = "grindstone";
+		public static final String GRINDSTONE = "itemGrindstone";
 		public static final String CHISEL = "chisel";
 		public static final String COPPER_INGOT = "copperIngot";
 		public static final String TIN_INGOT = "tinIngot";
@@ -70,6 +70,7 @@ public class Names {
 		public static final String COPPER_ORE = "copperOre";
 		public static final String TIN_ORE = "tinOre";
 		public static final String MARBLE = "marble";
+		public static final String GRINDSTONE = "grindstone";
 		
 	}
 	

@@ -22,7 +22,8 @@ public class GreeceEvent {
 
 	@SubscribeEvent
 	public void onOldOreMined (PlayerEvent.ItemPickupEvent event) {
-		if (event.pickedUp.getEntityItem().isItemEqual(new ItemStack(ModBlocks.copperOre))) {// only works on copper
+		if (event.pickedUp.getEntityItem().isItemEqual(new ItemStack(ModBlocks.copperOre)) || 
+				event.pickedUp.getEntityItem().isItemEqual(new ItemStack(ModBlocks.tinOre))) {
 			event.player.addStat(ModStats.oldOreMiner, 1);
 		}
 	}

@@ -36,13 +36,13 @@ public class ItemChisel extends ItemDamagable{// class may have corrupt logic
 			player.swingItem();
 			if (player.isSneaking()) {
 				if (block == Blocks.stone) {
-					world.setBlock(x, y, z, ModBlocks.letterBlocks.get(0));// change to block alpha
+					world.setBlock(x, y, z, ModBlocks.letterBlocks.get(NameHandler.length()));
 				} else {
 					previousLetter(block, world, x, y, z);
 				}
 			} else {
 				if (block == Blocks.stone) {
-					world.setBlock(x, y, z, ModBlocks.letterBlocks.get(0));// wrong?
+					world.setBlock(x, y, z, ModBlocks.letterBlocks.get(0));
 				} else {
 					nextLetter(block, world, x, y, z);
 				}
@@ -120,6 +120,9 @@ public class ItemChisel extends ItemDamagable{// class may have corrupt logic
 		}
 		else if (block == ModBlocks.letterBlocks.get(20)) {
 			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(21));
+		}
+		else if (block == ModBlocks.letterBlocks.get(21)) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(22));
 		} else {
 			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(NameHandler.length()));
 		}
@@ -127,6 +130,9 @@ public class ItemChisel extends ItemDamagable{// class may have corrupt logic
 	
 	protected void previousLetter (Block block, World world, int x, int y, int z) {
 		if (block == ModBlocks.letterBlocks.get(NameHandler.length())) {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(22));
+		}
+		else if (block == ModBlocks.letterBlocks.get(22)) {
 			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(21));
 		}
 		else if (block == ModBlocks.letterBlocks.get(21)) {
@@ -188,8 +194,11 @@ public class ItemChisel extends ItemDamagable{// class may have corrupt logic
 		}
 		else if (block == ModBlocks.letterBlocks.get(2)) {
 			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(1));
-		} else {
+		}
+		else if (block == ModBlocks.letterBlocks.get(1)) {
 			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(0));
+		} else {
+			world.setBlock(x, y, z, ModBlocks.letterBlocks.get(NameHandler.length()));
 		}
 	}
 	

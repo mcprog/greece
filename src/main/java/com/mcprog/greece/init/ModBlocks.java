@@ -10,6 +10,7 @@ import net.minecraftforge.oredict.OreDictionary;
 import com.mcprog.greece.block.BlockColumn;
 import com.mcprog.greece.block.BlockDust;
 import com.mcprog.greece.block.BlockGreece;
+import com.mcprog.greece.block.BlockGrindstone;
 import com.mcprog.greece.block.BlockLetter;
 import com.mcprog.greece.block.BlockMetal;
 import com.mcprog.greece.block.OreGreece;
@@ -42,6 +43,8 @@ public class ModBlocks {// no object holder annotation becuase of arraylist
 	
 	public static final Block marble = new BlockGreece();
 	
+	public static final BlockGreece grindstone = new BlockGrindstone();
+	
 	/**
 	 * init of blocks and registration
 	 * naming
@@ -72,6 +75,8 @@ public class ModBlocks {// no object holder annotation becuase of arraylist
 		
 		marble.setBlockName(Names.Blocks.MARBLE);
 		
+		grindstone.setBlockName(Names.Blocks.GRINDSTONE);
+		
 		GameRegistry.registerBlock(column, Names.Blocks.COLUMN);
 		GameRegistry.registerBlock(copperBlock, Names.Blocks.COPPER_BLOCK);
 		GameRegistry.registerBlock(tinBlock, Names.Blocks.TIN_BLOCK);
@@ -82,6 +87,8 @@ public class ModBlocks {// no object holder annotation becuase of arraylist
 		GameRegistry.registerBlock(copperOre, Names.Blocks.COPPER_ORE);
 		GameRegistry.registerBlock(tinOre, Names.Blocks.TIN_ORE);
 		GameRegistry.registerBlock(marble, Names.Blocks.MARBLE);
+		
+		GameRegistry.registerBlock(grindstone, Names.Blocks.GRINDSTONE);
 	}
 	
 	public static void oreDictionary () {

@@ -5,10 +5,12 @@ import net.minecraftforge.oredict.OreDictionary;
 
 import com.mcprog.greece.entity.EntitySpear;
 import com.mcprog.greece.handler.ConfigHandler;
+import com.mcprog.greece.handler.GuiHandler;
 import com.mcprog.greece.init.ModBlocks;
 import com.mcprog.greece.init.ModItems;
 import com.mcprog.greece.init.ModStats;
 import com.mcprog.greece.init.Recipes;
+import com.mcprog.greece.init.WorldGeneration;
 import com.mcprog.greece.proxy.IProxy;
 import com.mcprog.greece.reference.Reference;
 import com.mcprog.greece.utility.LogHelper;
@@ -21,6 +23,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
@@ -59,8 +62,9 @@ public class Greece {
 		AchievementPage.registerAchievementPage(ModStats.GREECE_PAGE);//move this
 		ModStats.init();
 		Recipes.init();
-		GameRegistry.registerWorldGenerator(new OreGen(), 0);//move this
+		WorldGeneration.init();
 		
+		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 		proxy.initRenderingAndTextures();
 		EntityRegistry.registerModEntity(EntitySpear.class, "entitySpear", 0, Greece.instance, 128, 5, true);// needs to be moved
 		
