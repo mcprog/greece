@@ -1,5 +1,7 @@
 package com.mcprog.greece.init;
 
+import scala.reflect.internal.Trees.New;
+
 import com.mcprog.greece.reference.Names;
 
 import net.minecraft.block.Block;
@@ -16,6 +18,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 /**
  * 
  * @author mcprog
+ * @author ime990
  *
  */
 public class Recipes {// needs consolidation / reorganization
@@ -31,11 +34,17 @@ public class Recipes {// needs consolidation / reorganization
 		addStorageRecipe(new ItemStack(ModBlocks.copperDustBlock), Names.OreDictionary.DUST_COPPER);
 		
 		/*
+		 * copper dust from copper dust block
+		 */
+		addUnStorageRecipe(new ItemStack(ModItems.copperDust, 9), new ItemStack(ModBlocks.copperDustBlock));
+		
+		/*
 		 * bronze dust
 		 */
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.classicBronzeDust, 10), 
 				Names.OreDictionary.DUST_TIN, 
 				ModBlocks.copperDustBlock));
+		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.mildBronzeDust, 17), 
 				Names.OreDictionary.DUST_TIN,
 				Names.OreDictionary.DUST_COPPER,
@@ -46,53 +55,81 @@ public class Recipes {// needs consolidation / reorganization
 				Names.OreDictionary.DUST_COPPER,
 				Names.OreDictionary.DUST_COPPER,
 				ModBlocks.copperDustBlock));
+		
 		/*
-		 * copper dust from ore
+		 * electrum dust
+		 */
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.electrumDust, 2), 
+				Names.OreDictionary.DUST_SILVER,
+				Names.OreDictionary.DUST_GOLD));
+		
+		/*
+		 * Dust from ore
 		 */
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.copperDust), ModBlocks.copperOre, new ItemStack(ModItems.grindstone, 1, OreDictionary.WILDCARD_VALUE));
-		
-		/*
-		 * copper dust from block
-		 */
-		addUnStorageRecipe(new ItemStack(ModItems.copperDust, 9), new ItemStack(ModBlocks.copperDustBlock));
-		
-		/*
-		 * tin dust from ore
-		 */
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.tinDust), ModBlocks.tinOre, new ItemStack(ModItems.grindstone, 1, OreDictionary.WILDCARD_VALUE));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.silverDust), ModBlocks.silverOre, new ItemStack(ModItems.grindstone, 1, OreDictionary.WILDCARD_VALUE));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.goldDust), Blocks.gold_ore, new ItemStack(ModItems.grindstone, 1, OreDictionary.WILDCARD_VALUE));
 		
 		/*
 		 * metal blocks from ingots
 		 */
 		addStorageRecipe(new ItemStack(ModBlocks.copperBlock), Names.OreDictionary.INGOT_COPPER);
 		addStorageRecipe(new ItemStack(ModBlocks.tinBlock), Names.OreDictionary.INGOT_TIN);
+		addStorageRecipe(new ItemStack(ModBlocks.silverBlock), Names.OreDictionary.INGOT_SILVER);
 		addStorageRecipe(new ItemStack(ModBlocks.classicBronzeBlock), ModItems.classicBronzeIngot);
 		addStorageRecipe(new ItemStack(ModBlocks.mildBronzeBlock), ModItems.mildBronzeIngot);
+		addStorageRecipe(new ItemStack(ModBlocks.electrumBlock), ModItems.electrumIngot);
 		
 		/*
 		 * ingots from nuggets
 		 */
 		addStorageRecipe(new ItemStack(ModItems.copperIngot), Names.OreDictionary.NUGGET_COPPER);
 		addStorageRecipe(new ItemStack(ModItems.tinIngot), Names.OreDictionary.NUGGET_TIN);
+		addStorageRecipe(new ItemStack(ModItems.silverIngot), Names.OreDictionary.NUGGET_SILVER);
 		addStorageRecipe(new ItemStack(ModItems.classicBronzeIngot), ModItems.classicBronzeNugget);
 		addStorageRecipe(new ItemStack(ModItems.mildBronzeIngot), ModItems.mildBronzeNugget);
-		
-		/*
-		 * ingots from blocks
-		 */
-		addUnStorageRecipe(new ItemStack(ModItems.copperIngot, 9), new ItemStack(ModBlocks.copperBlock));
-		addUnStorageRecipe(new ItemStack(ModItems.tinIngot, 9), new ItemStack(ModBlocks.tinBlock));
-		addUnStorageRecipe(new ItemStack(ModItems.classicBronzeIngot, 9), new ItemStack(ModBlocks.classicBronzeBlock));
-		addUnStorageRecipe(new ItemStack(ModItems.mildBronzeIngot, 9), new ItemStack(ModBlocks.mildBronzeBlock));
+		addStorageRecipe(new ItemStack(ModItems.electrumIngot), ModItems.electrumNugget);
 		
 		/*
 		 * nuggets from ingots
 		 */
 		addUnStorageRecipe(new ItemStack(ModItems.copperNugget, 9), Names.OreDictionary.INGOT_COPPER);
 		addUnStorageRecipe(new ItemStack(ModItems.tinNugget, 9), Names.OreDictionary.INGOT_TIN);
+		addUnStorageRecipe(new ItemStack(ModItems.silverNugget, 9), Names.OreDictionary.INGOT_SILVER);
 		addUnStorageRecipe(new ItemStack(ModItems.classicBronzeNugget, 9), new ItemStack(ModItems.classicBronzeIngot));
 		addUnStorageRecipe(new ItemStack(ModItems.mildBronzeNugget, 9), new ItemStack(ModItems.mildBronzeIngot));
+		addUnStorageRecipe(new ItemStack(ModItems.electrumNugget, 9), new ItemStack(ModItems.electrumIngot));
 		
+		/*
+		 * ingots from blocks
+		 */
+		addUnStorageRecipe(new ItemStack(ModItems.copperIngot, 9), new ItemStack(ModBlocks.copperBlock));
+		addUnStorageRecipe(new ItemStack(ModItems.tinIngot, 9), new ItemStack(ModBlocks.tinBlock));
+		addUnStorageRecipe(new ItemStack(ModItems.silverIngot, 9), new ItemStack(ModBlocks.silverBlock));
+		addUnStorageRecipe(new ItemStack(ModItems.classicBronzeIngot, 9), new ItemStack(ModBlocks.classicBronzeBlock));
+		addUnStorageRecipe(new ItemStack(ModItems.mildBronzeIngot, 9), new ItemStack(ModBlocks.mildBronzeBlock));
+		addUnStorageRecipe(new ItemStack(ModItems.electrumIngot, 9), new ItemStack(ModBlocks.electrumBlock));
+		
+		/*
+		 * dust from tiny piles of dust
+		 */
+		addStorageRecipe(new ItemStack(ModItems.copperDust), ModItems.tinyPileOfCopperDust);
+		addStorageRecipe(new ItemStack(ModItems.tinDust), ModItems.tinyPileOfTinDust);
+		addStorageRecipe(new ItemStack(ModItems.silverDust), ModItems.tinyPileOfSilverDust);
+		addStorageRecipe(new ItemStack(ModItems.goldDust), ModItems.tinyPileOfGoldDust);
+		addStorageRecipe(new ItemStack(ModItems.classicBronzeDust), ModItems.tinyPileOfClassicBronzeDust);
+		addStorageRecipe(new ItemStack(ModItems.mildBronzeDust), ModItems.tinyPileOfMildBronzeDust);
+		
+		/*
+		 * tiny piles of dust from dust
+		 */
+		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfCopperDust, 9),  new ItemStack(ModItems.copperDust));
+		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfTinDust, 9), new ItemStack(ModItems.tinDust));
+		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfSilverDust, 9), new ItemStack(ModItems.silverDust));
+		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfGoldDust, 9), new ItemStack(ModItems.goldDust));
+		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfClassicBronzeDust, 9), new ItemStack(ModItems.classicBronzeDust));
+		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfMildBronzeDust, 9), new ItemStack(ModItems.mildBronzeDust));
 		
 		/*
 		 * grindstone
@@ -111,6 +148,9 @@ public class Recipes {// needs consolidation / reorganization
 				"k",
 				'i', new ItemStack(ModItems.grindWheel), 'k', new ItemStack(ModItems.stoneBase));
 		
+		/*
+		 * column
+		 */
 		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.column), ModBlocks.marble, new ItemStack(ModItems.chisel, OreDictionary.WILDCARD_VALUE));
 		
 		/*
@@ -120,6 +160,7 @@ public class Recipes {// needs consolidation / reorganization
 				" i",
 				"i ",
 				'i', new ItemStack(ModItems.classicBronzeIngot));
+		
 		/*
 		 * xiphos
 		 */
@@ -138,6 +179,54 @@ public class Recipes {// needs consolidation / reorganization
 				"k  ",
 				'i', new ItemStack(ModItems.classicBronzeIngot), 'k', new ItemStack(Items.stick));
 		
+		/*
+		 * Silver Stater (temp. recipes for coins)
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.silverStater),
+				" ik",
+				"ii ",
+				'i', new ItemStack(ModItems.silverNugget), 'k', new ItemStack(ModItems.silverIngot));
+		
+		/*
+		 * Silver Drachma
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.silverDrachma),
+				"i i",
+				"iii",
+				" i ",
+				'i', new ItemStack(ModItems.silverNugget));
+		
+		/*
+		 * Silver Obol
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.silverObol),
+				"i",
+				'i', new ItemStack(ModItems.silverNugget));
+		
+		/*
+		 * Electrum Stater
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.electrumStater),
+				" ik",
+				"ii ",
+				'i', new ItemStack(ModItems.electrumNugget), 'k', new ItemStack(ModItems.electrumIngot));
+		
+		/*
+		 * Electrum Drachma
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.electrumDrachma),
+				"i i",
+				"iii",
+				" i ",
+				'i', new ItemStack(ModItems.electrumNugget));
+		
+		/*
+		 * Electrum Obol
+		 */
+		GameRegistry.addRecipe(new ItemStack(ModItems.electrumObol),
+				"i",
+				'i', new ItemStack(ModItems.electrumNugget));
+		
 		//***********************
 		//*      Smelting       *
 		//***********************
@@ -147,14 +236,24 @@ public class Recipes {// needs consolidation / reorganization
 		 */
 		GameRegistry.addSmelting(ModItems.copperDust, new ItemStack(ModItems.copperIngot), 0F);
 		GameRegistry.addSmelting(ModItems.tinDust, new ItemStack(ModItems.tinIngot), 0F);
+		GameRegistry.addSmelting(ModItems.silverDust, new ItemStack(ModItems.silverIngot), 0F);
+		GameRegistry.addSmelting(ModItems.goldDust, new ItemStack(Items.gold_ingot), 0F);
 		GameRegistry.addSmelting(ModItems.classicBronzeDust, new ItemStack(ModItems.classicBronzeIngot), 0F);
 		GameRegistry.addSmelting(ModItems.mildBronzeDust, new ItemStack(ModItems.mildBronzeIngot), 0F);
+		
+		GameRegistry.addSmelting(ModItems.tinyPileOfCopperDust, new ItemStack(ModItems.copperNugget), 0F);
+		GameRegistry.addSmelting(ModItems.tinyPileOfTinDust, new ItemStack(ModItems.tinNugget), 0F);
+		GameRegistry.addSmelting(ModItems.tinyPileOfSilverDust, new ItemStack(ModItems.silverNugget), 0F);
+		GameRegistry.addSmelting(ModItems.tinyPileOfGoldDust, new ItemStack(Items.gold_nugget), 0F);
+		GameRegistry.addSmelting(ModItems.tinyPileOfClassicBronzeDust, new ItemStack(ModItems.classicBronzeNugget), 0F);
+		GameRegistry.addSmelting(ModItems.tinyPileOfMildBronzeDust, new ItemStack(ModItems.mildBronzeNugget), 0F);
 		
 		/*
 		 * ore
 		 */
 		GameRegistry.addSmelting(ModBlocks.copperOre, new ItemStack(ModItems.copperIngot), 0.5F);
 		GameRegistry.addSmelting(ModBlocks.tinOre, new ItemStack(ModItems.tinIngot), 0.7F);
+		GameRegistry.addSmelting(ModBlocks.silverOre, new ItemStack(ModItems.silverIngot), 0.7F);
 	}
 	
 	protected static void addStorageRecipe (ItemStack out, Item in) {
