@@ -114,22 +114,24 @@ public class Recipes {// needs consolidation / reorganization
 		/*
 		 * dust from tiny piles of dust
 		 */
-		addStorageRecipe(new ItemStack(ModItems.copperDust), ModItems.tinyPileOfCopperDust);
-		addStorageRecipe(new ItemStack(ModItems.tinDust), ModItems.tinyPileOfTinDust);
-		addStorageRecipe(new ItemStack(ModItems.silverDust), ModItems.tinyPileOfSilverDust);
-		addStorageRecipe(new ItemStack(ModItems.goldDust), ModItems.tinyPileOfGoldDust);
-		addStorageRecipe(new ItemStack(ModItems.classicBronzeDust), ModItems.tinyPileOfClassicBronzeDust);
-		addStorageRecipe(new ItemStack(ModItems.mildBronzeDust), ModItems.tinyPileOfMildBronzeDust);
+		addDustRecipe(new ItemStack(ModItems.copperDust), ModItems.tinyPileOfCopperDust);		
+		addDustRecipe(new ItemStack(ModItems.tinDust), ModItems.tinyPileOfTinDust);
+		addDustRecipe(new ItemStack(ModItems.silverDust), ModItems.tinyPileOfSilverDust);
+		addDustRecipe(new ItemStack(ModItems.goldDust), ModItems.tinyPileOfGoldDust);
+		addDustRecipe(new ItemStack(ModItems.classicBronzeDust), ModItems.tinyPileOfClassicBronzeDust);
+		addDustRecipe(new ItemStack(ModItems.mildBronzeDust), ModItems.tinyPileOfMildBronzeDust);
+		addDustRecipe(new ItemStack(ModItems.electrumDust), ModItems.tinyPileOfElectrumDust);
 		
 		/*
 		 * tiny piles of dust from dust
 		 */
-		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfCopperDust, 9),  new ItemStack(ModItems.copperDust));
-		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfTinDust, 9), new ItemStack(ModItems.tinDust));
-		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfSilverDust, 9), new ItemStack(ModItems.silverDust));
-		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfGoldDust, 9), new ItemStack(ModItems.goldDust));
-		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfClassicBronzeDust, 9), new ItemStack(ModItems.classicBronzeDust));
-		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfMildBronzeDust, 9), new ItemStack(ModItems.mildBronzeDust));
+		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfCopperDust, 4),  new ItemStack(ModItems.copperDust));
+		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfTinDust, 4), new ItemStack(ModItems.tinDust));
+		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfSilverDust, 4), new ItemStack(ModItems.silverDust));
+		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfGoldDust, 4), new ItemStack(ModItems.goldDust));
+		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfClassicBronzeDust, 4), new ItemStack(ModItems.classicBronzeDust));
+		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfMildBronzeDust, 4), new ItemStack(ModItems.mildBronzeDust));
+		addUnStorageRecipe(new ItemStack(ModItems.tinyPileOfElectrumDust, 4), new ItemStack(ModItems.electrumDust));
 		
 		/*
 		 * grindstone
@@ -240,14 +242,8 @@ public class Recipes {// needs consolidation / reorganization
 		GameRegistry.addSmelting(ModItems.goldDust, new ItemStack(Items.gold_ingot), 0F);
 		GameRegistry.addSmelting(ModItems.classicBronzeDust, new ItemStack(ModItems.classicBronzeIngot), 0F);
 		GameRegistry.addSmelting(ModItems.mildBronzeDust, new ItemStack(ModItems.mildBronzeIngot), 0F);
-		
-		GameRegistry.addSmelting(ModItems.tinyPileOfCopperDust, new ItemStack(ModItems.copperNugget), 0F);
-		GameRegistry.addSmelting(ModItems.tinyPileOfTinDust, new ItemStack(ModItems.tinNugget), 0F);
-		GameRegistry.addSmelting(ModItems.tinyPileOfSilverDust, new ItemStack(ModItems.silverNugget), 0F);
-		GameRegistry.addSmelting(ModItems.tinyPileOfGoldDust, new ItemStack(Items.gold_nugget), 0F);
-		GameRegistry.addSmelting(ModItems.tinyPileOfClassicBronzeDust, new ItemStack(ModItems.classicBronzeNugget), 0F);
-		GameRegistry.addSmelting(ModItems.tinyPileOfMildBronzeDust, new ItemStack(ModItems.mildBronzeNugget), 0F);
-		
+		GameRegistry.addSmelting(ModItems.electrumDust, new ItemStack(ModItems.electrumIngot), 0F);
+	
 		/*
 		 * ore
 		 */
@@ -283,6 +279,12 @@ public class Recipes {// needs consolidation / reorganization
 	
 	protected static void addUnStorageRecipe (ItemStack out, String in) {
 		GameRegistry.addRecipe(new ShapelessOreRecipe(out, in));
+	}
+	
+	protected static void addDustRecipe (ItemStack out, Item in) {
+		GameRegistry.addShapelessRecipe(out,
+				in, in,
+				in, in);
 	}
 	
 }
