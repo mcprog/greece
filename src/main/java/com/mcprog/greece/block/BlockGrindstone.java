@@ -3,7 +3,6 @@ package com.mcprog.greece.block;
 import com.mcprog.greece.Greece;
 import com.mcprog.greece.tileentity.TileEntityGrindstone;
 
-import cpw.mods.fml.common.network.internal.FMLNetworkHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.entity.item.EntityItem;
@@ -12,6 +11,7 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.network.internal.FMLNetworkHandler;
 
 public class BlockGrindstone extends BlockGreece implements ITileEntityProvider {
 

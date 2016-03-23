@@ -1,6 +1,5 @@
 package com.mcprog.greece.block;
 
-import net.minecraft.block.BlockCompressed;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 

@@ -1,8 +1,5 @@
 package com.mcprog.greece;
 
-import net.minecraftforge.common.AchievementPage;
-import net.minecraftforge.oredict.OreDictionary;
-
 import com.mcprog.greece.entity.EntitySpear;
 import com.mcprog.greece.handler.ConfigHandler;
 import com.mcprog.greece.handler.GuiHandler;
@@ -14,20 +11,18 @@ import com.mcprog.greece.init.WorldGeneration;
 import com.mcprog.greece.proxy.IProxy;
 import com.mcprog.greece.reference.Reference;
 import com.mcprog.greece.utility.LogHelper;
-import com.mcprog.greece.worldgen.OreGen;
 
-import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.network.NetworkRegistry;
-import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.EntityRegistry;
-import cpw.mods.fml.common.registry.EntityRegistry;
-import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.common.AchievementPage;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.registry.EntityRegistry;
+
+
 
 /**
  * 
@@ -64,7 +59,8 @@ public class Greece {
 		Recipes.init();
 		WorldGeneration.init();
 		
-		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
+		//TODO fix this
+		//NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 		proxy.initRenderingAndTextures();
 		EntityRegistry.registerModEntity(EntitySpear.class, "entitySpear", 0, Greece.instance, 128, 5, true);// needs to be moved
 		

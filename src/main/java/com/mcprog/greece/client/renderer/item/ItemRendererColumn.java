@@ -4,12 +4,9 @@ import org.lwjgl.opengl.GL11;
 
 import com.mcprog.greece.client.renderer.model.ModelColumn;
 import com.mcprog.greece.reference.Textures;
-import com.mcprog.greece.utility.ResourceLocationHelper;
 
-import cpw.mods.fml.client.FMLClientHandler;
-import net.minecraft.client.model.ModelDragon;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.client.IItemRenderer;
+import net.minecraftforge.fml.client.FMLClientHandler;
 
 /**
  * 

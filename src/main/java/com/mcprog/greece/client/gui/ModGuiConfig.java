@@ -1,14 +1,11 @@
 package com.mcprog.greece.client.gui;
 
-import java.util.List;
-
 import com.mcprog.greece.handler.ConfigHandler;
 import com.mcprog.greece.reference.Reference;
 
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;
-import cpw.mods.fml.client.config.GuiConfig;
-import cpw.mods.fml.client.config.IConfigElement;
+import net.minecraftforge.fml.client.config.GuiConfig;
 
 /**
  * 

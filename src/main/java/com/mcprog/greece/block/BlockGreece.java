@@ -3,11 +3,10 @@ package com.mcprog.greece.block;
 import com.mcprog.greece.creativetab.CreativeTabGreece;
 import com.mcprog.greece.reference.Textures;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 /**
  * 
